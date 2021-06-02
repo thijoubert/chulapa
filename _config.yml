@@ -88,7 +88,7 @@ comments:
 #   "brand" options would be set on the left side of your navbar
 #   "nav" would be set on the right side. Two-level nav links available
 navbar:
-  style :  fab
+  style :  dual
   brand:
     title :  Home
     img: "./assets/img/site/brand-clear.png"
