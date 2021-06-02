@@ -14,35 +14,17 @@ project_links:
       label: Follow
 ---
 
-<div class="text-center">
-  <div class="btn-group btn-group-sm" role="group" aria-label="Latest release">
-  <button type="button" class="btn btn-dark font-weight-bold" disabled>Latest release</button>
-  <a href="https://github.com/dieghernan/chulapa/releases" class="btn btn-outline-dark font-weight-bold">{{ site.github.releases[0].tag_name }}</a>
+## <a href="./blog" class="text-dark">Recent posts</a>
+{: .display-3 .mb-5 }
+
+{% include_cached components/indexcards.html cacheddocs=site.posts cachedlimit=3 %}
+
+<div class="text-right mx-3">
+		<a href="./blog/" class="btn btn-outline-primary border-0">Blog <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i><span class="sr-only">Go</span></a>
 </div>
-  
-		    <div class="text-center my-4 py-5 px-3 bg-secondary rounded-lg chulapa-overlay-img"  style="
-    background-image: linear-gradient(rgba(223, 215, 186, 0.7), rgba(223, 215, 186, 0.7)),  url(https://dieghernan.github.io/chulapa/assets/img/iconbanner/github.svg)">
-		        <p><i class="fas fa-rocket fa-3x"></i></p>
-		        <h2 class="font-weight-light py-3">Easy to install</h2>
-		        <h5 class="font-weight-light py-2">Create a fully responsive website hosted on Github in minutes - for free!</h5>
-        </div>
-        <div class="text-center my-4 py-5 px-3 bg-secondary rounded-lg chulapa-overlay-img" style="background-repeat: repeat;
-    background-size: auto;
-    background-image: linear-gradient(rgba(223, 215, 186, 0.7), rgba(223, 215, 186, 0.7)),  url(https://dieghernan.github.io/chulapa/assets/img/iconbanner/banner.png)">
-          <p><i class="fas fa-code fa-3x"></i></p>
-          <h2 class="font-weight-light  py-3">First-class features</h2>
-          <h5 class="font-weight-light py-2">Fontawesome, comments, internal search, MathJax, Twitter Cards and Open Graph, three different navbars, video support and much more...</h5>
-        </div>
-		    <div class="text-center my-4 py-5 px-3 bg-secondary rounded-lg chulapa-overlay-img"  style="
-    background-image: linear-gradient(rgba(223, 215, 186, 0.7), rgba(223, 215, 186, 0.7)),  url(https://dieghernan.github.io/chulapa/assets/img/iconbanner/palette.svg)">
-          <p><i class="fas fa-cogs fa-3x"></i></p>
-          <h2 class="font-weight-light py-3">One theme, a thousand looks</h2>
-          <h5 class="font-weight-light py-2">Bootstrap 4 inside! Use Bootstrap theming, any of our 14+ skins or the Chulapa autothemer</h5>
-        </div>
-		    <div class="text-center my-4 py-5 px-3 bg-secondary rounded-lg chulapa-overlay-img"  style="background-image: linear-gradient(rgba(223, 215, 186, 0.7), rgba(223, 215, 186, 0.7)),  url(https://dieghernan.github.io/chulapa/assets/img/iconbanner/th.svg)">
-          <p><i class="fas fa-puzzle-piece fa-3x"></i></p>
-          <h2 class="font-weight-light py-3">Layouts for everything</h2>
-          <h5 class="font-weight-light py-2">Blogs, portfolios, projects, archives, image galleries... Use our collection of built-in layouts with lots of additional components</h5>
-        </div>
+
+
+
+
         <a class="btn btn-dark btn-lg my-3 text-primary" href="./docs/01-install" role="button">Read the docs</a>
 </div>
