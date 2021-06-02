@@ -91,69 +91,38 @@ navbar:
   style :  dual
   brand:
     title :  Home
-    img: "./assets/img/site/brand-clear.png"
+    #img: "./assets/img/site/brand-clear.png"
   nav:
   - title: Blog
     url: /blog/
-  - title: Docs
-    child:
-     - title: Installation
-       url: /docs/01-install
-     - title: Global Settings
-       url: /docs/02-config
-     - title: Theming your site
-       url: /docs/03-theming
-     - title: Layouts & Snippets
-       url: /docs/04-layouts
-     - title: Tips & Tricks
-       url: /docs/05-tips-n-tricks
-     - title: Markdown cheatsheet
-       url: /docs/markdown-cheatsheet
-     - title: Syntax highlighting
-       url: /docs/syntax-highlighting
-     - title: Variable dictionary
-       url: /docs/variable-dictionary
-  - title: Skins		
-    url: /skins
-  - title: Demos
-    child:
-     - title: Index
-       url: /demo
-     - title: Archive (all)
-       url: /demo/archive
-     - title: Tag Cloud (2 cols)
-       url: /demo/tags
-     - title: Category Cloud (single)
-       url: /demo/category
-     - title: Search Google CSE
-       url: /demo/search_google
-     - title: Search LUNR
-       url: /demo/search_lunr
-     - title: Classic Navbar
-       url: /demo/classic-navbar
+  - title: Events
+    url: /events/
+  - title   : Archives
+    child   :
+      - title : By date
+        url   : /archive
+      - title : By tags
+        url   : /tags
   - title: About
-    child: 
-      - title: License
-        url: /license
-      - title: Showcase
-        url: /showcase
-      - title: Contribute
-        url: /contribute
-      - title: Changelog
-        url: /CHANGELOG
+    child:
+     - title: About me
+       url: /docs/01-install
+     - title: Disclaimer
+       url: /Disclaimer
+
 
 #Social links to be placed on your site footer
 footer:
   links:
+    - label: "Linkedin"
+      url:  www.linkedin.com/in/thijoubert #A link or email: https://twitter.com/jack, mail@example.com
+      icon: "fab fa-linkedin" # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/   
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: https://github.com/thijoubert/
     - label: "RSS"
       icon: "fa fa-rss"
       url:  "./atom.xml"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: https://github.com/dieghernan/
-    - label: "My blog"
-      icon: "fas fa-blog"
-      url: "https://dieghernan.github.io/"
 
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
