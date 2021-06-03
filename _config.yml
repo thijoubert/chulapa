@@ -11,8 +11,8 @@ title                   :     Thibault Joubert #default["repository_name"]
 title_separator         :     " | " #default [" | "]
 subtitle                :     Microsoft 365 Security, Compliance and Identity thoughts # [your-repository-tagline]  
 description             :     Microsoft 365 Security, Compliance and Identity thoughts #default [your-repository-tagline]
-url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
-baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+url                     :     www.thijoubert.com #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
+baseurl                 :     thijoubert.github.io #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     200 #default[200]
 timezone                :     Europe/Paris #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
