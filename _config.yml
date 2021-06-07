@@ -6,7 +6,7 @@
 # A. Site Settings /SEO options
 # Overall options for your site, would affect your site SEO
 # Default values are explained
-locale                  :     fr #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
+locale                  :     en-US #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
 title                   :     Thibault Joubert #default["repository_name"]
 title_separator         :     " | " #default [" | "]
 subtitle                :     Microsoft 365 Security, Compliance and Identity thoughts # [your-repository-tagline]  
