@@ -106,9 +106,9 @@ navbar:
   - title: About
     child:
      - title: About me
-       url: /docs/01-install
+       url: /aboutme
      - title: Disclaimer
-       url: /Disclaimer
+       url: /disclaimer
 
 
 #Social links to be placed on your site footer
