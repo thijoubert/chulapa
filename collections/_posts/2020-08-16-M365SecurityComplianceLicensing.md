@@ -6,7 +6,7 @@ tags:
   - Licensing
   - Security
   - Compliance
-header_img : "./assets/img/posts/2020-08-13_0_Article.jpg"
+header_img : "./assets/img/site/2020-08-13_0_Article.jpg"
 ---
 
 Qui ne s’est pas déjà senti perdu en cherchant des informations sur les plans de licences autour d’Office 365 ? Avec cet article, je souhaite vous partager un décryptage de ce qui existe avec quelques conseils pour retrouver son chemin, ainsi que rappeler certaines annonces récentes de l’éditeur.
