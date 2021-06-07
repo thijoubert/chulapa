@@ -1,6 +1,6 @@
 ---
 title: "« Petit » guide pour se retrouver dans la jungle des licences sécurité et conformité Microsoft 365"
-subtitle: "« Petit » guide pour se retrouver dans la jungle des licences sécurité et conformité Microsoft 365"
+subtitle:
 excerpt: Qui ne s’est pas déjà senti perdu en cherchant des informations sur les plans de licences autour d’Office 365 ? Quelques conseils ici pour retrouver son chemin. 
 tags:
   - Microsoft 365
