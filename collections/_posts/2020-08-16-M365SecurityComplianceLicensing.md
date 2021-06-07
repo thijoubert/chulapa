@@ -18,6 +18,7 @@ A l’heure du *modern workplace*, il est indispensable pour les équipes sécu
 
 *Cet article est orienté pour les entreprises ayant plus de 300 collaborateurs. Pour les autres organisations (éducation, associations, petites et moyennes entreprises) les plans de licences sont légèrement différents, mais les informations ci-dessous restent applicables pour la plupart.*
 
+
 # 1/ Comprendre les services de sécurité et de conformité disponibles
 Historiquement tournée vers des services de bureautique (avec Microsoft Office) et de collaboration (avec Exchange et SharePoint on-premise), l’offre de Microsoft a fortement évolué **en intégrant des services de développement d’applications sans code (avec la Power Platform), mais aussi des briques de sécurité et de conformité**.
 
@@ -29,6 +30,7 @@ On peut regrouper ces dernières en sept catégories :
 ![2020-08-13_Licensing M365_1_Matrice.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_1_Matrice.png)
 
 ## **Gestion des identités et des accès**
+
 [**Azure Active Directory**](https://docs.microsoft.com/fr-fr/azure/active-directory/fundamentals/active-directory-whatis) est la brique fondamentale des services Cloud Microsoft (Office 365 mais aussi Azure IaaS et PaaS). Il ne s’agit pas d’un simple contrôleur de domaine de la source d’identité on-premise dans le Cloud, mais bien d’un service IAM à part entière. Plusieurs plans de licences sont disponibles dans le cadre d’une utilisation Microsoft 365, dont les principales fonctionnalités sont rappelées ci-dessous :
 
 - **Azure Active Directory Basic** pour Office 365 : Single Sign On, Gestion manuelles des utilisateurs, des groupes et des applications, Enregistrement des terminaux, Security Defaults (politiques de sécurité basiques pour les utilisateurs et les administrateurs) ;
@@ -38,7 +40,9 @@ On peut regrouper ces dernières en sept catégories :
 Par expérience, la licence Azure AD Premium P1 revêt aujourd’hui un caractère indispensable pour un certain nombre d’entreprises, à minima pour les deux fonctionnalités suivantes : accès conditionnel et classification des groupes. Azure AD Premium P2 sera plutôt destinée à des populations d’administration dans un premier temps.
 
 Pour rappel, les fonctionnalités disponibles quant à l’ajout ou la modification d’objets (groupes, utilisateurs ou terminaux) varient en fonction du mode d’implémentation choisi : Fédération d’identités, Password Hash Sync (PHS) et Pass Through Authentication (PTA). 
+
 ## **Gestion des terminaux**
+
 [**Intune**](https://docs.microsoft.com/fr-fr/azure/active-directory/fundamentals/active-directory-whatis) est la solution de Mobile Device Management (MDM) et Mobile Access Management (MAM) proposée par Microsoft. 
 
 La partie **Intune** **MDM** est historiquement une solution de gestion des terminaux mobiles : déploiement d’applications ou de certificats sur les terminaux enrôlés, durcissement des paramètres, gestion de parc, etc.
@@ -46,7 +50,9 @@ La partie **Intune** **MDM** est historiquement une solution de gestion des t
 La partie **Intune** **MAM** représente les fonctionnalités permettant de maîtriser les données au sein d’applications, via des *apps protection policies*. Le MAM peut être utilisé même dans un contexte BYOD. Il est important de noter que des solutions MDM tierces peuvent s’intégrer avec les Intune MAM pour maîtriser les applications Microsoft 365 Apps (comme Office pour iOS ou Android), mais la licence sera tout de même requise pour utiliser les fonctionnalités du SDK.  
 
 Dans le cadre du *modern management*, la partie MDM d’Intune se positionne comme une solution d’Enpoint Unified Management (ou UEM) pour gérer l’ensemble des terminaux (mobiles ou non) de façon unifiée. L’objectif est à terme de remplacer l’outil SCCM, également appelé Configuration Manager, en se positionnant en concurrence directe avec d’autres solution de MDM déjà bien en place au sein des entreprises.
+
 ## **Gestion de la menace**
+
 La suite [**Microsoft Defender**](https://docs.microsoft.com/fr-fr/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide) regroupe l’ensemble des fonctionnalités avancées de lutte contre les menaces (prévention, détection, investigation et réaction) de l’environnement Microsoft 365 : messageries, espaces de collaboration, terminaux et identités.
 
 Bien que les différents composants de la suite soient historiquement considérés comme moins performants que d’autres “*pure players”* sur leurs segments respectifs*,* ils ont l’avantage indéniable de proposer une gestion unifiée, ainsi qu’une corrélation des indicateurs. Cet écart tend toutefois à s’estomper depuis deux ans, Gartner ayant même reconnu [**plusieurs briques de la suite Defender (ex-ATP Advanced Threat Protection) comme leaders sur leurs segments**](https://www.microsoft.com/security/blog/2019/12/03/microsoft-security-leader-5-gartner-magic-quadrants/) fin 2019.
@@ -97,7 +103,9 @@ Enfin, une découverte des informations peut être réalisée *à posteriori*
 Le [**SDK Microsoft Information Protection**](https://docs.microsoft.com/fr-fr/information-protection/develop/overview) peut être utilisé par des applications tierces pour appliquer de la classification ou de la protection sur des données, ou tout simplement consommer des données protégées.
 
 Comme vous pouvez le voir, il y a un certain nombre d’outils avec des noms différents pour protéger les données des organisations. A retenir, les utilisateurs ne seront confrontés directement qu’à la classification et à la protection. 
+
 ## **Gouvernance**
+
 L’année 2020 pourra être retenue comme l’année de la conformité pour Office 365. Microsoft a en effet réorganisé les produits existants et en a présenté des nouveaux pour apporter des réponses à différents risques RH et réglementaires. Tous ces produits sont regroupés dans le nouveau **Centre de Conformité**, qui remplace la partie équivalente dans le Security & Compliance Center.
 
 Le premier groupe de ces produits est lié à la rétention des informations. Des **politiques de rétention** (conservation, enregistrement légal, suppression, etc.) sont définies via des étiquettes de rétention pour être appliquées à une donnée ou à un espace partagé. L’étiquetage peut se faire manuellement, par défaut sur des conteneurs (ex : boîtes mails utilisateurs ou sites SharePoint), ou automatiquement, de la même façon que pour les étiquettes de confidentialité.
@@ -122,7 +130,9 @@ Enfin, Microsoft a récemment présenté tout un [**panel de produits pour lutt
 - **Customer Lockbox** : Lockbox est le nom du processus interne Microsoft permettant à une personne du support d’accéder à des données d’une organisation. Customer Lockbox ajoute une étape de validation par le client concerné. En pratique, ce produit permet de s’assurer qu’un employé Microsoft ne modifie pas des données par inadvertance ; mais ne permet pas de se prémunir des [**requêtes gouvernementales**](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-lockbox-requests?view=o365-worldwide#frequently-asked-questions). Sur ce dernier sujet, Microsoft publie [**régulièrement des statistiques**](https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report?rtc=1).
 
 La majeure partie de ces produits sont encore en préversion. Il n’y a encore que très peu de retours terrain sur ces solutions appelées à gagner en maturité.
+
 ## **Maîtrise des services**
+
 Outre les produits décrits dans le chapitre précédent, Microsoft propose aux organisations deux outils supplémentaires pour se mettre en conformité avec les réglementations locales.
 
 Tout d’abord, **Customer Key** permet à une organisation d’ajouter une surcouche de chiffrement au niveau applicatif (Exchange Online, OneDrive, SharePoint Online et Teams), en gérant le cycle de vie des clés utilisées. Cette surcouche s’ajoute au chiffrement appliqué par construction aux données au repos dans les serveurs Microsoft. Attention toutefois à ne pas perdre les clés, ce qui conduirait à une perte totale des données.
@@ -141,7 +151,9 @@ Il est importun de rappeler ici qu’Azure AD P1 sera nécessaire, si l’on sou
 
 Avec les fonctionnalités de Gouvernance présentées précédemment, Cloud App Security est la brique la moins exploitée aujourd’hui, principalement en raison du niveau trop élevé des licences.
 
+
 # 2/ S'approprier la logique de *licensing*
+
 Pour les personnes profanes au *licensing* Microsoft, trois principes régissent l’attribution de licences en fonction de la population concernée :
 
 - Un utilisateur interne d’un service ou bénéficiant indirectement dudit produit (ex : groupe dynamique, classification d’un site SharePoint, partage de tableaux de bords Power BI) doit avoir la licence requise ;
@@ -153,7 +165,9 @@ Les licences sont nominatives et s’entendent par utilisateur et par mois.
 
 A noter qu’un même produit peut être disponible avec des **fonctionnalités plus ou moins avancées en fonction du niveau des licences choisi**. Un exemple récurrent concerne les journaux d’audits unifiés : ces logs sont conservés 90 jours avec des licences Office E1 ou E3 tandis qu’avec des licences Office E5 la durée est de 365 jours.  
 
+
 # 3/ Percer le mystère des plans de licences
+
 Pour rappel, le modèle des licences Microsoft est constitué des éléments suivants :
 
 - **Plan de licences** : Un plan définit les services souscrits à l’éditeur qui sont disponibles dans le tenant. La plupart du temps, un plan de licences sera un bundle collaboratif (Office 365), un bundle de sécurité (EMS) ou un package (Microsoft 365) ;
@@ -173,14 +187,18 @@ Deux points importants à noter :
 
 - Office DLP et AIP P1 peuvent être souscrits comme licences additionnelles pour des utilisateurs Office E1, afin d’avoir des fonctionnalités de protection de la donnée similaires à Office E3 ;
 - L’option de Multi-Géo est une licence additionnelle, quel que soit le plan de licences choisi. 
+
 ## **Les bundles de sécurité : des fonctionnalités de sécurité complémentaires**
+
 Introduit dès 2014, le bundle de sécurité EMS (Enterprise Mobility Suite, puis Enterprise Mobility + Security) intègre divers produits de sécurité. Ces produits ont pour vocation à maîtriser les identités, les terminaux en situation de mobilité et les applications accédant aux données Office 365. 
 
 - **EMS E3** : Intune, Azure AD P1, AIP 1, Advanced Threat Analytics ;
 - **EMS E5** : Azure AD P2, AIP P2, MDI et Microsoft Cloud App Security.
 
 Aujourd’hui, EMS E3 se révèle indispensable pour des organisations faisant le choix de partir sur une stratégie « Full Microsoft ». En effet, Intune et Azure AD P1 offrent une stratégie cohérente pour gérer les accès à la plateforme Office 365. En revanche, peu d’organisations ont fait le choix de généraliser EMS E5, un bundle plutôt orienté pour des populations sensibles ou administrateurs, en raison d’un manque de cohérence entre les différents produits de sécurité inclus.
+
 ## **Les packages Microsoft 365 : une offre complète mais onéreuse**
+
 Annoncé en 2017, Microsoft 365 est désormais le produit phare de l’éditeur de Redmond. Ce plan de licences combine les fonctionnalités d’Office 365, de la suite EMS et de Windows 10 :
 
 - **Microsoft 365 E3** = Office 365 E3 + EMS E3 + Windows 10 E3 ;
@@ -203,7 +221,9 @@ Présentées officiellement comme des extensions de Microsoft 365 E3, la documen
 **Microsoft 365 E5 Sécurité** combine Azure AD P2, la suite Defender (Defender for Office 365, Defender for Endpoints, Defender for Identies) et Cloud App Security. Ce bundle sera intéressant pour les organisations peu dimensionnées pour gérer de nombreux outils de sécurité (MFA, EDR, AD Monitoring, Passerelle mail, CASB) ou celles qui souhaitent basculer dans une approche plateforme. 
 
 ![2020-08-13_Licensing M365_2_Microsoft E5.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_2_Microsoft%20E5.png)
+
 ## **Focus sur les Firstline Workers**
+
 Les plans de licences Office 365 F3 et Microsoft 365 F1 et F3 sont destinés aux [**Firstline Workers**](https://www.microsoft.com/en-us/licensing/news/m365-firstline-workers) :
 
 - **Microsoft 365 F1** est un plan de licences qui regroupe EMS E3, Teams et SharePoint (uniquement en partage et consommation de contenu) ;
@@ -215,8 +235,11 @@ Microsoft définit cette population par « utilisateur sans terminal dédié, a
 Les licences Fx ne peuvent donc pas être utilisées pour optimiser les coûts de *licensing* pour des populations n’ayant pas de besoins avancés. 
 
 # 4/ Se doter des bons outils pour trouver les informations pertinentes 
+
 Il n’existe pas de cartographie officielle permettant de se retrouver facilement entre les produits et les niveaux de licences (E1, E3, E5, F1, F3, etc.), à croire que tout semble fait pour orienter les entreprises vers les licences les plus onéreuses. Il n’est pas donc étonnant de voir que des entreprises se soient spécialisées sur le segment très spécifique du *licensing* Microsoft (conseil en optimisation ou éditeurs de solution de gestion).
+
 ## **Comment se renseigner sur ce qui existe (sources officielles)**
+
 Concernant les licences liées aux produits conformité et sécurité, la référence la plus complète est la documentation "[**Conseils de licence Microsoft 365 pour la conformité & la sécurité**](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)". Malheureusement, cette documentation officielle n’est pas exhaustive, il y manque par exemple :
 
 - Les produits concernés par les préversions privées ou publiques. Par exemple, le nouvel Endpoint DLP nécessite par exemple une licence Microsoft 365 E5 Compliance ou Microsoft 365 E5 Information Protection & Governance ;
@@ -233,7 +256,9 @@ En dehors de la documentation officielle, j’utilise deux sources assez intére
 
 - [**Cartographie non-officielle des produits Microsoft 365**](https://github.com/AaronDinnage/Licensing), faite par Aaron Dinnage (Microsoft) : il s’agit du document disponible le plus complet sur le sujet ;
 - [**Détails et prix publics**](https://www.infusedinnovations.com/blog/secure-modern-workplace/complete-office-365-and-microsoft-365-licensing-comparison) (en dollars) des différents plans de licences Microsoft 365, faite par Dan Chemistruck (Infused Innovation).
+
 ## **Comment se renseigner sur ce qui est disponible dans le tenant**
+
 Il existe trois possibilités pour maîtriser les licences (unitaires, *bundles* ou *packages*) et les produits acquis dans un tenant Office 365.
 
 La première et la plus simple consiste tout simplement à utiliser les **informations disponibles dans les portails d’administration Office 365 ou Azure**. Cependant, ces portails ne proposent que des fonctionnalités assez basiques : pas d’actions pour un grand nombre d’utilisateurs, un tableau de bord (licences acquises, utilisées et non conformes) global sans granularité par pays ou par entité, etc.
@@ -241,13 +266,16 @@ La première et la plus simple consiste tout simplement à utiliser les **infor
 La deuxième option est d’acquérir un **outil de gestion ou d’optimisation des licences** (ex : ManageEngine, QuadroTech, CoreView). Ce type de solutions s’adresse plus au PME qu’aux grands groupes qui préfèrent la troisième option en raison d’économies d’échelle.
 
 Cette dernière option consiste à développer un outil (à base de scripts PowerShell et d’API Microsoft Graph) d’attribution des licences et un tableau de bord (généralement sur Power BI). Ce choix permettra de palier les limites des outils natifs, mais également de déléguer la maîtrise des licences aux différents Local IT dans un contexte décentralisé.
+
 ## **Focus sur le développement : comment se retrouver parmi les noms**
+
 Le développement en lui-même ne présente pas de complexité particulière. En revanche, un problème courant apparaît très rapidement. Les noms des services obtenus par PowerShell et Graph API sont tout simplement incompréhensibles. Ces noms sont souvent issus de rachats ou de noms de projets internes Microsoft (ex : ADALLOM pour MCAS, RIGHTSMANAGEMENT pour AIP P1 ou encore SPE\_E3 pour Microsoft 365 E3).
 
 Par expérience, il est alors **indispensable de garder à jour une liste de correspondances entre les noms des SKUs obtenus par scripting et les noms officiels** :
 
 - La [**liste officielle Microsoft**](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-service-plan-reference) est malheureusement loin d’être exhaustive et n’est pas mise à jour régulièrement ;
 - Plusieurs listes non officielles sont maintenues tant bien que mal et disponibles sur Internet.
+
 
 # 5/ Sept conseils pour définir sa stratégie de *licensing* sécurité et conformité
 ![2020-08-13_Licensing M365_3_Bonnes pratiques.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_3_Bonnes%20pratiques.png)
