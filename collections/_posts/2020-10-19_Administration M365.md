@@ -1,3 +1,14 @@
+---
+title: "Quelques pistes pour maîtriser l'administration de Microsoft 365"
+subtitle:
+excerpt: Quelles fonctionnalités natives dans la plateforme de Microsoft ? Comment gérer la délégation ? Quelles mesures de protection pour ces comptes sensibles ?
+tags:
+  - Administration 
+  - Microsoft 365
+  - Security
+header_img : "./assets/img/posts/2020-10-19_Administration M365.jpg"
+---
+
 Au sein de toute infrastructure ou application, les comptes à privilèges sont des comptes particulièrement sensibles. Leur sécurisation est un sujet clé. Cela est d’autant plus vrai pour les services SaaS, pour lesquels le **modèle de responsabilité partagé impose à une organisation de protéger ses données et ses identités**, et la suite Microsoft 365 ne déroge pas à la règle.
 
 D’ailleurs, s’il y a bien une chose que vous devez protéger, ce sont bien vos administrateurs !
