@@ -1,10 +1,12 @@
 ---
 layout: default
-title: About me
+title:
 permalink: ./aboutme
 # show_toc: true
 show_author: true
 ---
+
+## About me
 
 Hello there! I am Thibault, a consultant specialized in Digital Workplace security, at Wavestone, a French consulting company.
 
