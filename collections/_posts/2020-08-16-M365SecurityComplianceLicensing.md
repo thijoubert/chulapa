@@ -20,6 +20,7 @@ A l’heure du *modern workplace*, il est indispensable pour les équipes sécu
 
 
 # 1/ Comprendre les services de sécurité et de conformité disponibles
+
 Historiquement tournée vers des services de bureautique (avec Microsoft Office) et de collaboration (avec Exchange et SharePoint on-premise), l’offre de Microsoft a fortement évolué **en intégrant des services de développement d’applications sans code (avec la Power Platform), mais aussi des briques de sécurité et de conformité**.
 
 On peut regrouper ces dernières en sept catégories :
@@ -27,7 +28,7 @@ On peut regrouper ces dernières en sept catégories :
 - **Sécurité** : Gestion des identités et des accès, Gestion des terminaux et Gestion de la menace ;
 - **Conformité** : Protection de l’information, Gouvernance, Maîtrise des services, et Maîtrise du Cloud. 
 
-![2020-08-13_Licensing M365_1_Matrice.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_1_Matrice.png)
+<img src="https://thijoubert.github.io/assets/img/site/2020-08-13_Licensing%20M365_1_Matrice.png" >
 
 ## **Gestion des identités et des accès**
 
@@ -138,7 +139,9 @@ Outre les produits décrits dans le chapitre précédent, Microsoft propose aux 
 Tout d’abord, **Customer Key** permet à une organisation d’ajouter une surcouche de chiffrement au niveau applicatif (Exchange Online, OneDrive, SharePoint Online et Teams), en gérant le cycle de vie des clés utilisées. Cette surcouche s’ajoute au chiffrement appliqué par construction aux données au repos dans les serveurs Microsoft. Attention toutefois à ne pas perdre les clés, ce qui conduirait à une perte totale des données.
 
 Ensuite, les fonctionnalités de **Multi-géo** garantissent que les données soient conservées au repos dans une zone géographique donnée. L’enjeu avec cette fonctionnalité est d’être capable de différencier les espaces personnels et partagés en fonction de la localisation cible.
+
 ## **Maîtrise du Cloud**
+
 Avec [**Cloud App Security**](https://docs.microsoft.com/fr-fr/cloud-app-security/what-is-cloud-app-security), Microsoft a son Cloud Access Security Broker (CASB) : lutte contre le Shadow IT (utilisation des API des solutions supervisées ou des applications SaaS non gérées via l’analyse des logs du proxy), Protection des données, Détection des comportements anormaux et Analyse de la conformité des applications SaaS.
 
 Encore une fois, trois niveaux de fonctionnalités sont disponibles :
@@ -174,7 +177,9 @@ Pour rappel, le modèle des licences Microsoft est constitué des éléments sui
 - **Licence** : Pour être considéré comme actif, et donc pouvoir se connecter au tenant, un utilisateur doit au moins posséder une licence ;
 - **Service** : Un service est un produit, une fonctionnalité ou une capacité de Microsoft 365 nécessitant une licence. Cette licence peut provenir de plusieurs plans de licences différents : par exemple Office 365 E1 octroie SharePoint Online Plan 1 tandis qu’Ofice 365 E3 et E5 apportent SharePoint Online Plan 2 ;
 - **SKU** : En langage Microsoft, ce terme tiré de la gestion des stocks désigne l’implémentation d’une licence pouvant être assignée à un utilisateur.
+
 ## **Les bundles collaboratifs Office 365 : des fonctionnalités de protection de la donnée et conformité incluses nativement**
+
 Les plans de licences collaboratifs, également appelés bundles Office 365, sont à la base du *licensing* Microsoft 365. Ces plans intègrent nativement des fonctionnalités croissantes de conformité. Les options de sécurité sont quant à elles assez limitées et doivent être souscrites indépendamment.
 
 Le premier plan est **Office 365 E1**. Ce plan intègre l’ensemble des services bureautiques en mode web uniquement. Les produits de conformité et de sécurité correspondent au minimum vital de ce que l’on peut attendre d’un service SaaS d'entreprise aujourd’hui : Security Defaults (MFA basique), Journaux d’audits, Recherche de contenus et Etiquettes de rétention.
@@ -220,7 +225,7 @@ Présentées officiellement comme des extensions de Microsoft 365 E3, la documen
 
 **Microsoft 365 E5 Sécurité** combine Azure AD P2, la suite Defender (Defender for Office 365, Defender for Endpoints, Defender for Identies) et Cloud App Security. Ce bundle sera intéressant pour les organisations peu dimensionnées pour gérer de nombreux outils de sécurité (MFA, EDR, AD Monitoring, Passerelle mail, CASB) ou celles qui souhaitent basculer dans une approche plateforme. 
 
-![2020-08-13_Licensing M365_2_Microsoft E5.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_2_Microsoft%20E5.png)
+<img src="https://thijoubert.github.io/assets/img/site/2020-08-13_Licensing%20M365_2_Microsoft%20E5.png" >
 
 ## **Focus sur les Firstline Workers**
 
@@ -233,6 +238,7 @@ Les plans de licences Office 365 F3 et Microsoft 365 F1 et F3 sont destinés aux
 Microsoft définit cette population par « utilisateur sans terminal dédié, avec un usage occasionnel. » Concrètement, un terminal dédié est un matériel informatique ayant un écran de plus de 10,1 pouces, utilisé par un collaborateur à hauteur de plus de 60% de son temps de travail. Des exemples peuvent être des populations médicales, des vendeurs dans un magasin ou des ouvriers dans une usine.
 
 Les licences Fx ne peuvent donc pas être utilisées pour optimiser les coûts de *licensing* pour des populations n’ayant pas de besoins avancés. 
+
 
 # 4/ Se doter des bons outils pour trouver les informations pertinentes 
 
@@ -278,7 +284,8 @@ Par expérience, il est alors **indispensable de garder à jour une liste de co
 
 
 # 5/ Sept conseils pour définir sa stratégie de *licensing* sécurité et conformité
-![2020-08-13_Licensing M365_3_Bonnes pratiques.png](https://github.com/thijoubert/thijoubert.github.io/blob/c2fcb1046d654c44702c3b0a310402181f485077/assets/img/site/2020-08-13_Licensing%20M365_3_Bonnes%20pratiques.png)
+
+<img src="https://thijoubert.github.io/assets/img/site/2020-08-13_Licensing%20M365_3_Bonnes%20pratiques.png" >
 
 1. **Identifier ses besoins** en termes de sécurité (identité, menaces, terminaux, etc.) et conformité (protection de la donnée, conformité réglementaire, etc.) pour Office 365 ;
 1. **Formaliser l’inventaire** de l’ensemble des outils de sécurité et de conformité liés au *Digital Workplace* disponibles dans l’entreprise (incluant passerelle mail, EDR, classification, DLP, etc.) ;
