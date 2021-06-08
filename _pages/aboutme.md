@@ -7,6 +7,7 @@ show_author: true
 ---
 
 Hello there! I am Thibault, a consultant specialized in Digital Workplace security, at Wavestone, a French consulting company.
+
 What do I do concretely? I help my clients to master their Microsoft 365 platform on the subjects of Security, Compliance and Identity, through the definition and implementation of controls.
 Why do I love these topics? Simply because the Digital Workplace brings new surprises and challenges every day. And as a end-user myself, empowering others with new Ways of Working while improving security is exciting. 
 
