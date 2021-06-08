@@ -96,7 +96,7 @@ navbar:
   - title: Blog
     url: /blog/
   - title: Events
-    url: /events/
+    url: /events
   - title   : Archives
     child   :
       - title : By date
