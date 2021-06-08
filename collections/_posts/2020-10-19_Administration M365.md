@@ -22,7 +22,7 @@ Ces rôles d’administration de services sont également appelés [**rôles Az
 
 Cependant, les rôles proposés par défaut donnent accès à l’intégralité du service administré pour l’ensemble du tenant et peut donner certains cas donner accès aux données sous-jacentes (notamment pour SharePoint Administrator, Exchange Administrator et User Administrator). 
 
-<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_1_Roles.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2020-10-19_Administration_1_Roles.png" >
 
 Dans le **cas d’une maturité avancée,** il est possible d’aller plus loin dans la ségrégation des droits en créant des **rôles Azure AD personnalisés**. Concrètement, cela revient à décider de quelles permissions bénéficie ce rôle (ex : « microsoft.directory/applications/create » permet de créer des applications dans Azure Active Directory).
 
@@ -67,7 +67,7 @@ Pour les rôles RBAC, la définition des rôles se fait directement dans la plat
 
 On pourrait également envisager une combinaison, avec l’élevation d’un rôle RBAC via l’activation de l’appartenance à un groupe de sécurité privilégié via Azure AD PIM. 
 
-<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_2_Differences.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2020-10-19_Administration_2_Differences.png" >
 
 
 # 2/ Comment bâtir et implémenter son modèle d’administration ?
@@ -118,7 +118,7 @@ En [**fonction des licences de sécurité, principalement du bundle EMS**](http
 
 La plupart de ces mesures pourraient également être obtenues via des outils tierces.
 
-<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_3_BestPractices.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2020-10-19_Administration_3_BestPractices.png" >
 
 
 ## Les mesures basiques de la sécurisation du compte d’administration
@@ -142,7 +142,7 @@ Il sera également pertinent de limiter les types de facteurs supplémentaires 
 
 ## Des mesures de sécurisations fortement recommandées
 
-### 3. Compte sans licence Office 365** 
+### 3. Compte sans licence Office 365
 
 Sans licence, il se sera pas possible pour un administrateur d’accéder aux différents services et données de la plateforme, ou encore d’avoir une boite mail.
 
@@ -188,7 +188,6 @@ A noter, les fonctionnalités de PIM ont récemment été [**étendus aux diff�
 
 Une fois toutes ces mesures de sécurisation en place, il ne vous reste plus qu’à implémenter de la supervision afin de détecter les non-conformités aux règles précédentes et les comportements anormaux.
 
-Et pour cela, rien de mieux que de se référer à [**notre article**](https://www.riskinsight-wavestone.com/2020/03/journalisation-doffice-365-un-cas-concret-avec-les-administrateurs/) sur le sujet pour comprendre les journaux disponibles.
 
 ### 9. Mettre en place une Privileged Access Workstation**
 
@@ -228,5 +227,6 @@ Mais quelles que soient les mesures de protection implémentées, la **sécurit
 
 Les administrateurs doivent garder à l’esprit que leurs comptes donnent accès à des informations et des actions extrêmement sensibles : ils sont donc la cible privilégiée des pirates informatiques !
 
-O365 étant en constante évolution, chaque nouveauté introduite par Microsoft pourra amener également son lot de problèmes de sécurité qu’il faudra étudier et prendre en compte. Profitez-en pour mettre à jour vos documentations : analyses de risques O365, configuration des services, modèle de délégation…toujours **sans oublier de permettre à vos administrateurs de se former** **!**
+O365 étant en constante évolution, chaque nouveauté introduite par Microsoft pourra amener également son lot de problèmes de sécurité qu’il faudra étudier et prendre en compte. Profitez-en pour mettre à jour vos documentations : analyses de risques O365, configuration des services, modèle de délégation…toujours **sans oublier de permettre à vos administrateurs de se former !**
 
+Merci à [Alexandre MAZARS](https://www.linkedin.com/in/alexandre-mazars/) et [Raymond CHAN](https://www.linkedin.com/in/raymond-chan-fr/) pour la co-rédaction. 
