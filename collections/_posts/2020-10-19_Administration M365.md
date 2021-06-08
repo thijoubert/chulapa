@@ -1,19 +1,20 @@
-﻿Au sein de toute infrastructure ou application, les comptes à privilèges sont des comptes particulièrement sensibles. Leur sécurisation est un sujet clé. Cela est d’autant plus vrai pour les services SaaS, pour lesquels le **modèle de responsabilité partagé impose à une organisation de protéger ses données et ses identités**, et la suite Microsoft 365 ne déroge pas à la règle.
+Au sein de toute infrastructure ou application, les comptes à privilèges sont des comptes particulièrement sensibles. Leur sécurisation est un sujet clé. Cela est d’autant plus vrai pour les services SaaS, pour lesquels le **modèle de responsabilité partagé impose à une organisation de protéger ses données et ses identités**, et la suite Microsoft 365 ne déroge pas à la règle.
 
-*D’ailleurs, s’il y a bien une chose que vous devez protéger, ce sont bien vos administrateurs !*
+D’ailleurs, s’il y a bien une chose que vous devez protéger, ce sont bien vos administrateurs !
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-Qu’elles concernent les méthodes d’authentification, les permissions des applications tierces via les API (en autorisant une application tierce à synchroniser des données avec un service de stockage externe par exemple) ou encore la [**modification des politiques de rétention**](https://www.theregister.com/2020/08/24/kpmg_microsoft_teams/), Une action d’administration peut considérablement affecter les données et la sécurité du tenant à plus large échelle. S’il est nécessaire d’expliciter encore ce point, un Administrateur général (ou *Global Administrator* en anglais) a la capacité d’accéder à l’ensemble des données ou de gérer tous les paramétrages d’Office 365, Windows 10, d’Azure AD… mais également d’Azure ! 
+Qu’elles concernent les méthodes d’authentification, les permissions des applications tierces via les API (en autorisant une application tierce à synchroniser des données avec un service de stockage externe par exemple) ou encore la [**modification des politiques de rétention**](https://www.theregister.com/2020/08/24/kpmg_microsoft_teams/), Une action d’administration peut considérablement affecter les données et la sécurité du tenant à plus large échelle. S’il est nécessaire d’expliciter encore ce point, un Administrateur général (ou _Global Administrator_ en anglais) a la capacité d’accéder à l’ensemble des données ou de gérer tous les paramétrages d’Office 365, Windows 10, d’Azure AD… mais également d’Azure ! 
 
-**Quelles fonctionnalités natives dans la plateforme de Microsoft ?**
+# 1/ Quelles fonctionnalités natives dans la plateforme de Microsoft ?
 
-**Quels modèles de droits au sein de Microsoft 365 ?**
+## Quels modèles de droits au sein de Microsoft 365 ?
 
 A ce jour, Microsoft 365 comporte deux niveaux de droits principaux. Ces deux niveaux permettent schématiquement de déléguer des droits d’administration en s’adaptant aux différents modèles d’organisations (petites / moyennes / grandes, centralisées / décentralisées) :
 
-- Rôles Azure AD : Administration des services Azure AD et Microsoft 365 ;
-- Rôles RBAC : Administration des objets au sein des services.
+- **Rôles Azure AD** : Administration des services Azure AD et Microsoft 365 ;
+- **Rôles RBAC** : Administration des objets au sein des services.
 
-**Premier niveau : Utilisation des rôles Azure AD pour gérer les services**
+### Premier niveau : Utilisation des rôles Azure AD pour gérer les services
 
 La personne à l’origine de l’ouverture du tenant récupère automatiquement le rôle d’Administrateur Général. Il peut alors nommer d’autres administrateurs pour l’accompagner dans ses tâches. Dans la mesure du possible, les droits de Global Admin ne doivent pas être utilisés afin de limiter une surexposition des comptes d’administration. Une bonne pratique, consiste à limiter ce rôle général à un maximum de 3-4 comptes. De plus, pour la quasi-totalité des actions, il existe un rôle d’administration de service équivalent (ex : SharePoint Administrator, User Administrator, etc.).
 
@@ -21,13 +22,13 @@ Ces rôles d’administration de services sont également appelés [**rôles Az
 
 Cependant, les rôles proposés par défaut donnent accès à l’intégralité du service administré pour l’ensemble du tenant et peut donner certains cas donner accès aux données sous-jacentes (notamment pour SharePoint Administrator, Exchange Administrator et User Administrator). 
 
-![Aucun texte alternatif pour cette image](Aspose.Words.d2d745d8-b9d1-4a3c-b21d-f261efd9c95f.001.png)
+<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_1_Roles.png" >
 
 Dans le **cas d’une maturité avancée,** il est possible d’aller plus loin dans la ségrégation des droits en créant des **rôles Azure AD personnalisés**. Concrètement, cela revient à décider de quelles permissions bénéficie ce rôle (ex : « microsoft.directory/applications/create » permet de créer des applications dans Azure Active Directory).
 
 Le revers de la médaille sera qu’il sera plus compliqué d’auditer l’administration et qu’il sera nécessaire de veiller à l’évolution des services afin de s’assurer que les permissions restent cohérentes avec les besoins des administrateurs.
 
-**Second niveau : Utilisation du modèle RBAC pour gérer les objets**
+### Second niveau : Utilisation du modèle RBAC pour gérer les objets
 
 Certains services tels que Exchange Online, Intune, les Centres de Securité et de Conformité ou encore Cloud App Security proposent des [**modèles de droits RBAC spécifiques**](https://docs.microsoft.com/fr-fr/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security?view=o365-worldwide).
 
@@ -35,7 +36,7 @@ Comme son nom l’indique, le *Role Based Access Control* (RBAC)*,* permet d�
 
 
 
-**Comment provisionner les comptes d’administrations ?**
+## Comment provisionner les comptes d’administrations ?
 
 La première question est de savoir comment créer l’identité d’un administrateur. Deux stratégies sont possibles :
 
@@ -46,11 +47,11 @@ Quel que soit le rôle d’administration, il est recommandé pour un service Sa
 
 
 
-**Comment attribuer des permissions ?**
+## Comment attribuer des permissions ?
 
 La deuxième question est de savoir comment attribuer les bons privilèges aux rôles d’administration créés.
 
-**Dans le cas de l’administration des services**
+### Dans le cas de l’administration des services
 
 Afin d’attribuer un rôle AAD, il est possible d’utiliser 3 méthodes (via le portail ou la commande PowerShell correspondante) :
 
@@ -60,17 +61,18 @@ Afin d’attribuer un rôle AAD, il est possible d’utiliser 3 méthodes (via l
 
 A noter, il est également désormais possible d’assigner un rôle Azure AD à un groupe de sécurité (Cloud uniquement) via [**une fonctionnalité en preview**](https://docs.microsoft.com/fr-fr/azure/active-directory/users-groups-roles/roles-groups-concept). Cela pourrait simplifier certains modèles d’administration, dans lesquels l’équipe Communications Unifiées doit par exemple bénéficier du rôle SharePoint Administrator et de Teams Administrator. Attention cependant à la gestion de ce groupe.
 
-**Dans le cas de l’administration des objets**
+### Dans le cas de l’administration des objets
 
 Pour les rôles RBAC, la définition des rôles se fait directement dans la plateforme d’administration du service concerné. Il est alors possible d’assigner le rôle en question manuellement ou à un groupe de sécurité, dans le portail ou via une solution IAM. 
 
 On pourrait également envisager une combinaison, avec l’élevation d’un rôle RBAC via l’activation de l’appartenance à un groupe de sécurité privilégié via Azure AD PIM. 
 
-![Aucun texte alternatif pour cette image](Aspose.Words.d2d745d8-b9d1-4a3c-b21d-f261efd9c95f.002.png)
+<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_2_Differences.png" >
 
-**Comment bâtir et implémenter son modèle d’administration ?**
 
-**Quelle stratégie pour définir son modèle de droits ?**
+# 2/ Comment bâtir et implémenter son modèle d’administration ?
+
+## Quelle stratégie pour définir son modèle de droits ?
 
 La construction d’un modèle de délégation doit se faire sur le **principe du moindre privilège**. Le cœur du travail est faire l’inventaire des cas d’usages d’administration d’Office 365 et de faire la **correspondance entre vos équipes et les droits disponibles**.
 
@@ -82,13 +84,13 @@ Cela peut être l’occasion de remettre à plat l’organisation des équipes t
 
 Office 365 a pour particularité de rassembler une multitude de services différents, tels que le stockage de fichier ou d’informations (SharePoint, OneDrive), des outils de communication (Exchange, Teams) mais aussi de sécurité (Defender, Information Protection, etc.). Il est alors indispensable de regrouper les services en catégorie et de définir une **matrice de correspondance** entre équipe et rôles d’administration.
 
-Concrètement, nous vous conseillons dans un premier temps d’**utiliser les rôles Azure AD par défaut pour l’administration des services, et ensuite de définir des rôles plus granulaires** avec RBAC et les rôles personnalisés.
+Concrètement, il est recommandé dans un premier temps d’**utiliser les rôles Azure AD par défaut pour l’administration des services, et ensuite de définir des rôles plus granulaires** avec RBAC et les rôles personnalisés.
 
 Il est également intéressant **d’identifier** **les rôles les plus sensibles**, comme ceux permettant l’accès aux données ou paramètres de sécurité (par exemple : Global Admin, Exchange Admin, Security Administrator et Application Administration) afin de pouvoir adapter la sécurisation de ces rôles.
 
 
 
-**Comment déléguer des droits d’administration sur les objets dans un contexte multi-entité ?**
+## Comment déléguer des droits d’administration sur les objets dans un contexte multi-entité ?
 
 Avant de parler sécurisation à proprement parler, se pose encore une autre question. Bien que **la configuration des services et des paramètres de sécurité ne puisse se faire que centralement, les équipes locales ont besoin de faire actions de support** : création ou modification d’un compte interne ou invité, réinitialisation des authentifiants, création de groupe Microsoft 365 ou d’une liste de distribution, etc.
 
@@ -108,22 +110,24 @@ Dans le cas de structures plus importantes, la bonne pratique est de ne pas gér
 A noter : cette interface, dédiée aux équipes de supports, sera distincte d’une interface ouverte à tous les utilisateurs leurs permettant de créer centralement des utilisateurs invités, et des sites SharePoint, des Teams, etc. Concrètement, cette deuxième interface pourra être intégré aux outils de ITSM, à la SMP ou encore être développée à base de Power Apps et de Graph API.
 
 ` `*Une bonne pratique est de ne pas gérer les objets directement dans les portails natifs*
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-**10 mesures pour sécuriser vos comptes d’administrations**
+# 3/ 10 mesures pour sécuriser vos comptes d’administrations
 
 En [**fonction des licences de sécurité, principalement du bundle EMS**](https://www.linkedin.com/pulse/petit-guide-pour-se-retrouver-dans-la-jungle-des-licences-joubert/), Microsoft fournit un certain nombre de contrôles pour sécuriser les comptes d’administration.
 
 La plupart de ces mesures pourraient également être obtenues via des outils tierces.
 
-![Aucun texte alternatif pour cette image](Aspose.Words.d2d745d8-b9d1-4a3c-b21d-f261efd9c95f.003.png)
+<img src="https://thijoubert.github.io/assets/img/site/2020-10-19_Administration_3_BestPractices.png" >
 
-**Les mesures basiques de la sécurisation du compte d’administration**
 
-**1.      Un compte d’administrateur dédié**
+## Les mesures basiques de la sécurisation du compte d’administration
+
+### 1. Un compte d’administrateur dédié
 
 Un administrateur doit posséder un compte dédié à l’administration, différent du compte bureautique. Ce devrait être cloud-only dans la mesure du possible (ex : wavestone.onmicrosoft.com).
 
-**2.      Authentification Multi-Facteur**
+### 2. Authentification Multi-Facteur
 
 L’authentification à plusieurs facteurs n’est plus une option aujourd’hui, et ce encore moins pour les administrateurs.
 
@@ -136,34 +140,34 @@ Il est également important également de veiller à la [**désactivation des p
 
 Il sera également pertinent de limiter les types de facteurs supplémentaires disponibles ; à quoi bon sécuriser les comptes d’administration si le second facteur est l’adresse Gmail de l’administrateur.
 
-**Des mesures de sécurisations fortement recommandées**
+## Des mesures de sécurisations fortement recommandées
 
-**3.      Compte sans licence Office 365** 
+### 3. Compte sans licence Office 365** 
 
 Sans licence, il se sera pas possible pour un administrateur d’accéder aux différents services et données de la plateforme, ou encore d’avoir une boite mail.
 
 A noter, certains services, comme Power Apps ou Power BI, requièrent une licence pour accéder au portail d’administration. En pratique, il peut être intéressant de créer un groupe de sécurité attribuant les licences nécessaires pour les administrateurs.
 
-**4.      Conditional Access (avec Azure AD P1)**
+### 4. Conditional Access (avec Azure AD P1)
 
 [**L’accès conditionnel**](https://docs.microsoft.com/fr-fr/azure/active-directory/conditional-access/overview) permet d’évaluer le contexte lors de l’accès à un service Office 365, et d’autoriser en fonction l’accès. Il permet par exemple de bloquer l’accès en fonction du type de poste utilisé (géré par l’entreprise ou non), du réseau sur lequel l’utilisateur est connecté, de l’application en question ou encore de son rôle d’administration.
 
 Dans une logique Zero Trust, il ne faudrait pas différencier le réseau interne et le réseau externe, en particulier pour les administrateurs, mais plutôt se concentrer sur l’état du poste de travail et le risque de la connexion.
 
-\5.      **Protection de mot de passe (avec Azure AD P1)**
+### 5. Protection de mot de passe (avec Azure AD P1)
 
 [**Aure AD Password Protection**](https://docs.microsoft.com/fr-fr/azure/active-directory/authentication/concept-password-ban-bad-on-premises) apporte des contrôles sur les mots de passe. Il sera ainsi possible d’interdire l’utilisation d’un mot de passe courant ou d’un dérivé (avec une liste prédéfinie par Microsoft ou maintenue par l’organisation).
 
 Une bonne pratique consiste à appliquer à minima cette protection sur l’ensemble des comptes d’administration Cloud-only.
 
-**6.      Azure AD Identity Protection (avec Azure AD P2)**
+### 6. Azure AD Identity Protection (avec Azure AD P2)
 
 [**Azure AD Identity Protection**](https://docs.microsoft.com/fr-fr/azure/active-directory/identity-protection/overview-identity-protection) permet d’ajouter une notion de risque dans l’évaluation des accès et des comportements des utilisateurs. Concrètement, il sera opportun des définir les politiques suivantes ;
 
 - Risky users : Forcer le changement de mot de passe pour un administrateur susceptible d’être compromis (avec un risque Medium ou High) ;
 - Risky sign-in : Forcer un challenge MFA lors d’un accès à risque (ex : IP anonyme ou inhabituelle).
 
-` `**7.      Azure AD Privileged Identity Management (avec Azure AD P2):**
+### 7. Azure AD Privileged Identity Management (avec Azure AD P2)
 
 [**Azure AD Privileged Identity Management**](https://docs.microsoft.com/fr-fr/azure/active-directory/privileged-identity-management/) est un service permettant de contrôler l’attribution et l’utilisation des rôles d’administration :
 
@@ -178,15 +182,15 @@ Le suivi des administrateurs éligibles permet en bonus, de prendre conscience d
 
 A noter, les fonctionnalités de PIM ont récemment été [**étendus aux différents groupes**](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/groups-features), ce qui permet de mettre en place du « Just-in-time » pour [**des cas plus exotiques comme les Super-Users RMS / AIP**](https://techcommunity.microsoft.com/t5/microsoft-security-and/using-azure-pim-for-the-aip-super-user-feature-management/ba-p/1587690).
 
-**Pour aller encore plus loin**
+## Pour aller encore plus loin
 
-**8.      Supervision des action administrateurs pour détecter les comportements anormaux**
+### 8. Supervision des action administrateurs pour détecter les comportements anormaux**
 
 Une fois toutes ces mesures de sécurisation en place, il ne vous reste plus qu’à implémenter de la supervision afin de détecter les non-conformités aux règles précédentes et les comportements anormaux.
 
 Et pour cela, rien de mieux que de se référer à [**notre article**](https://www.riskinsight-wavestone.com/2020/03/journalisation-doffice-365-un-cas-concret-avec-les-administrateurs/) sur le sujet pour comprendre les journaux disponibles.
 
-**9.      Mettre en place une Privileged Access Workstation**
+### 9. Mettre en place une Privileged Access Workstation**
 
 L’administration étant une action par définition critique. Il est nécessaire qu’elle soit réalisée dans un périmètre de confiance. La mise à disposition de [**PAW, ou poste d’administration**](https://docs.microsoft.com/fr-fr/windows-server/identity/securing-privileged-access/privileged-access-workstations), permettra d’aller dans cet objectif.
 
@@ -196,11 +200,12 @@ La configuration du poste d’administration devrait être simple (pas de droits
 - Dans un modèle plus classique, il est possible de mettre en place un [**silo d’authentification**](https://docs.microsoft.com/fr-fr/windows-server/security/credentials-protection-and-management/authentication-policies-and-authentication-policy-silos) avec les administrateurs et les postes associés. On aurait ainsi un modèle se rapprochant du modèle en tiers bien connu des équipes AD.
 - D’autre pistes sont également possibles, même si plus complexes : association d’un certificat et d’un reverse proxy ou encore d’un bastion.
 
-**10.  Rester informé des bonnes pratiques et des nouveautés**
+### 10. Rester informé des bonnes pratiques et des nouveautés
 
 On ne rappellera jamais assez qu’Office 365 étant une plateforme Cloud, elle est en évolution constante. Se tenir au courant permettra de continuer à augmenter son niveau de sécurisation au fil du temps.
 
-**Focus sur les comptes bris de glace**
+
+# Focus sur les comptes bris de glace
 
 Une bonne pratique est la **mise en place de comptes d’administrateur "bris de glace".** Ces comptes ont pour objectif de conserver un accès d'administration à la plateforme lors d'un incident (dans la chaîne d'authentification ou dans les configurations de sécurité). Le rôle de Global Administrator leur est donc attribué.
 
