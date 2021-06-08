@@ -64,7 +64,9 @@ On y retrouve trois composants :
 - **MDE - Defender for Endpoints (ex-Windows Defender ATP)** : Solution EDR de l’éditeur de Redmond ;
 - **MDI - Defender for Identities (ex-Azure ATP)** : Solution de détection et d’investigation contre la compromission des identités, via l’analyse des signaux de l’Active Directory local. Microsoft a annoncé en février dernier la [**fin du support de la solution historique**](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181), Microsoft Advanced Threat Analytics (ATA), pour Janvier 2021.
   *EDIT (Février 2021) : Le support ATA standard a pris fin le 12 janvier 2021. [Le support étendu se poursuivra jusqu’en Janvier 2026](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).*
+
 ## **Protection de l’information**
+
 Microsoft a récemment regroupé l’ensemble des fonctionnalités de découverte, de classification et de protection des données sous le framework [**Microsoft Information Protection**](https://docs.microsoft.com/fr-fr/microsoft-365/compliance/protect-information?view=o365-worldwide).
 
 A la base, se trouve le moteur d’identification des données sensibles. Le moteur de Microsoft se base sur deux éléments :
