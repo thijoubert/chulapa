@@ -159,7 +159,7 @@ collections:
     permalink: /skins/:name
 collections_dir     : collections
 
-permalink           : /:year:month:day_:title/
+permalink           : /:year-:month/:title/
 
 
 # Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
