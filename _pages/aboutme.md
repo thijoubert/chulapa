@@ -19,9 +19,7 @@ I also hold the following certifications:
 - Microsoft 365 Certified: Security Administrator
 - Microsoft 365 Certified: Enterprise Administrator Expert
 
-<img src="https://thijoubert.github.io/assets/img/site/M365Expert_200.png" >  
-
-![M365Security](https://github.com/thijoubert/thijoubert.github.io/blob/303b98171acc742f953eddecb6eced8c69a6cd67/assets/img/site/M365Security_200.png) ![M365Expert](https://github.com/thijoubert/thijoubert.github.io/blob/9fb2a5a0918c306817d6f28ce942a8b26f8a343a/assets/img/site/M365Expert_200.png)
+<img src="https://thijoubert.github.io/assets/img/site/M365Expert_200.png" > <img src="https://thijoubert.github.io/assets/img/site/M365Security_200.png" > 
 
 
 ## About this blog
