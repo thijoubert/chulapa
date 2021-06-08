@@ -1,7 +1,7 @@
 ---
 # layout: landingpage
 title: Microsoft 365 Security, Compliance and Identity thoughts
-subtitle: Microsoft 365 Security, Compliance and Identity thoughts
+subtitle: By Thibault Joubert
 excerpt: excerpt
 header_type: splash
 header_img: "https://images.unsplash.com/photo-1545290614-5ceedf604139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=60"
