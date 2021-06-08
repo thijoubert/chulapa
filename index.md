@@ -4,8 +4,7 @@ title: Microsoft 365 Security, Compliance and Identity thoughts
 subtitle: By Thibault Joubert
 excerpt: excerpt
 header_type: splash
-header_img: "https://images.unsplash.com/photo-1545290614-5ceedf604139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=60"
-og_image: "./assets/img/site/banner.png"
+header_img: "https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=60"
 include_on_search: true
 show_sociallinks: true
 # project_links:
