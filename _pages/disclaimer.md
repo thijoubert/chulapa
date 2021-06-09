@@ -14,16 +14,13 @@ The information in this blog is provided “as is” with no warranties, and con
 As an IT pro, you are responsible to check the information, procedure and scripts before implementing them. 
 
 
-### Privacy notice
-
-This website is Thibault Joubert’s personal blog.   
-The site uses Google Analytics for collecting analytics data regarding site visits. No additional data are collected.
-
-
 ### Attributions
 
 This website is built with Jekyll and based on Chulapa template.   
 Unless explicitly mentioned, all images are free of rights and come from image banks like Unsplash.  
-The diagrams belong to me.
+The diagrams belong to me. 
 
+### Privacy 
 
+This website is Thibault Joubert's personal blog. 
+The site uses Google Analytics for collecting analytics data regarding site visits. No additional data are collected.
