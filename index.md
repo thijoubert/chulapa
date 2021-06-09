@@ -1,6 +1,6 @@
 ---
 layout: landingpage
-title: Microsoft 365 Security, Compliance and Identity thoughts
+title: Thoughts on Microsoft 365 Security, Compliance and Identity
 subtitle: By Thibault Joubert
 # excerpt:
 header_type: splash
