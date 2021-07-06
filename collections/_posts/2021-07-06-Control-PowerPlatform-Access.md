@@ -49,10 +49,10 @@ Let's take an example of an employee with an Office E3 license without "Power Ap
 Out user wants to create a new workflow to forward his mails to his personal address. 
 
 When he reaches <https://france.flow.microsoft.com/en-us/>, he lands on the page below. Without any configuration by the organization, four possibilities are offered by default: 
-1. « Sign In »
-1. Try free
-1. Buy now
-1. Start free
+1. "Sign In"
+1. "Try free"
+1. "Buy now"
+1. "Start free"
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_2.png" >
 
@@ -90,10 +90,10 @@ After clicking on "Start free", the user follows the **same process** as for "Tr
 Our user then wants to create an application to collect data for a project. 
 
 When he reaches <https://make.powerapps.com/>, he lands on the page below. Without any configuration by the organization, four possibilities are offered by default: 
-1. « Sign In »
-1. Try free
-1. Buy now
-1. Start free
+1. "Sign In"
+1. "Try free"
+1. "Buy now"
+1. "Start free"
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_10.png" >
 
@@ -200,7 +200,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_18.png" >
 
-From this point, only users who have been assigned a license by an administrator will be able to take full advantage of the features of the Power Automaton and Power Apps. 
+From this point, **only users who have been assigned a license by an administrator will be able to take full advantage** of the features of the Power Automate and Power Apps. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 
@@ -214,6 +214,8 @@ A detail which is important here: Power Apps and Power Automate are free service
 - Etc.
 
 The only possible measure to cover this risk is to implement [cross-tenant restrictions (or tenants isolation) on Power Platform](https://docs.microsoft.com/en-us/power-platform/admin/cross-tenant-restrictions). These are not to be confused with the tenant restrictions on Azure AD. To implement them, it is necessary today to open a ticket to Microsoft. It will soon be [possible to implement them directly in the Power Platform administration center](https://docs.microsoft.com/en-us/power-platform-release-plan/2021wave1/power-platform-governance-administration/power-platform-tenant-isolation-support-along-ability-specify-allow-list-tenants). However, the Public Preview seems to have been delayed to September 2021. 
+
+
 
 # And what about other workflow services? 
 
