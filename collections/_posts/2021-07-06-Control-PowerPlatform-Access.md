@@ -207,6 +207,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_18.png" >
 
 <br/>
+
 From this point, **only users who have been assigned a license by an administrator will be able to take full advantage** of the features of the Power Automate and Power Apps. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
