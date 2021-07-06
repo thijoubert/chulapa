@@ -38,7 +38,7 @@ Let's start by reviewing what exists: To make it simple, there are two types of 
 - **Free licenses** are included in any Office 365 subscription and allow to create workflows and applications based on the platform services (e.g., Exchange Online, SharePoint Online, Teams, Azure AD, etc.) in a common environment.
 - **Premium licenses (or paid licenses)** provide access to additional features: more than 400 premium connectors (including HTTP), the creation of environments to segregate applications, additional capacity, etc. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_1.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_1.png" >
 
 **Turning off the "Power Apps for Office 365" and "Power Automate for Office 365" services has no effect unlike what one might think.** Even with both services "Off", a user could still create a workflow or create an app with his professional identity. 
 
@@ -54,33 +54,33 @@ When he reaches <https://france.flow.microsoft.com/en-us/>, he lands on the page
 1. Buy now
 1. Start free
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_2.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_2.png" >
 
 
 ### 1. “Sign in”: Access to services in shadow mode
 After clicking on "sign in", the user accesses the service, after selecting the region of use. Note that he does not get any free license, which makes him a **shadow user**.  Another thing to note is that the Power Automate and Power Apps services will not appear in the Office 365 waffle for the user. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_3.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_3.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_4.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_4.png" >
 
 
 ### 2. “Try free”: Access to services and obtaining a "Free" license
 After clicking on "Try free", the user is taken to a page where he is told that he is accessing the service in a free version. As soon as he accepts the terms of use, he gets a "**Microsoft Power Automate Free**" license. An administrator can use this license to track who creates or uses workflows.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_5.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_5.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_6.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_6.png" >
 
 
 ### 3. “Buy now”: Self-service for premium licenses
 After clicking on "Buy now", the user **is offered the various paid license plans of the service**. The user can then enter **his credit card information** to purchase a self-service license plan that will allow him to access the premium features. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_7.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_7.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_8.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_8.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_9.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_9.png" >
 
 
 ### 4. “Start free”: same as “Try free” 
@@ -95,7 +95,7 @@ When he reaches <https://make.powerapps.com/>, he lands on the page below. Witho
 1. Buy now
 1. Start free
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_10.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_10.png" >
 
 
 The findings remain the same as for Power Automate with a few exceptions: 
@@ -103,9 +103,9 @@ The findings remain the same as for Power Automate with a few exceptions:
 - **A user without a license can still create an application.**
 - **A user without a license who wants to run an application will see an error message telling him that he does not have a license. But he will be able to subscribe to a trial license** (see screenshot below)
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_11.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_11.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_12.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_12.png" >
 
 
 Thus, we have seen that disabling the "Power Automate for Office 365" and "Power Apps for Office 365" licenses is not enough to control who can use these services. It is necessary to go further.
@@ -133,9 +133,9 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 Get-MsolCompanyInformation | Select AllowAdHocSubscriptions 
 ```
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_13.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_13.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_14.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_14.png" >
 
 This solution blocks options 2 (Try free) and 4 (Start free), but does not prevent the user from “signing in” or subscribing to a paid version.
 
@@ -159,11 +159,11 @@ According to the documentation:
 - ”**Internal**" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" 
 - "**Viral**" consent plans are trial licenses that users can sign themselves up for via [https://signup.microsoft.com](https://signup.microsoft.com/) or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal.
  
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_15.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_15.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_16.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_16.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_17.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_17.png" >
 
 
 This is the only interesting option I could test and validate to ensure that a user cannot access a free version of the Power Automate or Power Platform services. 
@@ -171,7 +171,10 @@ This is the only interesting option I could test and validate to ensure that a u
 This command is especially interesting because it also **removes all trial and developer plans already subscribed**. 
 
 However, there are two major limitations to keep in mind: 
+
 **Power Automate: all flows created by a user will continue to run**. To remediate this situation, it will be necessary for an admin to deactivate or delete them manually. 
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
+
 **Power Platform: a user without a license will still be able to create an application and share it**. However, he will not be able to run an application, whether it is one of their own or another person's. In this case, it will be necessary to set up supervision to detect this use case. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
@@ -195,12 +198,14 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | ? {$\_.Policy
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase 
 ```
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerAutomate_18.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_18.png" >
 
+From this point, only users who have been assigned a license by an administrator will be able to take full advantage of the features of the Power Automaton and Power Apps. 
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 
 # Wait! One more thing
-You have locked all the options on your tenant and now have control over all the users able to create or use Power Apps or Power Automate. That's great! Is it enough? No, not completely! 
+You have locked all the options on your tenant and now have control over all the users able to create or use Power Apps or Power Automate. **That's great! Is it enough? No, not completely!**
 
 A detail which is important here: Power Apps and Power Automate are free services. **Any user can create a flow or an application from a personal account... and create a connection with their professional account** (e.g. OneDrive for Business or Exchange Online). This simply means bypassing all the security and governance measures in place: 
 
