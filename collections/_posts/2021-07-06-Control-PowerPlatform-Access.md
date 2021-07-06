@@ -29,7 +29,7 @@ For a long time, I had in mind, as many others, that it was impossible to comple
 However, from what I've seen, it **should possible to make some interesting hardenings**.
 
 
-
+<br/>
 # How can a user access to Power Apps and Power Automate by default?  
 
 Like any service in Office 365, the platform's services are subject to a **subscription model** (license per user per month). Licensing a user grants him access to the service. 
@@ -40,11 +40,12 @@ Let's start by reviewing what exists: To make it simple, there are two types of 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_1.png" >
 
+<br/>
 **Turning off the "Power Apps for Office 365" and "Power Automate for Office 365" services has no effect unlike what one might think.** Even with both services "Off", a user could still create a workflow or create an app with his professional identity. 
 
 Let's take an example of an employee with an Office E3 license without "Power Apps for Office 365" and "Power Automate for Office 365".
 
-
+<br/>
 ## Default access to Power Automate
 Out user wants to create a new workflow to forward his mails to his personal address. 
 
@@ -56,7 +57,7 @@ When he reaches <https://france.flow.microsoft.com/en-us/>, he lands on the page
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_2.png" >
 
-
+<br/>
 ### 1. “Sign in”: Access to services in shadow mode
 After clicking on "sign in", the user accesses the service, after selecting the region of use. Note that he does not get any free license, which makes him a **shadow user**.  Another thing to note is that the Power Automate and Power Apps services will not appear in the Office 365 waffle for the user. 
 
@@ -64,7 +65,7 @@ After clicking on "sign in", the user accesses the service, after selecting the 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_4.png" >
 
-
+<br/>
 ### 2. “Try free”: Access to services and obtaining a "Free" license
 After clicking on "Try free", the user is taken to a page where he is told that he is accessing the service in a free version. As soon as he accepts the terms of use, he gets a "**Microsoft Power Automate Free**" license. An administrator can use this license to track who creates or uses workflows.
 
@@ -72,7 +73,7 @@ After clicking on "Try free", the user is taken to a page where he is told that 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_6.png" >
 
-
+<br/>
 ### 3. “Buy now”: Self-service for premium licenses
 After clicking on "Buy now", the user **is offered the various paid license plans of the service**. The user can then enter **his credit card information** to purchase a self-service license plan that will allow him to access the premium features. 
 
@@ -82,10 +83,11 @@ After clicking on "Buy now", the user **is offered the various paid license plan
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_9.png" >
 
-
+<br/>
 ### 4. “Start free”: same as “Try free” 
 After clicking on "Start free", the user follows the **same process** as for "Try free".
 
+<br/>
 ## Default access to Power Apps 
 Our user then wants to create an application to collect data for a project. 
 
@@ -98,6 +100,7 @@ When he reaches <https://make.powerapps.com/>, he lands on the page below. Witho
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_10.png" >
 
 
+<br/>
 The findings remain the same as for Power Automate with a few exceptions: 
 - There is no "Microsoft Power Automate Free" license that allows tracking of users creating or using applications.
 - **A user without a license can still create an application.**
@@ -108,13 +111,15 @@ The findings remain the same as for Power Automate with a few exceptions:
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_12.png" >
 
 
+<br/>
 Thus, we have seen that disabling the "Power Automate for Office 365" and "Power Apps for Office 365" licenses is not enough to control who can use these services. It is necessary to go further.
 
 
-
+<br/>
 # How to control the subscription to a free license? 
 Two possibilities are offered in PowerShell to block the subscription to a free Power Platform license for an unauthorized user. 
 
+<br/>
 ## 1st possibility: Configuration of AllowAdHocSubscriptions
 
 [The first possibility](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup), which is generally used by companies, is to **restrict self-service subscriptions to trial or free versions based on the email address** (e.g. Power Automate, Azure RMS, etc.)
@@ -137,9 +142,10 @@ Get-MsolCompanyInformation | Select AllowAdHocSubscriptions
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_14.png" >
 
+<br/>
 This solution blocks options 2 (Try free) and 4 (Start free), but does not prevent the user from “signing in” or subscribing to a paid version.
 
-
+<br/>
 ## 2nd possibility: Deactivation of trial and developer license plans
 
 The second possibility, much less known, is to **disable the possibility to subscribe to a trial license or a developer plan**. In the Microsoft documentation, I found [only a small reference lost in the PowerShell documentation for PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell).
@@ -165,7 +171,7 @@ According to the documentation:
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_17.png" >
 
-
+<br/>
 This is the only interesting option I could test and validate to ensure that a user cannot access a free version of the Power Automate or Power Platform services. 
 
 This command is especially interesting because it also **removes all trial and developer plans already subscribed**. 
@@ -179,7 +185,7 @@ However, there are two major limitations to keep in mind:
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 
-
+<br/>
 # How to control the subscription to a paid license?
 
 With the outcry against self-service for end-users to buy paid licenses with their credit card last year, Microsoft introduced a way to block it. Currently, this can only be done in PowerShell with the commands below: 
@@ -200,10 +206,12 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-06_PowerPlatform_18.png" >
 
+<br/>
 From this point, **only users who have been assigned a license by an administrator will be able to take full advantage** of the features of the Power Automate and Power Apps. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 
+<br/>
 # Wait! One more thing
 You have locked all the options on your tenant and now have control over all the users able to create or use Power Apps or Power Automate. **That's great! Is it enough? No, not completely!**
 
