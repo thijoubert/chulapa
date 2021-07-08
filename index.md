@@ -19,11 +19,23 @@ show_sociallinks: true
 
 {% include_cached components/indexcards.html cacheddocs=site.posts cachedlimit=3 %}
 
+<div class="text-center">
 <a class="btn btn-dark btn-lg my-3 text-primary" href="./blog" role="button">More articles here</a>
+</div>
 
 ## <a href="./events" class="text-dark">Events</a>
 
 Coming soon!
+
+{% assign alldocs = alldocs | sort: 'date' | reverse %}
+{% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
+{%- for tag in grouptag -%}
+  {%- if forloop.first -%}
+    {%- assign sizemax = tag.size -%}
+  {%- elsif forloop.last -%}
+    {% assign mid = tag.size | plus: sizemax | divided_by: 2  %}
+  {%- endif -%}
+{%- endfor -%}
 
 <div class="row g-0 pt-5" id="tags">
 <div class="col">
