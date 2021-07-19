@@ -19,7 +19,7 @@ Malicious actions (such as extraction) or errors impacting data (email, sharing,
 In order to prevent this kind of risk, it is necessary to implement hardening and supervision measures.  
 
 
-
+<br/>
 # Why should all organizations consider tenant isolation?
 
 To answer this question, let's take a concrete example. 
@@ -85,6 +85,7 @@ We can see in the sign-in logs that the connection to the :
 
 Note that it is not possible to block these applications via a conditional access policy, as this would mean blocking all connections (not just incoming and outgoing ones).
 
+<br/>
 My second thought was about the ability of an organization to detect or investigate such a case. 
 
 For the connection:
@@ -102,7 +103,6 @@ For the connection:
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_9.png" >
 
-
 For the run of the flow: 
 - In "Monitor", the user will not see any trace of the flow run;
 - In the Office 365 unified audit logs, accessible by the admins, the retrieval of the document by the flow only appears in a "Downloaded file" log;
@@ -110,14 +110,14 @@ For the run of the flow:
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_10.png" >
 
-
+<br/>
 Finally, I wondered how to remove this connection: 
 
 - The user can remove the connection from their professional or personal account by going to Data > Connections ;
 - A PowerPlatform administrator in the organization could remove the connection with the "Remove- AdminPowerAppConnection" PowerShell command ... as long as he knows which one is relevant.
 
 
-
+<br/>
 # What should we learn from the above example? 
 
 Our scenario thus highlighted the fact that, without additional hardening, everything that had been done to secure data in an Office 365 tenant could be bypassed.
@@ -134,7 +134,7 @@ The worst case scenario would be a hacker **compromising an account** and creati
 The **only solution is to activate the unfortunately unknown "tenant isolation" feature** to block incoming and outgoing connections to company data.
 
 
-
+<br/>
 # The solution : turn on "tenant isolation" 
 Currently, the [documentation states that it is necessary to make a ticket to the Microsoft support via the Power Platform Admin Center](https://docs.microsoft.com/en-us/power-platform/admin/cross-tenant-restrictions) (PPAC), in order to activate the functionality. 
 
@@ -154,6 +154,7 @@ Below is a [screenshot shared by Microsoft](https://cloudblogs.microsoft.com/pow
 Note that Microsoft specifies in its documentation a [current limitation](https://docs.microsoft.com/en-us/power-platform/admin/cross-tenant-restrictions#known-issue) (under investigation): tenant isolation does not work for the moment for incoming connections between two different clouds (e.g. a Microsoft commercial subscription and a Microsoft US Governments subscription). 
 
 
+<br/>
 # What is the user experience?
 
 ## In the case of a new workflow : 
@@ -163,7 +164,6 @@ When tenant isolation is in place, a user from the organization will not be able
 When attempting to do so, he will see an **error message explaining that a technical blocking measure has been put in place within the target tenant**. He will also be invited to contact his administrator to whitelist the tenant, if relevant (see screenshot below).  
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_12.png" >
-
 
 
 ## In the case of an existing worfklow :
@@ -179,7 +179,7 @@ When looking at the details of the "Flow checker", a message is displayed to the
 I observed a duration of one hour, before the appearance of failures for the connections. This must correspond to the lifetime of the Oauth access token linked to the connection.
 
 
-
+<br/>
 # Enabled or not by default?
 
 A question to be checked with Microsoft: will tenant isolation be activated by default or not? If the answer is the same as for the Graph APIs ("Users can consent to apps accessing company data on their behalf"), the answer will probably be no...  
