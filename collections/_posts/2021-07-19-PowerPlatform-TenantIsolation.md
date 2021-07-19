@@ -12,9 +12,9 @@ header_img : "./assets/img/posts/2021-07-19_PowerPlatform_0.jpg"
 
 ---
 
-*As a follow-up to my first article on the Power Platform "How to (really!) managed the access to the Power Platform, several people have asked me about the "tenant isolation" feature. 
+*As a follow-up to my first article on the Power Platform "How to (really!) managed the access to the Power Platform, several people have asked me about the "tenant isolation" feature.* 
 
-Malicious actions (such as extraction) or errors impacting data (email, sharing, downloading) is an existing risk for all organizations using Office 365. When it is done in a unitary way, it may only affect a limited amount of data. However, when it is done automatically (via the Graph API or Power Automate) it can take on much greater proportions. 
+Malicious actions (such as extraction) or errors impacting data (email, sharing, downloading) is an existing risk for all organizations using Office 365. When it is done in a unitary way, it may only affect a limited amount of data. However, when **it is done automatically** (via the Graph API or Power Automate) it can reach **much greater proportions**. 
 
 In order to prevent this kind of risk, it is necessary to implement hardening and supervision measures.  
 
@@ -24,7 +24,7 @@ In order to prevent this kind of risk, it is necessary to implement hardening an
 
 To answer this question, let's take a concrete example. 
 
-Let's say an organization has reached a certain level of maturity on its Office 365 tenant (a very small  small number of organizations) :
+Let's say an organization has reached a certain level of maturity on its Office 365 tenant (a **very small  small number of organizations**):
 - Conditional access is deployed and requires a managed device to access Office 365 workloads.
 - External shares and Azure B2B / SharePoint B2B guests are managed.
 - Automatic forwarding have been disabled.
@@ -33,20 +33,20 @@ Let's say an organization has reached a certain level of maturity on its Office 
 - A governance has been defined for the Power Platform (including Data Policies adapted to business needs).
 - Etc. 
 
-You'd think this organization would be in control of its data circulation. Well, they're going to be missing one little critical thing ... that could bypass all of the above security measures!
+You'd think this organization **would be in control of its data circulation**. Well, they're going to be **missing one little critical thing ... that could bypass all of the above security measures!**
 
 
 ## A picture is worth a thousand words... 
 
 In this organization, let's take a user who is leaving his current position. He wants to copy his data from his professional OneDrive to his personal OneDrive, to keep confidential data.  
 
-To do this, he thinks of using a Power Automate workflow to automatically copy any new document. Except that in this case:
+To do this, he thinks of **using a Power Automate workflow to automatically copy any new document**. Except that in this case:
 - He has neither a Power Automate license nor the authorization to subscribe to a trial license with his corporate account.
 - His access to the Power Platform has been blocked by a conditional access policy (see screeshot below).
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_1.png" >
 
-He then thinks of creating a flow directly from his personal Microsoft account. 
+He then thinks of creating a flow directly from his **personal Microsoft account**. 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_2.png" >
 
@@ -58,14 +58,14 @@ To do this, he **creates a connection to his company account**. Being on his man
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_3.png" >
 
-From that moment on, he can use the connection from another device than his professional one.
+From that moment on, he can **use the connection from another device than his professional one**.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 The flow is then activated. As soon as a new document is created in the professional OneDrive, the flow is executed and retrieves the document. 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_4.png" >
 
-In summary, the user was able to create a connection to his corporate OneDrive, to retrieve data and export content to his personal OneDrive, via a flow running from his personal account. He was not bothered by any of the hardening or supervision measures in place.
+In summary, the user was **able to create a connection to his corporate OneDrive, to retrieve data and export content to his personal OneDrive**, via a flow running from his personal account. He was not **bothered by any of the hardening or supervision measures in place**.
 
 When testing further, we can see that the **data policies defined in the organization's Power Platform environment do not apply**. This is logical, as the flow is executed in the user's personal environment.
 
@@ -74,7 +74,7 @@ When testing further, we can see that the **data policies defined in the organiz
 
 My first thought was that the user should have been blocked by the conditional access policy when the connection was created. 
 
-Going back to the [definition of a connector](https://docs.microsoft.com/en-us/connectors/connectors) ("proxy or a wrapper around an API that allows the underlying service to talk to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps"), the behavior actually looks quite normal. The connection is not made to the Power Automate service, but to the API behind the connector. 
+Going back to the [definition of a connector](https://docs.microsoft.com/en-us/connectors/connectors) ("proxy or a wrapper around an API that allows the underlying service to talk to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps"), the behavior actually looks quite normal. The **connection is not made to the Power Automate service, but to the API behind the connector**. 
 
 We can see in the sign-in logs that the connection to the : 
 
@@ -168,7 +168,7 @@ When attempting to do so, he will see an **error message explaining that a techn
 
 ## In the case of an existing worfklow :
 
-Similarly, when isolation tenant is in place, the impacted flows will appear to fail and therefore be stopped. 
+Similarly, when isolation tenant is in place, the **impacted flows will appear to fail and therefore be stopped**. 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-19_PowerPlatform_13.png" >
 
