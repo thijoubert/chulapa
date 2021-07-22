@@ -14,11 +14,7 @@ header_img : "./assets/img/posts/2021-07-19_PowerPlatform_0.jpg"
 
 *As a follow-up to my first article on the Power Platform "How to (really!) managed the access to the Power Platform, several people have asked me about the "tenant isolation" feature.* 
 
-<<<<<<< Updated upstream
-Malicious actions (such as extraction) or errors impacting data (email, sharing, downloading) is an existing risk for all organizations using Office 365. When it is done in a unitary way, it may only affect a limited amount of data. However, when **it is done automatically** (via the Graph API or Power Automate) it can reach **much greater proportions**. 
-=======
 Malicious actions such as extraction or errors impacting data (email, sharing, downloading) is an existing risk for all organizations using Office 365. When it is done in a unitary way, it may only affect a limited amount of data. However, when it is done automatically (via the Graph API or Power Automate) it can take on much greater proportions. 
->>>>>>> Stashed changes
 
 In order to prevent this kind of risk, it is necessary to implement hardening and supervision measures.  
 

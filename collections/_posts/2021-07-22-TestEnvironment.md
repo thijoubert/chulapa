@@ -1,7 +1,7 @@
 ---
-title: "Developer Program, Trial tenant : ?"
+title: "Quels environnements de test pour Microsoft 365 (Tenant Développeur, Trial tenant...) ?"
 subtitle:
-excerpt: By default, a user of an organisation can create connection to business data from an external Microsoft account without being bothered by the security policies in place. 
+excerpt: Microsoft offre plusieurs possibilités pour tester ces différentes fonctionnalités. Durées de vie, fonctionnalités... petit tour d'horizon sur les avantages et inconvénients.  
 tags:
   - Microsoft 365
   - Power Platform
@@ -25,10 +25,10 @@ Il y a déjà beaucoup de documentation en anglais sur comment créer un environ
 
 
 
-
+<br/>
 # *Trial tenant*, Tenant développeur, Tenant de pré-production : de quoi parle-t-on ?
 
-
+<br/>
 ## Tenant développeur : késako ? 
 Microsoft a remis en valeur fin 2020 – début 2021 les tenant développeurs. Ces environnements s’adressent à tous les personnes qui souhaitent tester des fonctionnalités cloud de Microsoft 365, et développer des applications (Graph API, Azure AD, Teams, SharePoint Framework, Power Platform, etc.)
 
@@ -64,6 +64,7 @@ Pour aller encore plus loin, vous aurez également la **possibilité de [rajoute
 Il est également possible de souscrire à des licences d’essai dans un environnement développeur (cf. ci-dessous). 
 
 
+<br/>
 ## *Trial tenant* : kesako ? 
 
 Un tenant de test (ou *trial tenant*) est un environnement avec des licences Office 365 gratuites pendant 30 jours. 
@@ -81,18 +82,20 @@ En parallèle, il vous sera également **possible de souscrire à d’autres lic
 A l’issue de ces 30 jours, vous aurez le choix entre supprimer le tenant, souscrire à un autre plan de licences ou conserver le tenant mais rien en faire. 
 
 
+<br/>
 ## Tenant de préproduction : késoko ? 
 
 Un tenant de pré-production est, comme son nom l’indique, un environnement similaire à la pro-production dans lequel seront testées les nouvelles applications ou fonctionnalités, avant déploiement. 
 
 Il peut s’agir d’un tenant trial converti en tenant payant. 
 
+
+<br/>
 # Quel est l’environnement de test qui vous convient le mieux ? 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-22_TestEnvironment_7.png" >
 
 En bonus, vous trouverez ci-dessous un comparatif détaillé des licences Microsoft 365 E3, Microsoft 365 E5 et Microsoft E5 Developer. 
-
 
 ||**Microsoft E3**|**Microsoft E5**|**Microsoft E5 <br>(Developer)**|
 | :-: | :-: | :-: | :-: |
