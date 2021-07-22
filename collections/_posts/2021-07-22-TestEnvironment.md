@@ -1,7 +1,7 @@
 ---
-title: "Quels environnements de test pour Microsoft 365 (Tenant Développeur, Trial tenant...) ?"
+title: "De testeur du dimanche aux projets d'ampleur : quels environnements de test pour Microsoft 365 ?"
 subtitle:
-excerpt: Microsoft offre plusieurs possibilités pour tester ces différentes fonctionnalités. Durées de vie, fonctionnalités... petit tour d'horizon sur les avantages et inconvénients.  
+excerpt: Microsoft offre plusieurs possibilités pour tester ses différentes fonctionnalités. Durées de vie, licences disponibles... petit tour d'horizon sur les avantages et inconvénients.  
 tags:
   - Microsoft 365
   - Power Platform
