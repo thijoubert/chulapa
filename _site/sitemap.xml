@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<<<<<<< Updated upstream
 <loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
 <lastmod>2021-07-19T00:00:00+01:00</lastmod>
 </url>
  <url>
+=======
+<loc>/2021-07/TestEnvironment/</loc>
+<lastmod>2021-07-22T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
+<lastmod>2021-07-19T00:00:00+01:00</lastmod>
+</url>
+<url>
+>>>>>>> Stashed changes
 <loc>/2021-07/Control-PowerPlatform-Access/</loc>
 <lastmod>2021-07-07T00:00:00+01:00</lastmod>
 </url>
