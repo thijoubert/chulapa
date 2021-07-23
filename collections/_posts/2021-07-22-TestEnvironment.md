@@ -12,7 +12,6 @@ header_img : "./assets/img/posts/2021-07-22_TestEnvironment_0.jpg"
 ---
 
 
-
 Une frustration importante que je rencontre chez un grand nombre de personnes (consultants, équipes sécurité, *workplace* ou *change management…*) est l’incapacité à tester les fonctionnalités des services Office 365.
 
 Parmi les points que l’on m’a remontés : 
@@ -26,7 +25,7 @@ Il y a déjà beaucoup de documentation en anglais sur comment créer un environ
 
 
 <br/>
-# *Trial tenant*, Tenant développeur, Tenant de pré-production : de quoi parle-t-on ?
+# Tenant développeur, *Trial tenant*, Tenant de pré-production : de quoi parle-t-on ?
 
 <br/>
 ## Tenant développeur : késako ? 
@@ -88,6 +87,29 @@ A l’issue de ces 30 jours, vous aurez le choix entre supprimer le tenant, sous
 Un tenant de pré-production est, comme son nom l’indique, un environnement similaire à la pro-production dans lequel seront testées les nouvelles applications ou fonctionnalités, avant déploiement. 
 
 Il peut s’agir d’un tenant trial converti en tenant payant. 
+
+
+<br/>
+## Tenant de démonstration : késako ? 
+
+Les tenants de démonstration font partie du [CDX (Customer Digital expérience)](https://cdx.transform.microsoft.com/), une plateforme accessible aux **employés de Microsoft, aux employés d’un Partenaire de Microsoft ou à un MVP**. Il s’agit de tenants destinés, comme le nom l’indique, à **faire des démonstrations à des clients sur les fonctionnalités des services Microsoft 365**. 
+
+<img src="https://thijoubert.github.io/assets/img/posts/2021-07-22_TestEnvironment_9.png" >
+
+Une autre particularité de ces tenants est qu’ils viennent avec des scénarios et sont pré-alimentés de données. On y retrouve par exemple : 
+
+- **Des scénarios par cas d’usage** : Compliance, Teams, Defender for Endpoint, First Line Workers, etc. 
+- **Des scénarios par secteur d’activité** : financier, santé, etc.  
+
+Il existe une vingtaine de scénarios différents. Les scénarios pourront différer selon la plaque géographique considérée et auront une durée de vie de 90 jours ou 1 an (extensibles pour certains). 
+
+Même si ce n’est pas l’objet de cet article, il peut être intéressant d’évoquer les autres fonctionnalités du CDX : 
+
+- Guide interactif
+- Platforme de Lab
+- Scénario de démonstration (également appelé *Customer Immersion Expérience)*
+
+
 
 
 <br/>
