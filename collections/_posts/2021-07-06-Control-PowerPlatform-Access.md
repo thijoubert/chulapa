@@ -26,7 +26,7 @@ A set **of security and governance measures must be implemented**, whether it is
 
 For a long time, I had in mind, as many others, that it was impossible to completely restrict a user's access to the services. Indeed, Microsoft [writes in its Q&A](https://docs.microsoft.com/en-us/power-automate/organization-q-and-a#what-is-the-power-automate-free-plan) that "The Power Automate Free license is used only for tracking purposes. Enabling or disabling it has no effect on a user's ability to create flows. If you disable the Power Automate Free license, it becomes enabled again when a user logs in." 
 
-However, from what I've seen, it **should possible to make some interesting hardenings**.
+However, from what I've seen, it **should be possible to make some interesting hardenings**.
 
 
 <br/>
@@ -47,7 +47,7 @@ Let's take an example of an employee with an Office E3 license without "Power Ap
 
 <br/>
 ## Default access to Power Automate
-Out user wants to create a new workflow to forward his mails to his personal address. 
+Our user wants to create a new workflow to forward his mails to his personal address. 
 
 When he reaches <https://france.flow.microsoft.com/en-us/>, he lands on the page below. Without any configuration by the organization, four possibilities are offered by default: 
 1. "Sign In"

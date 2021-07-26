@@ -29,7 +29,7 @@ Let's say an organization has reached a certain level of maturity on its Office 
 - External shares and Azure B2B / SharePoint B2B guests are managed.
 - Automatic forwarding have been disabled.
 - Access to Graph / Office 365 APIs is under control.
-- DLP rules have implemented in place to limit data leakage.
+- DLP rules have been implemented to limit data leakage.
 - A governance has been defined for the Power Platform (including Data Policies adapted to business needs).
 - Etc. 
 
@@ -125,7 +125,7 @@ Our scenario thus highlighted the fact that, without additional hardening, every
 A user could indeed create a connection to business data in a Power Automate flow running in his personal environment. To note: 
 - The **connection (and therefore the organization's data) can be exploited from an unsecured context** (network, terminal, etc.).
 - The organization's Power Platform **data policies do not apply** to the flow's execution environment.
-- The organization can **identify connections, but with will not have any visibility** into the flow and therefore the use of the data.
+- The organization can **identify connections, but will not have any visibility** into the flow and therefore the use of the data.
 - The organization will be able to **delete connections for a user, as long as it knows which connections to delete**. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
