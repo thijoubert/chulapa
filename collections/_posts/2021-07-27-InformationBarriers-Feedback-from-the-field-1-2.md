@@ -38,7 +38,7 @@ If the prerequisites are there and the business needs are clear, the implementat
 
 ## What are the prerequisites?
  
-Les principaux prérequis évoqués dans la [documentation sont les suivants ](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-barriers-policies?view=o365-worldwide): 
+The main prerequisites mentioned in the [documentation are the following ](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-barriers-policies?view=o365-worldwide): 
 - Assign licenses to users who need on (see dedicated section below)?
 - Fill the [relevant user attributes](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-barriers-attributes?view=o365-worldwide) for segmenting users.
 - Enable [scoped directory search](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-scoped-directory-search) for Microsoft Teams.
