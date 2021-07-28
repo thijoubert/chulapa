@@ -6,7 +6,6 @@ tags:
   - Microsoft 365
   - Compliance
 header_img : "./assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
-author: TJO
 ---
 
 
