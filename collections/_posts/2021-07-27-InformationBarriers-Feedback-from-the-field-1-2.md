@@ -6,9 +6,8 @@ tags:
   - Microsoft 365
   - Compliance
 header_img : "./assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
-
+author:
 ---
-
 
 
 [Information Barriers is an advanced compliance option in Office 365 offered by Microsoft](https://docs.microsoft.com/en-us/microsoftteams/information-barriers-in-teams), allowing to restrict communication and collaboration between groups of users. 
