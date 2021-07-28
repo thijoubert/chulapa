@@ -5,7 +5,7 @@ excerpt: Information Barriers is an interesting feature to restrict communicatio
 tags:
   - Microsoft 365
   - Compliance
-header_img : "./assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.png"
+header_img : "https://thijoubert.github.io/assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.png"
 
 ---
 
