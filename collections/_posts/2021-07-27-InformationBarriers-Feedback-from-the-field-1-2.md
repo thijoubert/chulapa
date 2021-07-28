@@ -283,7 +283,8 @@ However, I don't find this to be consistent from a licensing standpoint. But the
 As a reminder, the only licenses officially required for guest users are Azure AD Premium (P1 or P2) or premium licenses for the Power Platform.
 
 
-During my tests, I noticed that a user without the SKU "Information Barriers" or "Exchange Online" are also impacted by the Information Barriers policies.
+During my tests, I noticed that a user without the SKU "Information Barriers" are also impacted by the Information Barriers policies.
+If a user does not have a Exchange Online SKU, but just a Teams one, he won't be able to communicate to any user in a segment (as the ABP will not be accessible for him). 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 
