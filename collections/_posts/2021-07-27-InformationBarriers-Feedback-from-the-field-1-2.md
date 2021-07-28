@@ -5,13 +5,12 @@ excerpt: Information Barriers is an interesting feature to restrict communicatio
 tags:
   - Microsoft 365
   - Compliance
-header_img : "./assets/img/posts/2021-07-22_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
+header_img : "./assets/img/posts/2021-07-22_InformationBarriers-Feedback-from-the-field-1-2_0.png"
 
 ---
 
 
 
-# Information Barriers : Feedback from the field 
 [Information Barriers is an advanced compliance option in Office 365 offered by Microsoft](https://docs.microsoft.com/en-us/microsoftteams/information-barriers-in-teams), allowing to restrict communication and collaboration between groups of users. 
 
 This feature, initially designed to **enforce a compliance policy, can also be used to isolate a perimeter in the event of a carve out or compromise**.
