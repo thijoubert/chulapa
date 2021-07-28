@@ -8,7 +8,6 @@ tags:
   - Licensing
   - Test
 header_img : "./assets/img/posts/2021-07-22_TestEnvironment_0.jpg"
-
 ---
 
 
