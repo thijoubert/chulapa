@@ -1,15 +1,15 @@
 ---
 title: "Information Barriers - Feedback from the field: how to implement it in one hour?"
 subtitle:
-excerpt: Microsoft offre plusieurs possibilités pour tester ses différentes fonctionnalités. Durées de vie, licences disponibles... petit tour d'horizon sur les avantages et inconvénients.  
+excerpt: Information Barriers is an interesting feature to restrict communication and collaboration in Office 365 (compliance, carve out, compromise, etc.). Find here some best practices and clarifications with a detailed example.  
 tags:
   - Microsoft 365
   - Compliance
 header_img : "./assets/img/posts/2021-07-22_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
 
 ---
-<br/>
-2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_3
+
+
 
 # Information Barriers : Feedback from the field 
 [Information Barriers is an advanced compliance option in Office 365 offered by Microsoft](https://docs.microsoft.com/en-us/microsoftteams/information-barriers-in-teams), allowing to restrict communication and collaboration between groups of users. 
@@ -21,6 +21,7 @@ Before anything else, I think it is important to remind that Information Barrier
 The solution covers the main services in Office 365, but not all. We will come back to this in the rest of the article.
 
 
+<br/>
 # A brief historical reminder
 
 Information Barriers replaces an old feature in the Microsoft environment: [Address Book Policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/create-an-address-book-policy). These policies allowed users to be partitioned to customize the directory (or GAL). 
@@ -32,7 +33,7 @@ It is required to remove any ABP before implementing Information Barriers.
 Il est requis de supprimer toute ABP avant implémentation d’Information Barriers. 
 
 
-
+<br/>
 # How to set up Information Barriers in less than an hour? 
 If the prerequisites are there and the business needs are clear, the implementation can be straight forward. 
 
@@ -58,6 +59,7 @@ Start-Process  "https://login.microsoftonline.com/common/adminconsent?client\_id
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_1.png" >
 
 
+<br/>
 ## Step 0: Define the target
 This phase is very important: it is **necessary to write down in advance who is allowed to communicate and collaborate with whom**. Depending on the number of segments, this can be a real headache. 
 
@@ -79,6 +81,7 @@ This is reflected in the table below:
 |**Isengard**|“Mordor”, “Isengard – Saruman Army”|“Fellowship of the Ring”, “Gondor”, “Rohan”|
 |**Isengard – Saruman Army**|“Isengard”|“Mordor”, “Fellowship of the Ring”, “Gondor”, “Rohan”|
 
+<br/>
 We can also illustrate the communications in the following diagram.
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_2.png" >
@@ -86,6 +89,7 @@ We can also illustrate the communications in the following diagram.
 In the case of your organization, you just need to replicate the same logic.
 
 
+<br/>
 ## Step 1: Technically declare user segments
 
 After the identification of the use cases, the next step is to technically **define the user groups, via segments**. 
@@ -129,6 +133,7 @@ Get-OrganizationSegment | Select Name, Guid, ExoSegmentId, UserGroupFilter | Sor
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_4.png" >
 
 
+<br/>
 ## Step 2: Technically declare Information Barriers policies
 
 Now comes the time to **technically implement the policies**. Two types of policies are proposed by Microsoft:
@@ -183,6 +188,7 @@ Get-InformationBarrierPolicy | Select Name, Guid, State, SegmentsAllowed, Segmen
 <img src="https://thijoubert.github.io/assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_7.png" >
 
 
+<br/>
 ## Step 3: Apply the policy
 
 Once all policies are defined (and with a "active" status), they can be applied with the following PowerShell cmdlet: 
@@ -200,6 +206,7 @@ In the background, the "Information Barriers Processor" application defined prev
 **Well done! Information Barriers policies are active and applied.**
 
 
+<br/>
 ## Step 4: Decide if Information Barriers should apply to SharePoint and OneDrive
 
 **The measures defined so far apply only to Teams.** Two users in non-compatible segments (for example Saruman within “Isengard” or Frodo within “Fellowship of the Ring”) will not be able to :**    
@@ -235,6 +242,7 @@ Note that users without a segment will not be able to collaborate on these sites
 I will come back to all these impacts from an end user’s eye in a second article. 
 
 
+<br/>
 ## Step 5: Monitor the evolution of the Information Barriers
 
 During my tests, I noticed some interesting points:  
@@ -249,6 +257,7 @@ I would recommend to monitor actions related to segment or policy management to 
 Similarly, tracking the evolution of attributes could be interesting. **The alteration of an attribute** (e.g. "Rohan" replaced by "Rohann") **would remove the user from the policy**.
 
 
+<br/>
 # Licenses, always a tricky topic
 
 **Who needs an Information Barriers license? [**As with other productivity, security or compliance services, this is THE major limiting factor.](https://www.thijoubert.com/2020-08/M365SecurityComplianceLicensing/)** 
@@ -278,6 +287,7 @@ As a reminder, the only licenses officially required for guest users are Azure A
 
 
 
+<br/>
 # What are the main limitations of Information Barriers today?
 
 - **Complexity:** The definition of segments and policies can become very complex in the context of many use cases (due to the nature of Allow policies), especially since the implementation is done solely in PowerShell. 
