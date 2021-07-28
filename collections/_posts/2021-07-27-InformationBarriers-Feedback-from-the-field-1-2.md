@@ -28,7 +28,6 @@ Once implemented, a user could only see in the GAL the people with whom he had t
 
 It is required to remove any ABP before implementing Information Barriers. 
 
-Il est requis de supprimer toute ABP avant implémentation d’Information Barriers. 
 
 
 <br/>
