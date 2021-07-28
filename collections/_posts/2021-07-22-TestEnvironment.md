@@ -64,7 +64,7 @@ Il est également possible de souscrire à des licences d’essai dans un enviro
 
 
 <br/>
-## *Trial tenant* : kesako ? 
+## *Trial tenant* : késako ? 
 
 Un tenant de test (ou *trial tenant*) est un environnement avec des licences Office 365 gratuites pendant 30 jours. 
 
@@ -82,7 +82,7 @@ A l’issue de ces 30 jours, vous aurez le choix entre supprimer le tenant, sous
 
 
 <br/>
-## Tenant de préproduction : késoko ? 
+## Tenant de préproduction : késako ? 
 
 Un tenant de pré-production est, comme son nom l’indique, un environnement similaire à la pro-production dans lequel seront testées les nouvelles applications ou fonctionnalités, avant déploiement. 
 
