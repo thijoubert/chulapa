@@ -14,11 +14,11 @@ header_img : "./assets/img/posts/2021-07-22_InformationBarriers-Feedback-from-th
 # Information Barriers : Feedback from the field 
 [Information Barriers is an advanced compliance option in Office 365 offered by Microsoft](https://docs.microsoft.com/en-us/microsoftteams/information-barriers-in-teams), allowing to restrict communication and collaboration between groups of users. 
 
-This feature, initially designed to enforce a compliance policy, can also be used to isolate a perimeter in the event of a carve out or compromise.
+This feature, initially designed to **enforce a compliance policy, can also be used to isolate a perimeter in the event of a carve out or compromise**.
 
-Before anything else, I think it is important to remind that Information Barriers will provide a technical response to a business need. BUT, as any technical answer, the solution cannot be exhaustive and will not prevent a user from chatting, sending a picture or even a carrier pigeon... 
+Before anything else, I think it is important to **remind that Information Barriers will provide a technical response to a business need**. BUT, as any technical answer, the solution cannot be exhaustive and will not prevent a user from chatting, sending a picture or even a carrier pigeon... 
 
-The solution covers the main services in Office 365, but not all. We will come back to this in the rest of the article.
+The solution covers the **main services in Office 365, but not all**. We will come back to this in the rest of the article.
 
 
 <br/>
