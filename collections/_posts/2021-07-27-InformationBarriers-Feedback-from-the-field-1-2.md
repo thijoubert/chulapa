@@ -283,6 +283,9 @@ However, I don't find this to be consistent from a licensing standpoint. But the
 As a reminder, the only licenses officially required for guest users are Azure AD Premium (P1 or P2) or premium licenses for the Power Platform.
 
 
+During my tests, I noticed that a user without the SKU "Information Barriers" or "Exchange Online" are also impacted by the Information Barriers policies.
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
+
 
 <br/>
 # What are the main limitations of Information Barriers today?
