@@ -189,11 +189,11 @@ It may be appropriate to point out that the user can always share it by email as
 <br/>
 # What user experience for Teams a OneDrive combined with a segment and Information Barriers policy? 
 
-The user experience is very similar between OneDrive and Teams for content sharing. 
+The user experience is very similar between OneDrive and Teams for content sharing with Information Barriers applied. 
 
 Again, let's take a concrete example. For this, I have removed the "Goblins" segment from OneDrive from "Goblin - Army 1". Let's try to share content to "Goblin". 
 
-If we share a document from our OneDrive, a link is automatically created (**we could even create a link "Anyone with the link"!!!**). 
+If we share a document from our OneDrive, a link is automatically created (**we can even create a link "Anyone with the link"!!!**). 
 
 However, our "Goblin" user will not be able to open the document, nor copy the link. The error message being brief, this could lead to some frustration. 
 
