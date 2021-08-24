@@ -5,6 +5,7 @@ excerpt: Information Barriers is an interesting feature to restrict communicatio
 tags:
   - Microsoft 365
   - Compliance
+  - Information Barriers
 header_img : "./assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
 og_image: "./assets/img/posts/2021-07-27_InformationBarriers-Feedback-from-the-field-1-2_0.jpg"
 ---
@@ -236,7 +237,7 @@ Once enabled:
 Note that users without a segment will not be able to collaborate on these sites or OneDrive.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-I will come back to all these impacts from an end user’s eye in a second article. 
+I wrote [another article about the impacts and the user experience for OneDrive](https://www.thijoubert.com/2021-08/InformationBarriers-OneDrive/), if you want more details.
 
 
 <br/>
