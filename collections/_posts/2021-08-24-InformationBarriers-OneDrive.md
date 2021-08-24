@@ -95,7 +95,7 @@ A first execution of the script gives an empty InformationSegment column. I then
 - Redefinition of the segment "Goblins - Army
 - Modification of the segment of "Man 1
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.002.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_1.png" >
 
 The associated segments by default are consistent because  
 
@@ -103,7 +103,7 @@ The associated segments by default are consistent because
 - For the segment "Men", two allowed segments are not compatible with each other ("Dwarves" and "Elves").
 - For the segment "Goblins - Army", all allowed segments are compatible with each other ("Goblins - Army" and "Goblins").
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.002.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_2.png" >
 
 It is possible to add or remove a compatible segment via the cmldets below: 
 
@@ -127,7 +127,7 @@ To clarify the user experience, let's put ourselves in the shoes of one of our u
 
 When our user clicks on "Share", the sharing options are identical with or without Information Barriers.
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.003.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_3.png" >
 
 
 ## New sharing to “Anyone with the link”: 
@@ -136,28 +136,29 @@ Contrary to what is described, “Anyone with the link” is available to our us
 
 However, when our user tries to create a new anonymous share link with “Copy link” or “Send link”, he gets an error message.
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_4.png" >
 
 Note that the details of the error message are very technical. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_5.png" >
 
 
 ## New sharing link to “People in the organization”
 
 Our user, Goblin - Army 1, can create a link accessible to all users in the organization via “Copy link” or send it directly to a user in a compatible segment via “Send link”.
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_6.png" >
 
 However, an unauthorized user in possession of this link will not be able to access the document. When he tries to open the document, he will be presented with a blank page. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_7.png" >
 
 We can see in the URL of the white page that access has been denied. 
 
 <https://dwpsecuritytrial-my.sharepoint.com/personal/goblin_army1_dwpsecuritytrial_onmicrosoft_com/_layouts/15/AccessDenied.aspx?p=128&type=accessremoved&correlation=b670e39f-e0dc-1000-09e9-a3658ba6c381>
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.005.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_8.png" >
+
 
 
 ## New sharing link to “specific people”
@@ -166,19 +167,19 @@ Our user then wants to share a document only to specific people.
 
 He can search for users belonging to segments associated with his OneDrive. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_9.png" >
 
 However, it cannot find users belonging to non-compatible segments (or not associated with the space), for example below for "Dwarf". 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_10.png" >
 
 If he fills in the email address of our user directly, we can see that the names of unauthorized collaborators appear in red. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_11.png" >
 
 If he clicks on "Send link" or "Copy link", he will get an error message similar to those mentioned above. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_12.png" >
 
 It may be appropriate to point out that the user can always share it by email as a copy in an email.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
@@ -196,17 +197,18 @@ If we share a document from our OneDrive, a link is automatically created (**we 
 
 However, our "Goblin" user will not be able to open the document, nor copy the link. The error message being brief, this could lead to some frustration. 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_13.png" >
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_14.png" >
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_15.png" >
 
 If our user then tries to modify the link, we can see that "Goblin" appears in red because it is not allowed to access content on the OneDrive. 
 
 Note that Goblin - Army 1 can communicate with Goblin but cannot send it any content (see screenshot below). 
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_16.png" >
+
 
 
 
@@ -217,11 +219,8 @@ When applying Information Barriers policies to OneDrive:
 - Some users with whom items have been shared still appear in the SharePoint cache, especially users without segments.
 - Users with whom items have been shared are not removed from the library contacts.
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.004.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_17.png" >
 
 If a user's segment is removed from their OneDrive, but other segments are still associated, that user will no longer have access to their space.
 
-![](Aspose.Words.868a2181-0b01-47d8-961d-5bac6904bedf.006.png)
-
-
-
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-24_InformationBarriers-OneDrive_18.png" >
