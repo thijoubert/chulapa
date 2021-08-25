@@ -187,7 +187,7 @@ It may be appropriate to point out that the user can always share it by email as
 
 
 <br/>
-# What user experience for Teams a OneDrive combined with a segment and Information Barriers policy? 
+# What are the impacts for the user experience whithin Teams? 
 
 The user experience is very similar between OneDrive and Teams for content sharing with Information Barriers applied. 
 
