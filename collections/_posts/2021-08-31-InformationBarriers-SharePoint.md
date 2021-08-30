@@ -75,8 +75,7 @@ In order to better explain these tests, I have used the same organization as in 
 
 ### Case 1: A user creates a new communication site 
 
-:point_right: **When a user creates a communication site, his segment is automatically associated to the site.**
-
+:point_right:**When a user creates a communication site, his segment is automatically associated to the site.** 
 The segments associated to a SharePoint site are **visible to the end users (see screenshot below).** 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_1.png" >
