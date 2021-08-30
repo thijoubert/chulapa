@@ -7,12 +7,20 @@ tags:
   - Microsoft 365
   - Compliance
   - Information Barriers
+  - OneDrive
 header_img : "./assets/img/posts/2021-08-24_InformationBarriers-OneDrive_0.jpg"
 og_image: "./assets/img/posts/2021-08-24_InformationBarriers-OneDrive_0.jpg"
 ---
 
 
 [Information Barriers is an advanced compliance option in Office 365 offered by Microsoft](https://docs.microsoft.com/en-us/microsoftteams/information-barriers-in-teams), allowing to **restrict communication and collaboration** between groups of users. 
+
+This article is part of a series on Information Barriers with : 
+- [Information Barriers - Feedback from the field: how to implement it in one hour?](https://www.thijoubert.com/2021-07/InformationBarriers-Feedback-from-the-field-1-2/)
+- [Information Barriers: What impacts and user experience for SharePoint?](https://www.thijoubert.com/2021-08/InformationBarriers-SharePoint/)
+
+
+# Introduction to Information Barriers within OneDrive for Business
 
 This feature, initially designed to enforce an organization compliance policy, can also be used to isolate a perimeter in the event of a carve out or compromise. I have explained in a [previous article](https://www.thijoubert.com/thijoubert.github.io/2021-07/InformationBarriers-Feedback-from-the-field-1-2/) how to define and activate Information Barriers segments and policies. 
 

@@ -19,6 +19,10 @@ Before anything else, I think it is important to **remind that Information Barri
 
 The solution covers the **main services in Office 365, but not all**. We will come back to this in the rest of the article.
 
+This article is part of a series on Information Barriers with : 
+- [Information Barriers: What impacts and user experience for SharePoint?](https://www.thijoubert.com/2021-08/InformationBarriers-SharePoint/)
+- [Information Barriers: What impacts and user experience for OneDrive?](https://www.thijoubert.com/2021-08/InformationBarriers-OneDrive/)
+
 
 <br/>
 # A brief historical reminder
