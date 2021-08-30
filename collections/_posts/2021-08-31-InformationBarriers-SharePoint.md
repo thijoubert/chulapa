@@ -75,7 +75,7 @@ In order to better explain these tests, I have used the same organization as in 
 
 ### Case 1: A user creates a new communication site 
 
-:point_right: **When a user creates a communication site, his segment is automatically associated to the site.**
+**When a user creates a communication site, his segment is automatically associated to the site.**
 
 The segments associated to a SharePoint site are **visible to the end users (see screenshot below).** 
 
@@ -92,7 +92,7 @@ In the above screenshots, we can see that our user Dwarf can only add the "Orcs"
 
 ### Case 2: A user creates a new team site
 
-:point_right: **When a user creates a team site, his segment is automatically associated to the site.**
+**When a user creates a team site, his segment is automatically associated to the site.**
 
 Note that when creating a site a user can add secondary owners or users (see screeshot below). 
 
@@ -116,7 +116,7 @@ When a user creates a new Team, a Microsoft 365 Group and a team SharePoint site
 
 The assignment of segments to the created SharePoint site follows a different behavior than the cases 1 and 2. 
 
-:point_right: **The newly created site is automatically associated with the Team segments, i.e. the team members' segments**. 
+**The newly created site is automatically associated with the Team segments, i.e. the team members' segments**. 
 
 The owner cannot add segments to a site linked to a Team oustide the Teams interface. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
@@ -128,7 +128,7 @@ The owner cannot add segments to a site linked to a Team oustide the Teams inter
 
 When a user creates a new Microsoft 365 Group, a new Team SharePoint site is provisioned by construction. 
 
-:point_right: **The newly created site is not associated with any segments.** 
+**The newly created site is not associated with any segments.** 
 
 The owner can then add or remove segments as in case 1 and 2.
 
@@ -137,14 +137,14 @@ The owner can then add or remove segments as in case 1 and 2.
 
 Same behavior than the case 4: 
 
-:point_right: **The newly created site is not associated with any segments.** 
+**The newly created site is not associated with any segments.** 
 
 
 ### Case 6: A user creates a new Planner
 
 When a user creates a new Planner, he can decide to create a new Microsoft 365 Group or to reuse an existing Group. In the first case, this Planner, a team SharePoint site is provisioned by construction. 
 
-:point_right: ** The newly created site is not associated with any segments.** 
+**The newly created site is not associated with any segments.** 
 
 The owner can then add or remove segments as in case 1 and 2.
 
