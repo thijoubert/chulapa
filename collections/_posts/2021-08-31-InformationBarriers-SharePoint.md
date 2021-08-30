@@ -128,7 +128,7 @@ The owner cannot add segments via the SharePoint interface.
 
 When a user creates a new Microsoft 365 Group, a new Team SharePoint site is provisioned by construction. 
 
-:point_right: **The newly created site is not associated with any segments.** 
+**The newly created site is not associated with any segments.** 
 
 The owner can then add or remove segments as in case 1 and 2.
 
@@ -137,7 +137,7 @@ The owner can then add or remove segments as in case 1 and 2.
 
 Same behavior than the case 4: 
 
-:point_right: **The newly created site is not associated with any segments.** 
+**The newly created site is not associated with any segments.** 
 
 
 ### Case 6: A user creates a new Planner
