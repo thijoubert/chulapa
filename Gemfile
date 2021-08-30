@@ -6,5 +6,4 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata'
   gem 'jekyll-sitemap'
   gem 'jekyll-include-cache'
-  gem 'jemoji'
 end
