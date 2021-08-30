@@ -38,9 +38,9 @@ Immediately after running the cmdlet, a **new property, InformationSegment**, i
 # What are the principles of Information Barriers for SharePoint?
 
 According to [Microsoft documentation](https://docs.microsoft.com/en-us/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization), Content sharing in SharePoint follows these principles:
-- The site and its content can be shared only with users whose segment matches that of the site. 
-- New users can be added to the site as site members only if their segment matches that of the site.
-- In the case where no segment is associated with a SharePoint site, a user can share an item to people who belong to compatible segments with his, even if those segments are not compatible with one another.
+- The site and its content can be **shared only with users whose segment matches that of the site. **
+- New users can be added to the site as site members **only if their segment matches that of the site.**
+- **In the case where no segment is associated with a SharePoint site, a user can share an item to people who belong to compatible segments with his**, even if those segments are not compatible with one another.
 
 Note that a SharePoint site without segments could be used to share content across the organization. Where this could be seen as a bypass of the organization's compliance policies, it can also be seen as an opportunity to have a common intranet for all.  
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
@@ -51,7 +51,7 @@ Note that a SharePoint site without segments could be used to share content acro
 The basic principle is that **when a collaboration and communication space is created, the SharePoint site or Microsoft 365 Group will inherit the owner segment.** 
 
 However, there are several **context-dependent subtleties**: 
-- **Who performs the creation action:** a user or an administrator?** 
+- **Who performs the creation action:** a user or an administrator? 
 - **What is the object created in the first place:** a SharePoint site, a Team, a Microsoft 365 group, a Planner, etc.? 
 - **What is the interface used?** 
 
@@ -118,7 +118,7 @@ The assignment of segments to the created SharePoint site follows a different be
 
 :point_right: **The newly created site is automatically associated with the Team segments, i.e. the team members' segments**. 
 
-The owner cannot add segments via the SharePoint interface. 
+The owner cannot add segments to a site linked to a Team oustide the Teams interface. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_6.png" >
