@@ -1,5 +1,5 @@
 ---
-title: "Information Barriers: What impacts and user experience for SharePoint? ="
+title: "Information Barriers: What impacts and user experience for SharePoint?"
 subtitle:
 excerpt: Although the primary use of Information Barriers is for communication in Teams, it is possible to extend the coverage to OneDrive and SharePoint Online.
   
@@ -79,13 +79,13 @@ In order to better explain these tests, I have used the same organization as in 
 
 The segments associated to a SharePoint site are **visible to the end users (see screenshot below).** 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_1.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_1.png" >
 
 A site owner can then **add a segment compatible with his or her own or delete an existing segment** via "Site Information" > "Add segments". 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_2.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_2.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_3.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_3.png" >
 
 In the above screenshots, we can see that our user Dwarf can only add the "Orcs" and "Men" segments. These are indeed the only ones compatible with his.
 
@@ -98,11 +98,11 @@ Note that when creating a site a user can add secondary owners or users (see scr
 
 These users or owners will only have access if their segments are manually associated by the owner (as explained in case 1). 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_4.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_4.png" >
 
 If one of the owners or users added by the primary owner try to access the site, before the addition of their segments, he will see the following error message: 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_5.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_5.png" >
 
 
 ### Case 3: A user creates a new Team
@@ -121,7 +121,7 @@ The assignment of segments to the created SharePoint site follows a different be
 The owner cannot add segments via the SharePoint interface. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_6.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_6.png" >
 
 
 ### Case 4: A user creates a new Microsoft 365 Group via the Azure portal
@@ -150,7 +150,7 @@ The owner can then add or remove segments as in case 1 and 2.
 
 I summarized my different tests in the table below:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_7.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_7.png" >
 
 
 
@@ -182,9 +182,9 @@ List of the tested use cases:
 
 Before presenting the results of the various tests, I would like to remind that an administrator can remove or add compatible segments in the SharePoint administration portal via the "Policies" tab.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_8.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_8.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_9.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_9.png" >
 
 You can also find the segments associated with the different sites via : 
 
@@ -208,28 +208,28 @@ The first thing I noticed was that the **application of the segments was done in
 <br/>
 **Immediately**: only SharePoint sites with a segment manually associated by the administrator have a segment. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_9.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_10.png" >
 
 <br/>
 **After 24 hours:** the creation of the Teams seems to have changed the segments associated with the linked SharePoint sites.** 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_10.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_11.png" >
 
 <br/>
 **After 7 days:** there is an automatic cleaning of the segments associated with the SharePoint sites. The logic seems to be to only keep the segments that are compatible with the creator of the linked Team if any.
 
 Note that it is always possible for a SharePoint administrator or a space owner to change these associated segments afterwards.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_11.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_12.png" >
 
 <br/>
 We can find a trace of these three steps changes in the unified audit logs:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_12.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_13.png" >
 
 I summarized my different tests in the table below:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_13.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_14.png" >
 
 I was also able to test that the behavior was identical when creating a site via Graph API or via PowerShell.
 
@@ -250,14 +250,14 @@ List of tested cases:
 
 <br/>
 **Immediately:** Newly created sites are not associated with a segment. **
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_14.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_15.png" >
 
 <br/>
 **After 24 hours:** Sites are associated with the Teams creator’s segment and compatible members’ segments. Sites not linked to the Teams are not associated with segments. **
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_15.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_16.png" >
 
 I summarized my different tests in the table below: 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_16.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_17.png" >
 
 I was also able to test that the behavior was identical when creating a Microsoft 365 Group via Graph API or via PowerShell.
 
@@ -268,7 +268,7 @@ I was also able to test that the behavior was identical when creating a Microsof
 When our user clicks on “Share”, the sharing options are quite identical with or without Information Barriers. 
 
 Indeed, **all options are the same except for “Anyone with the link” which is disabled.** 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-OneDrive_17.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_18.png" >
 
 For the other links, **the behaviors are identical to those of OneDrive.** I have described them in [another article](https://www.thijoubert.com/2021-08/InformationBarriers-OneDrive/).
 
