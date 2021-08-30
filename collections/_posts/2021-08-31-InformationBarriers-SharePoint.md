@@ -118,7 +118,7 @@ The assignment of segments to the created SharePoint site follows a different be
 
 **The newly created site is automatically associated with the Team segments, i.e. the team members' segments**. 
 
-The owner cannot add segments to a site linked to a Team oustide the Teams interface. 
+An owner cannot edit segments of a SharePoint site provisioned from a Team outside the Teams interface.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-08-31_InformationBarriers-SharePoint_6.png" >
