@@ -1,7 +1,7 @@
 ---
 title: "Information Barriers: What impacts and user experience for SharePoint?"
 subtitle:
-excerpt: Although the primary use of Information Barriers is for communication in Teams, it is possible to extend the coverage to OneDrive and SharePoint Online.
+excerpt: Although the primary use of Information Barriers is for communication in Teams, it is possible to extend the coverage to SharePoint Online. The applied segments depend on the context. 
   
 tags:
   - Microsoft 365
