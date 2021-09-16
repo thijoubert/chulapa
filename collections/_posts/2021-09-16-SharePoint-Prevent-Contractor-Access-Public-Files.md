@@ -1,5 +1,5 @@
 ﻿---
-title: "How to prevent contractors with Office 365 internal account from accessing public files ?"
+title: "How to prevent a contractor with an Office 365 internal account from accessing public files ?"
 subtitle:
 excerpt: In the case of long-term consulting or outsourcing assignments (e.g. IT support), it is not uncommon to give an Office 365 user account to allow to communicate and collaborate in the course of their duties. 
 tags:
