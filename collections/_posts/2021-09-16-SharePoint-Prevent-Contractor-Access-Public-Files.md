@@ -17,6 +17,7 @@ In the case of long-term consulting or outsourcing assignments (e.g. IT support)
 However, by construction, any internal Office 365 user account is able to : 
 - Join a public Teams team 
 - Access a public SharePoint site
+
 ... and this logically raises confidentiality issues. 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_PreventContractorsToAccessPublicFiles_1.png" >
