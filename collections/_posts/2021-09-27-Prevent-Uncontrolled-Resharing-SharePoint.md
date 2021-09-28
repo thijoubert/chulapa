@@ -1,7 +1,7 @@
 ﻿---
 title: "How to avoid uncontrolled (re)sharing in SharePoint Online?"
 subtitle:
-excerpt: In the case of long-term consulting or outsourcing assignments (e.g. IT support), it is not uncommon to give an Office 365 user account to allow to communicate and collaborate in the course of their duties. 
+excerpt: By default, in SharePoint, a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person... The spread of data can then become **uncontrollable**.  
 tags:
   - Microsoft 365
   - SharePoint Online
