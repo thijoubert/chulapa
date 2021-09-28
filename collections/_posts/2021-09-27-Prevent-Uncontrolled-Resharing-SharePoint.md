@@ -7,7 +7,7 @@ tags:
   - SharePoint Online
   - Sharing
   - Governance
-header_img : "./assets/img/posts/2021-09-16_ResharingSharePoint_0.jpg"
+header_img : "./assets/img/posts/2021-09-27_ResharingSharePoint_0.jpg"
 ---
 
 
@@ -45,9 +45,9 @@ In cases where only owners should be able to share, it could be interesting to m
 
 These features are configured via "Settings > Site Permissions > Change how members can share".  
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_1.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_1.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_2.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_2.png" >
 
 The above screenshots represent the new modern interface. The historical settings accessible via "Site Settings > Site Permissions > Access Request Settings" are identical (see screenshot below):  
 
@@ -65,7 +65,7 @@ A SharePoint Online administrator or a Global Administrator can also prevent (re
 Set-SPOSite -Identity siteurl -DisableSharingforNonOwners
 ```
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_5.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_5.png" >
 
 Before performing this action, it is necessary to have the following limitations in mind: 
 - This action is **not reversible today in PowerShell**, an owner will have to modify the configurations manually in the GUI.
@@ -86,14 +86,14 @@ In the case where the owners have left the hand to the members to (re)share (Opt
 
 As a reminder, the different sharing options are as follows: 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_6.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_6.png" >
 
 In the case where owners do not allow members to (re)share (Option 3): a user who is a member or not of the site and has access to the content will only be able to **request access for specific people whitout "Allow editing"**, if access requests are enabled. 
 
 
 **I have summarized all the behaviors in the following matrix:**
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_7.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_7.png" >
 
 To clarify the user experience, let's take three different concrete scenarios from the matrix.
 
@@ -103,21 +103,21 @@ To clarify the user experience, let's take three different concrete scenarios fr
 
 Orc can only create a sharing link for people with existing access or request access for specific people:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_8.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_8.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_9.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_9.png" >
 
 After clicking on "copy link" or "send link", user is **automatically notified** that an approval is required from a site owner. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_10.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_10.png" >
 
 The owners of the site **automatically receive an email notification** inviting them to validate or not the sharing:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_11.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_11.png" >
 
 A user who does not (yet) have access to the content, Dwarf for example, **can request access** if he tries to access the document directly:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_12.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_12.png" >
 
 
 
@@ -126,11 +126,11 @@ A user who does not (yet) have access to the content, Dwarf for example, **can r
 
 **Sharing is only possible with users who already have access**. Orc can't share his document with Dwarf.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_13.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_13.png" >
 
 On his side, the other user, Dwarf, will see an **error message** if he tries to access directly to the url : 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_14.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_14.png" >
 
 
 
@@ -138,13 +138,13 @@ On his side, the other user, Dwarf, will see an **error message** if he tries to
 
 If he tries to share the site, Orc will get an **error message**:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_15.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_15.png" >
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_16.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_16.png" >
 
 It will also **not be able to add members to the Microsoft 365 Group** (in the case of a team site) either in SharePoint, Azure AD, or Teams: 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-09-16_ResharingSharePoint_17.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-09-27_ResharingSharePoint_17.png" >
 
 
 
