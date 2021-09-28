@@ -7,7 +7,7 @@ tags:
   - Microsoft 365
   - Compliance
   - Information Barriers
-  - SharePoint
+  - SharePoint Online
 header_img : "./assets/img/posts/2021-08-31_InformationBarriers-SharePoint_0.jpg"
 og_image: "./assets/img/posts/2021-08-31_InformationBarriers-SharePoint_0.jpg"
 ---

@@ -6,6 +6,8 @@ tags:
   - Microsoft 365
   - SharePoint Online
   - External sharing
+  - Sharing
+  - Governance
 header_img : "./assets/img/posts/2021-09-16_PreventContractorsToAccessPublicFiles_0.jpg"
 ---
 
