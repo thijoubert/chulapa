@@ -1,7 +1,7 @@
 ﻿---
 title: "How to avoid uncontrolled (re)sharing in SharePoint Online?"
 subtitle:
-excerpt: By default, in SharePoint, a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person... The spread of data can then become **uncontrollable**.  
+excerpt: By default, in SharePoint, a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person...  
 tags:
   - Microsoft 365
   - SharePoint Online
@@ -155,3 +155,5 @@ We have seen in this blog post how to prevent users from creating endless and un
 However, it is not necessary to activate them for all use cases: limiting sharing for storage sites can be interesting, but much less useful for a non-confidential internal project with many people.
 
 Limiting sharing is an essential brick in the construction of data governance. But it must be combined with the implementation of a life cycle for spaces and guests, the review of external sharing, data loss prevention, etc. 
+
+In a second article, I will write about [(re)sharing in OneDrive. The issue is identical but there are some differences for the possible actions].](https://www.thijoubert.com/2021-10/Prevent-Uncontrolled-Resharing-OneDrive/)
