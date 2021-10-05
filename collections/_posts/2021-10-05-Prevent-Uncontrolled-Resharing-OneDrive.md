@@ -7,7 +7,7 @@ tags:
   - OneDrive for Business
   - Sharing
   - Governance
-header_img : "./assets/img/posts/2021-10-05_ResharingOneDrive_3.jpg"
+header_img : "./assets/img/posts/2021-10-05_ResharingOneDrive_3.png"
 ---
 
 
