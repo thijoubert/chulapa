@@ -1,5 +1,5 @@
 ﻿---
-title: "How to avoid uncontrolled (re)sharing in SharePoint Online?"
+title: "How to avoid uncontrolled (re)sharing in OneDrive for Business?"
 subtitle:
 excerpt: By default, in OneDrive a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person...  
 tags:
@@ -7,7 +7,7 @@ tags:
   - OneDrive for Business
   - Sharing
   - Governance
-header_img : "./assets/img/posts/2021-09-27_ResharingSharePoint_0.jpg"
+header_img : "./assets/img/posts/2021-10-05_ResharingOneDrive_3.jpg"
 ---
 
 
