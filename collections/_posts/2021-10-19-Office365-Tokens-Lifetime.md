@@ -4,7 +4,7 @@ subtitle:
 excerpt: How long are my users logged in? How much flexibility do I have to revoke a compromised user's access? 
 tags:
   - Azure AD
-  - Conditionnal Access
+  - Conditional Access
   - Microsoft 365
   - Security
 header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
