@@ -1,13 +1,12 @@
 ﻿---
-title: "How to manage sessions lifetime within Office 365?"
+title: "How to manage Office 365 sessions lifetime?"
 subtitle:
-excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?    
+excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?  
 tags:
+  - Microsoft 365
   - Azure AD
-  - Tokens
   - Conditionnal Access
-  - Continuous Access Evaluation
-  - Resilience defaults
+  - Security
 header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
 ---
 
@@ -220,3 +219,6 @@ Note that Azure AD Authentication Backup is compatible with Continuous Access Ev
 1. Leave the Keep me sign-in option available for users (but make users aware)
 1. Enable Continuous Access Evaluation (use IP named locations and not Trusted IP)
 1. Disable resilience defaults durations for the most sensitive accesses
+
+
+<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png" >
