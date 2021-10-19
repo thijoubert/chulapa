@@ -1,12 +1,12 @@
 ﻿---
-title: "How to avoid uncontrolled (re)sharing in OneDrive for Business?"
+title: "How to manage Office 365 sessions lifetime"
 subtitle:
-excerpt: By default, in OneDrive a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person...  
+excerpt: How long are my users logged in? How much flexibility do I have to revoke a compromised user's access? 
 tags:
+  - Azure AD
+  - Conditionnal Access
   - Microsoft 365
-  - OneDrive for Business
-  - Sharing
-  - Governance
+  - Security
 header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
 ---
 
