@@ -1,5 +1,5 @@
 ﻿---
-title: "How to manage Office 365 sessions lifetime?"
+title: "How to avoid uncontrolled (re)sharing in OneDrive for Business?"
 subtitle:
 excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?
 tags:
