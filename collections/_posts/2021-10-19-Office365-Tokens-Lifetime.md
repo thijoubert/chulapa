@@ -13,7 +13,7 @@ header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
 
 How long are my users logged in? How much flexibility do I have to revoke a compromised user's access?  
 
-The problem is simple, but the answer is complex: what **balance should be found between user experience and session lifetime**?
+The problem is simple, but the answer is complex: what **balance can be found between user experience and session lifetime**?
 - The security answer is obviously: "you have to set the shortest possible duration" (it is not uncommon to want to set a day or even few hours)
 - On the other hand, the user experience could be so poor that it would paradoxically lead to a decrease in security. The two direct consequences are that users authenticate without thinking (risk of phishing) or use weak passwords. 
 
