@@ -1,5 +1,5 @@
 ﻿---
-title: "How to manage session lifetime within Office 365?"
+title: "How do I manage my users' session times in Office 365?"
 subtitle:
 excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?  
 tags:
