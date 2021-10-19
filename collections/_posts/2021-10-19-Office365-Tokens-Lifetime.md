@@ -1,12 +1,12 @@
 ﻿---
 title: "How to avoid uncontrolled (re)sharing in OneDrive for Business?"
 subtitle:
-excerpt: By default, in OneDrive a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person...  
+excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?
 tags:
   - Microsoft 365
-  - OneDrive for Business
-  - Sharing
-  - Governance
+  - Azure AD
+  - Security
+  - Conditionnal Access
 header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
 ---
 
@@ -27,7 +27,7 @@ In order to control the lifetime of user sessions and to manage the associated r
 Understanding the different Microsoft options is key to finding the best balance for your organization. 
 
 
-
+<br/>
 # By default, if you lift the hood of Azure AD, what will you find?
 
 When a user authenticates to an Azure AD application (e.g. Exchange Online), he will get a pair of tokens that will allow him to consume the services: 
@@ -52,6 +52,8 @@ It is interesting to keep in mind that the **Refresh token is specific to a clie
 In the case of an endpoint known by Azure AD (last two cases above), a Primary Refresh Token will be generated at each connection on the user's workstation (with or without multi-factor claim). It will be reused within the different applications for authentication.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
+
+<br/>
 ## What about persistence in a browser?
 
 After logging into a web browser, the user will be presented with the option "Stay signed in"? If he clicks on "Yes", a persistent browser session is created in order to allow the user to remain signed in after closing and reopening their browser window (via the deposit of a cookie in the browser).
@@ -61,6 +63,7 @@ After logging into a web browser, the user will be presented with the option "St
 The default settings thus pose a **significant security problem: a user can remain logged in ad vitam eternam on any terminal in case of continuous use**.
 
 
+<br/>
 ## In which cases are the tokens revoked? 
 
 Historically, **access tokens cannot be revoked** (see option 3 : Continuous Access Evaluation for the updates).
@@ -80,11 +83,12 @@ Microsoft details in its [documentation the different conditions for revoking a 
 
 
 
+<br/>
 # What are the options for controlling session lifetimes? 
 
 The possibilities to manage session lifetimes will mainly depend on the presence of Azure AD P1 licenses for the organization's users. Without a Premium license, the functionalities are extremely limited.
 
-
+<br/>
 ## Option 1: Disabling "Keep me signed-in"? 
 
 It is possible to hide the keep me signed-in feature in the organization's branding settings. 
@@ -95,7 +99,7 @@ It is possible to hide the keep me signed-in feature in the organization's brand
 
 It is important to note that even if an organization decides to create multiple company branding for the different languages of the organization, there can only be one Keep me signed-in configuration.
 
-
+<br/>
 ## Option 2 : AAD P1 - Politique d'accès conditionnel avec "sign-in frequency" et "persistence". 
 
 Conditional access policies allow you to impose [a "sign-in frequency", and "persistence" behavior for web sessions](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). This is **THE method to control when users should re-authenticate to the platform**.
@@ -119,7 +123,7 @@ However, Microsoft puts two points of attention forward:
 
 **If the "Persitent browser session" setting is enabled**: the conditional access policy overrides the Keep me signed-in option chosen by the user.
 
-
+<br/>
 ## Option 3: Continuous Access Evaluation (preview)
 
 In order to limit the risk related to the 1 hour window for access tokens, Microsoft is currently deploying the "[Continuous Access Evaluation](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)". 
@@ -160,7 +164,7 @@ It is interesting to note that Microsoft has added a field in the Azure AD sign-
 
 <img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_8.png" >
 
-
+<br/>
 ## Option 4 : AAL P1 - Configuration of the access token lifetimes (preview)
 
 With the introduction of Continuous Access Evaluation, it may be interesting to think about the lifetimes of access tokens, if the default values defined by Microsoft do not suit you (1h for non-CAE client compatible and up to 28h for CAE client compatible). 
@@ -188,7 +192,7 @@ However, it is important to note that **ALL new access tokens will respect this 
 In my tenant, the lifetime of the access token is always one hour, even when applying a policy to an application. I assume that this evolution will take place after the General Availability on October 31.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-
+<br/>
 ## To go further : Resilience defaults (preview)
 
 Microsoft introduced in late 2020, [Azure AD Authentication Backup](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/99-99-uptime-for-azure-active-directory/ba-p/1999628). This feature allows the renewal of current sessions in the event of an outage of the primary authentication service (<0.01% of the time according to Microsoft SLAs), with the known context of the previous authentication. 
@@ -211,7 +215,7 @@ Microsoft has recently introduced [resilience defaults](https://docs.microsoft.c
 Note that Azure AD Authentication Backup is compatible with Continuous Access Evaluation. An access token that should be revoked under normal circumstances will also be revoked if the primary authentication service is outaged.
 
 
-
+<br/>
 # Which best practices to control session lifetimes? 
 
 1. Use conditional access policies to impose a sign-in frequency based on populations (users vs. admins), services and context
