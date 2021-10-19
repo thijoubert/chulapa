@@ -1,14 +1,13 @@
 ﻿---
-title: "How to manage sessions lifetime within Office 365?"
+title: "How to avoid uncontrolled (re)sharing in OneDrive for Business?"
 subtitle:
-excerpt: The problem is simple, but the answer is complex: what balance should be found between user experience and session lifetime?    
+excerpt: By default, in OneDrive a user with **Edit permissions on content can in turn (re)share it to other people**, who can in turn re-share it to a third person...  
 tags:
-  - Azure AD
-  - Tokens
-  - Conditionnal Access
-  - Continuous Access Evaluation
-  - Resilience defaults
-header_img : "./assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_0.png"
+  - Microsoft 365
+  - OneDrive for Business
+  - Sharing
+  - Governance
+header_img : "./assets/img/posts/2021-10-05_ResharingOneDrive_3.png"
 ---
 
 
