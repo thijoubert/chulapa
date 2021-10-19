@@ -18,8 +18,8 @@ The problem is simple, but the answer is complex: what **balance should be found
 - On the other hand, the user experience could be so poor that it would paradoxically lead to a decrease in security. The two direct consequences are that users authenticate without thinking (risk of phishing) or use weak passwords. 
 
 In order to control the lifetime of user sessions and to manage the associated risks, Microsoft offers several options: 
-- Option 1: "**Keep me signed-in**" deactivation ? 
-- Option 2 : **Conditionnal Access Policy** with "sign-in frequency" and "persistence 
+- Option 1: "**Keep me signed-in**" deactivation
+- Option 2 : **Conditionnal Access Policy** with "sign-in frequency" and "persistence" 
 - Option 3: **Continuous Access Evaluation** (preview)
 - Option 4 : Configuration of **access token lifetime** (preview)
 - To go further : **Resilience defaults** (preview)
