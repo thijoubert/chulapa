@@ -155,8 +155,8 @@ This functionality is currently only available for the "location" condition, and
 <img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Office365-Tokens-Lifetime_7.png" >
 
 In parallel to this improvement of the security posture, **Microsoft has changed the default values of the access token lifetimes**:
-- For a CAE-compatible client: **About 1h** 
-- For a non CAE-compatible client: **Between 20 and 28 hours depending on the service**
+- For a CAE-compatible client: **Between 20 and 28 hours depending on the service** 
+- For a non CAE-compatible client: **About 1h**
 
 The increase of the access tokens lifetimes **can pose a security problem because the extraction of an access token with a long lifetime would make it exploitable on a long duration** (except on a terminal present in the named locations) which is not really in the logic of the Zero Trust. Let's bet that Microsoft will soon make the approach evolve. 
 
