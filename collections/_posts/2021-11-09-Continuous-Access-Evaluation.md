@@ -54,7 +54,7 @@ Note that Microsoft Admin Center now precises that you can refresh at once all t
 
 
 
-<\br>
+<br/>
 # What happened on October 31, 2021?
 
 At the Ignite Fall 2021, Microsoft announced that the CAE would be GA at the end of 2021, but it seems that this is already the case since October 31 (as announced during the preview). 
@@ -94,7 +94,7 @@ After migrating the CAE to the Conditionnal Access, a new conditional access pol
 Note that if you had activated the preview for all users, the behavior is identical to case 1.
 
 
-<\br>
+<br/>
 # How to modify the CAE after October 31? 
 
 From the two previous cases we understand that the CAE is activated by default for all users for whom it is not explicitly deactivated, via the Conditional Access.
