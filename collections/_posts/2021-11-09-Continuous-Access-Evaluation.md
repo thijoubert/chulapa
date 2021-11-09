@@ -95,7 +95,7 @@ Note that if you had activated the preview for all users, the behavior is identi
 
 
 <\br>
-# How to modify the CAE after the October 31? 
+# How to modify the CAE after October 31? 
 
 From the two previous cases we understand that the CAE is activated by default for all users for whom it is not explicitly deactivated, via the Conditional Access.
 
