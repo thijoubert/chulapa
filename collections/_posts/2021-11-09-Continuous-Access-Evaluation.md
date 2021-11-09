@@ -7,7 +7,7 @@ tags:
   - Conditional Access
   - Microsoft 365
   - Security
-header_img : "./assets/img/posts/2021-10-19_Continuous-Access-Evaluation_6.png"
+header_img : "./assets/img/posts/2021-11-09_Continuous-Access-Evaluation_6.png"
 ---
 
 
@@ -26,13 +26,13 @@ In order to limit the risk related to the 1-hour lifetime for the access tokens,
 - High user risk detected by Azure AD Identity Protection
 If such an event occurs, the service will force the user to re-authenticate.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_1.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_1.png" >
 
 
 **In case of a context change:** Exchange Online, SharePoint Online, Teams and Graph services retrieve a copy of the conditional access policies. In case of a context change detected by the service, it will force the user to re-authenticate.
 This functionality is currently only available for the “location” condition, and for IP-based named locations. Locations defined in the Azure MFA legacy portal or via countries are not supported today.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_2.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_2.png" >
 
 In parallel to this improvement of the security posture, **Microsoft has changed the default values of the access token lifetimes**:
 - For a CAE-compatible client: **Between 20 and 28 hours depending on the service**
@@ -46,11 +46,11 @@ In my tenant, the lifetime of the access token is always one hour. ☹
 
 It is interesting to note that Microsoft has added a field in the Azure AD sign-in logs to indicate a sign-in with Continuous Access Evaluation.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_3.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_3.png" >
 
 Note that Microsoft Admin Center now precises that you can refresh at once all the tokens (and not only the refresh tokens): 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_9.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_9.png" >
 
 
 
@@ -70,7 +70,7 @@ Indeed, on October 31st, a change has taken place in Azure AD. 2 cases are possi
 
 The page showing the preview in the "[Security](https://portal.azure.com/#blade/Microsoft_AAD_IAM/SecurityMenuBlade/)" blade is no longer available.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_4.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_4.png" >
 
 **Continuous Access Evaluation has been enabled by Microsoft for all CAE-compatible clients by default.** It is still possible to change the behavior in the Conditional Access policies. 
 
@@ -79,17 +79,17 @@ The page showing the preview in the "[Security](https://portal.azure.com/#blade/
 
 If, like me, you had activated the preview on a reduced perimeter (on my side on two users: Dwarf and Elf), [the page linked to the preview in Security](https://portal.azure.com/#blade/Microsoft_AAD_IAM/SecurityMenuBlade/ContinuousAccessEvaluation) is still accessible, but a message indicates that the functionality has been migrated to the Conditional Access interface.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_5.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_5.png" >
 
 It is required to click on "Migrate" to activate the new interface.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_6.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_6.png" >
 
 After migrating the CAE to the Conditionnal Access, a new conditional access policy is observed: "**CA policy created from CAE settings**". 
 
 **This new policy disables the Continuous Access Evaluation for all users, except for the users included in the preview.** Here are my two users Dwarf and Elf.
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_7.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_7.png" >
 
 Note that if you had activated the preview for all users, the behavior is identical to case 1.
 
@@ -106,6 +106,6 @@ The Conditional Access offers two possibilities in the session controls:
 As CAE is currently only applied to SharePoint Online, OneDrive for Business, Exchange Online and Teams, the side effect is limited to Office web apps for the time being. It is still possible to edit documents in Office via the online interfaces of the services mentioned above.  
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-<img src="https://thijoubert.github.io/assets/img/posts/2021-10-19_Continuous-Access-Evaluation_8.png" >
+<img src="https://thijoubert.github.io/assets/img/posts/2021-11-09_Continuous-Access-Evaluation_8.png" >
 
 It is interesting to note that for two concurrent policies, **deactivation takes precedence over "Strict Enforcement"**.
