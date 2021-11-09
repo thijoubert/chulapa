@@ -1,5 +1,5 @@
 ﻿---
-title: "Continuous Access Evaluation, what changed for you organisation on October 31?"
+title: "Continuous Access Evaluation, what changed for you organization on October 31?"
 subtitle:
 excerpt: Microsoft just released the Continuous Access Evaluation for main Office 365 workloads. How does it affect you tenant?  
 tags:
