@@ -39,7 +39,7 @@ The different filters available are:
 |model|Model of the device|
 |operatingSystem|Name of the operating system of the device|
 |operatingSystemVersion|Version of the operating system of the device|
-|physicalIds||
+|physicalIds|Physical id of the device|
 |profileType|"RegisteredDevice", "SecureVM", "Printer", "Shared", "IoT" |
 |systemLabels|List of labels applied to the device by the system|
 |trustType|"AzureAD", "ServerAD", "Workplace" |
@@ -109,3 +109,6 @@ I remember several things from it:
 - **Not all clients are supported for conditional access policy evaluation**. My various tests showed that at the moment Edge, PowerShell (with Azure AD module) were compatible while Safari, Chrome and Firefox were not supported.  
 - As for other conditions, **it may be interesting to think more in an exclusion logic than in an inclusion logic** to force the application of the conditional access policy (e.g. block all devices, except those with a displayname starting with POxxxx)
 - "Filter for devices" is a interesting condition but **the knowledge of it could enable a user to by-pass it**. 
+
+Note for later, Continuous Access Evaluation does not support yet the "Filter for devices" condition. For example, a token could be extracted from on admin workstation and re-played on another device. Hâte de voir ce que Microsoft va sortir pour gérer ce genre de cas (via le token binding, Azure AD Identity Protection or CAE). 
+{: #myid .alert .alert-info .p-3 .mx-2 mb-3}
