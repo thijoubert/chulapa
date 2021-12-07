@@ -8,7 +8,6 @@ tags:
   - Power Apps
   - Power Automate
   - Power Platform
-
 header_img : "./assets/img/posts/2021-12-07_PowerPlatform-Default-Data-Group_1.png"
 ---
 
