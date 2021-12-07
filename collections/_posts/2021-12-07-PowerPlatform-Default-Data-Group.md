@@ -105,6 +105,7 @@ To define a new value, it is the same thing via the command below.
 # Set a new valuee for the default group setting 
 $defaultApiGroup = "blocked" #hbi, lbi, blocked
 $policy.properties.definition.defaultApiGroup = $defaultApiGroup 
+InvokeApi -Method PUT -Route $route -Body $policy -ApiVersion $ApiVersion
 ```
 
 
