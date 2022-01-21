@@ -69,20 +69,20 @@ An on my phone:
 
 
 
-To keep track of these news, **I also store this them in the SharePoint site associated with my Teams**, but I'll come back to that below. 
+To keep track of these news, **I also store them in the SharePoint site associated with my Teams**, but I'll come back to that below. 
 
 To build this Office 365 watch center, I relied on **several Power Automate flows.** These flows run at midnight every day. Every morning, I can see at a glance the main news or blog appeared the day before!
 
-I could also decide to run my feeds every hour or every minute, but I wanted to limit the notifications during my working hours. 
+I could also decide to run my feeds every hour or every minute, but I wanted to **limit the notifications**. 
 
 
 <br/>
 
 # Let’s deep dive 
 
-Each flow is based on a **combination of RSS, HTTP, Teams, SharePoint connectors**. It's not rocket science, but really efficient!
+Each flow is based on a **combination of RSS, HTTP, Teams, SharePoint connectors**. It's really not rocket science, but really efficient!
 
-These flows were created in my developer environment by habit, but you can also associate them directly to a Team (via Dataverse for Teams) or in another environment.  
+These flows were created in my Developer environment by habit, but you can also associate them directly to a Team (via Dataverse for Teams) or in another environment.  
 
 <br/>
 
@@ -102,13 +102,13 @@ To follow the Microsoft blogs, I created a dedicated flow "Watch - Microsoft - B
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_3.png" >
 
-1. For the [Office 365 blog](https://techcommunity.microsoft.com/t5/office-365-blog/bg-p/Office365Blog), I get the RSS feeds of the previous day "addDays(utcnow(),-1)"
-1. For each item of the feed, I get the title, the URL, the publication date, the update date, the summary; and I add a line in my vRSS array variable 
+10. For the [Office 365 blog](https://techcommunity.microsoft.com/t5/office-365-blog/bg-p/Office365Blog), I get the RSS feeds of the previous day : "addDays(utcnow(),-1)".
+11. For each item of the feed, I get the title, the URL, the publication date, the update date, the summary; and I add a line in my vRSS array variable. 
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_4.png" >
 
 
-1. I repeat the same actions for each of the blogs that interest me: "Security and Compliance blog", "Microsoft 365 blog", "Azure AD blog", "Microsoft Teams blog", "Microsoft Teams Community blog", "Power Automate blog", "and Power BI blog".
+12. I repeat the same actions for each of the blogs that interest me: "Security and Compliance blog", "Microsoft 365 blog", "Azure AD blog", "Microsoft Teams blog", "Microsoft Teams Community blog", "Power Automate blog", "and Power BI blog".
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_5.png" >
 
@@ -118,25 +118,25 @@ To follow the Microsoft blogs, I created a dedicated flow "Watch - Microsoft - B
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_7.png" >
 
-1. I get an @mention to notify my account 
+13. I get an @mention to notify my account 
 
  Note that a user does not receive a notification if he notifies himself in Teams. So I use a dedicated account for my watch (Palantir).
  {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-1. Then, I go through the “vRSS” variable to process each of the messages
-1. For a given element, I start by filling my variables with the elements of my line (e.g.: "item()?['source']" for "vSource")
+14. Then, I go through the “vRSS” variable to process each of the messages
+15. For a given element, I start by filling my variables with the elements of my line (e.g.: "item()?['source']" for "vSource")
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_8.png" >
 
-1. To simplify the display of the dates, add a step with a condition to look if the update date is empty or equal to the publication date.
+16. To simplify the display of the dates, add a step with a condition to look if the update date is empty or equal to the publication date.
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_9.png" >
 
-1. Sharing of the article in the channel "Microsoft – Blogs" of the Teams "MG – Technical Watch" and here we go:
+17. Sharing of the article in the channel "Microsoft – Blogs" of the Teams "MG – Technical Watch" and here we go:
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_10.png" >
 
-1. Sharing of the article in a list of the site "MG – Technical Watch" for a future usage
+18. Sharing of the article in a list of the site "MG – Technical Watch" for a future usage
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_11.png" >
 
@@ -167,11 +167,11 @@ If you want to know more about this export feature, Tony Redmond wrote an [inter
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_14.png" >
 
-1. Get all the messages of the past day
+7. Get all the messages of the past day
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_15.png" >
 
-1. Parsing the messages with the following body: 
+8. Parsing the messages with the following body: 
 
  ```json
  {
@@ -283,29 +283,29 @@ If you want to know more about this export feature, Tony Redmond wrote an [inter
 
  For each message, update the defined variables (step 9 to 17):
 
-1. Reset of the variable "vArrayMessagesTagNames”
-1. Join the messages tags of the table "tags" with ","
-1. Split the messages tags names with "split(body('MessageTagNames\_-\_Join'),',')"
-1. Create a JSON with the tags (for SharePoint)
+9. Reset of the variable "vArrayMessagesTagNames”
+10. Join the messages tags of the table "tags" with ","
+11. Split the messages tags names with "split(body('MessageTagNames\_-\_Join'),',')"
+12. Create a JSON with the tags (for SharePoint)
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_16.png" >
 
-1. Re-write the categories of the messages (“Plan For Change” or “Stay Informed”)
+13. Re-write the categories of the messages (“Plan For Change” or “Stay Informed”)
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_17.png" >
 
-1. Join the affected workload display names (for SharePoint)
-1. Set the value of “vURL”
-1. Create an hyperlink (for Teams and SharePoint messages) : “concat('<a href="https://admin.microsoft.com/#/MessageCenter/:/messages/',outputs('Change\_Id\_-\_Get\_Value'),'"> See in Message Center</a>')”
+14. Join the affected workload display names (for SharePoint)
+15. Set the value of “vURL”
+16. Create an hyperlink (for Teams and SharePoint messages) : “concat('<a href="https://admin.microsoft.com/#/MessageCenter/:/messages/',outputs('Change\_Id\_-\_Get\_Value'),'"> See in Message Center</a>')”
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_18.png" >
 
-1. I get an @mention to notify my account (by my monitoring account “Palantir”)
-1. Sharing of the article in the channel "Microsoft – Messages Center" of the Teams "MG – Technical Watch" and here we go:
+17. I get an @mention to notify my account (by my monitoring account “Palantir”)
+18. Sharing of the article in the channel "Microsoft – Messages Center" of the Teams "MG – Technical Watch" and here we go:
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_19.png" >
 
-1. Sharing of the article in a list of the site "MG – Technical Watch" for a future usage
+19. Sharing of the article in a list of the site "MG – Technical Watch" for a future usage
 
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_20.png" >
 
