@@ -164,20 +164,11 @@ If you want to know more about this export feature, Tony Redmond wrote an [inter
 1. Initialization of a string variable " vTitle " to store the title of an article
 1. Initialization of authentication variables ("TenantID", "ClientID", "ClientSecret")
 1. Definition of the URI of the graph request: " https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages?$filter=lastModifiedDateTime ge @{addDays(utcnow(),-1)} "
-
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_14.png" >
 7. Get all the messages of the past day
  <img src="https://thijoubert.github.io/assets/img/posts/2022-01-21_How-to-watch-Office-365_15.png" >
 8. Parsing the messages with the following body: 
 
-My very favorite colors are:    
-1. Blue
-5. Red
-
-(I like red because that's the best flavor of Skittle. But I digress.)
-
-3. Orange  
-9. [etc]
 
  ```json
  {
