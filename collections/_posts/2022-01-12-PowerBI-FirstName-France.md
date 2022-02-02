@@ -90,15 +90,15 @@ There is no native map with French departments in Power BI:
 
 After some research, the solution was to import a custom Shape with a Shap maps visual: 
 
-Step 1: Retrieving the map of France in GeoJSON format ([source](https://france-geojson.gregoiredavid.fr/))
+**Step 1**: Retrieving the map of France in GeoJSON format ([source](https://france-geojson.gregoiredavid.fr/))
 
-Step 2: Transformation of GeoJSON into TopoJSON, a Power BI compatible format [(](https://mapshaper.org/)https://mapshaper.org/)
+**Step 2**: Transformation of GeoJSON into TopoJSON, a Power BI compatible format [(](https://mapshaper.org/)https://mapshaper.org/)
 
-Step 3: Import the map in "Format > Shape > Custom Map" once the "shape map" visual is created in the report
+**Step 3**: Import the map in "Format > Shape > Custom Map" once the "shape map" visual is created in the report
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_6.png" >
 
-Step 4: Cleaning of the display names of the departments to ensure the correspondence between the INSEE database and the visual thus generated (see. Display the map type key)
+**Step 4**: Cleaning of the display names of the departments to ensure the correspondence between the INSEE database and the visual thus generated (see. Display the map type key)
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_7.png" >
 
@@ -116,7 +116,7 @@ A very simple but useful setting.
 
 
 # Fun fact 1
-By playing with the different filters (year, gender), I noticed that the proportion of births Girls / Boy had frankly evolved: from 54% of girls at the beginning of the 20th century to 46% today. 
+By playing with the different filters (year, gender), I noticed that the proportion of births Female / Male had frankly evolved: from 54% of girls at the beginning of the 20th century to 46% today. 
 
 
 # Fun Fact 2
