@@ -1,10 +1,10 @@
 ﻿---
-title: "A mini Power BI project : French fist names from 1900 to 2020"
+title: "A mini Power BI project : French first names from 1900 to 2020"
 subtitle:
 excerpt: How I built a Power BI dashboard to analyze French first name, per year and per department.    
 tags:
   - Power BI
-header_img : "./assets/img/posts/2022-01-12_PowerBI-FirstName-France_1"
+header_img : "./assets/img/posts/2022-01-12_PowerBI-FirstName-France_1.png"
 ---
 
 
@@ -43,21 +43,21 @@ The analyses thus constructed are therefore partly limited because there are 7M 
 # The final visual 
 The result is as follows: 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_1" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_1.png" >
 
 Note : In order to visualize the evolution of the uncommon names (for recall given less than 3 times in the year), I cheated a little by grouping them in the year 1899. This allows to have the total number of first names. 
 
 I can filter on a first name (ex: “Thibault”):
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_2" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_2.png" >
 
 Or on derived first names (ex: “Thibau”):
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_3" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_3.png" >
 
 Or search on a time range and / or a department:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_4" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_4.png" >
 
 The graphic rendering can be improved, but the results are there! 
 
@@ -76,7 +76,7 @@ To filter my data, I created 3 tables:
 
 The construction of the model is also very simple:
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_5" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_5.png" >
 
 When constructing the charts, I ran into two problems: 
 1. How to represent the data in the form of a map of France? 
@@ -96,11 +96,11 @@ Step 2: Transformation of GeoJSON into TopoJSON, a Power BI compatible format [(
 
 Step 3: Import the map in "Format > Shape > Custom Map" once the "shape map" visual is created in the report
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_6" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_6.png" >
 
 Step 4: Cleaning of the display names of the departments to ensure the correspondence between the INSEE database and the visual thus generated (see. Display the map type key)
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_7" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_7.png" >
 
 
 ## How to have independent totals of some filters? 
@@ -110,7 +110,7 @@ The trick to not correlating the total numbers to the chosen names was to use th
 
 I can then specify for a filter (e.g., the search field for first names) that it has no impact on certain visuals, for example the three at the bottom left. 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_8" >
+<img src="https://thijoubert.github.io/assets/img/posts/2022-01-12_PowerBI-FirstName-France_8.png" >
 
 A very simple but useful setting. 
 
