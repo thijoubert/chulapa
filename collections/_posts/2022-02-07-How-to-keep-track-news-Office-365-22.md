@@ -18,24 +18,26 @@ In my former life as a consultant, I met a lot of organizations, during my audit
 
 With the core services of Office 365 (SharePoint Online, Exchange Online, etc.), the Power Platform, Azure Active Directory, security services... there are so many things that move every month or every day that it is impossible to keep up with everything. Regardless of the size of the organization (150 users or +150k people), it is still necessary to keep up to date with the evolutions that could affect the **user experience** or the **security of the platform**, not to mention the **new benefits brought**. 
 
-To ease the tracking of Microsoft 365 evolutions, I implemented workflows with Power Automate to gather the main information source I follow in one place. In a [first article](https://www.thijoubert.com/2022-01/How-to-keep-track-news-Office-365-12/), I described how I follow the Message Center and the Microsoft official blogs. 
+To ease the tracking of Microsoft 365 evolutions, I implemented workflows with Power Automate to gather the main information source I follow in one place. In a [first article, I described how I follow the Message Center and the Microsoft official blogs.](https://www.thijoubert.com/2022-01/How-to-keep-track-news-Office-365-12/) 
 
 In this second article, I tackle with: 
 - Microsoft 365 Roadmap
 - Other blogs (individual or solutions)
 - Twitter
 
-
+<br/>
 # Microsoft – Roadmap 
 To keep up with the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=) information, I didn't reinvite the wheel. I rely on the awesome [Office 365 Roadmap Watch](https://www.roadmapwatch.com/) site which offers: 
 
-- A " browse by Feature " page
+- A "browse by Feature" page
 - A RSS flow
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-02-07_How-to-watch-Office-365_1.png" >
 
 **Step 1:** Retrieval of the RSS feed elements as soon as they are published 
+
 **Step 2:** I get an @mention to notify my account (by my monitoring account “Palantir”)
+
 **Step 3:** Publication of the information in my Teams channel "Microsoft – Roadmap”
 
 And here we go in Teams:
@@ -46,7 +48,7 @@ And here we go in Teams:
 Every night (between 1:30 and 2:30 am French time), I get the evolution of the roadmap in my Team. 
 
 
-
+<br/>
 # MVPBuzz – Blogs 
 To follow the blog posts that inspire me (#CommunityRocks, #MVPBuzz), I made the same flow as "Watch - Microsoft - Blogs". 
 
@@ -55,16 +57,19 @@ To think about adding useful blogs, I have a **handy little extension for my bro
 <img src="https://thijoubert.github.io/assets/img/posts/2022-02-07_How-to-watch-Office-365_3.png" >
 
 
-**The choice is difficult**: there are so many interesting blogs that adding them all can quickly be counterproductive: one of the initial objectives was to spend as little time as possible on monitoring. Forcing yourself to read 5 articles every day and digging into the subjects behind them can very, very **quickly become time consuming**. 
+**The choice is difficult**: there are so many interesting blogs that adding them all can quickly be counterproductive: one of the initial objectives was to spend as little time as possible on monitoring. Forcing yourself to read 5 articles every day and digging into the subjects behind them can **become very time consuming**. 
 
 Il suffit alors de le récupérer et de l’ajouter dans le flux Power Automate. 
 
 
 
+<br/>
 # Solutions – Blogs 
 Pour suivre les articles de solutions ou d’entreprises, j’ai réalisé le même flux que « Watch – Microsoft – Blogs » et « Watch – MVPBuzz – Blog ». 
 
 
+
+<br/>
 ## Twitter
 Following the main blogs is good! Being able to follow the feed, and see what is not covered by the different blogs (which can happen even if it is rare), is even better. 
 
@@ -74,11 +79,13 @@ For this, I created a "Watch - Twitter" feed to follow about 50 influencers.
 
 **Step 1:** Triggering the flow when a Tweet is posted by one of your followers 
 
+ ```
 *from:@people1 OR from:@people2 OR from:@people3*
+ ```
 
 **Step 2:** Initialization of the "MediaItems" variable to retrieve the images of the Tweets (unfortunately the documents will not be retrieved)
 
-At this moment, I do two sortings to avoid retrieving all the surrounding noise: I want to retrieve only the Tweets and not the Retweets or the Reply's. For that, I look if there is an OriginalTweet or if there is a person to whom the user replies. 
+At this moment, I check two conditions to avoid the surrounding noise: I want to retrieve only the Tweets and not the Retweets nor the Reply's. For that, I look if there is an OriginalTweet or if there is a person to whom the user replies. 
 
 **Step 3:** Get the original Tweet
 **Step 4:** Add a condition: if "OriginalTweet" or "TweetInReplyToUserId" is non-zero, then I stop here. 
