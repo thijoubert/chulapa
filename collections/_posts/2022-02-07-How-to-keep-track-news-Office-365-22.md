@@ -1,5 +1,5 @@
 ﻿---
-title: "How to keep track of Office 365 news? An example with Power Automate (1/2)"
+title: "How to keep track of Office 365 news? An example with Power Automate (2/2)"
 subtitle:
 excerpt: "Following Office 365 evolutions can be very tricky. I present here how I organized my watch: Microsoft 365 Roadmap, Other blogs and Twitter."    
 tags:
