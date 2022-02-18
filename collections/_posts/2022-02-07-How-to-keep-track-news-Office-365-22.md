@@ -124,8 +124,6 @@ substring(variables('MediaItems'),0,sub(length(variables('MediaItems')),3))
 
 **Step 9:** The final step is to build an adaptive card and to send it in a chat or channel. 
 
-Pour construire la card, je me suis inspiré de l’article, que j’ai modifié avec les deux templates « images gallery » et « Activity Update ». 
-
 To build the card, I was guided by the articles of Luise Freese [Adaptive Cards for Beginners- Monitor a Hashtag on Twitter](https://regarding365.com/adaptive-cards-for-beginners-monitor-a-hashtag-on-twitter-1b9c1ea6e56f) and Chris Hoard [Teams Real Simple with Pictures: Twitter integration with Power Automate post connector retirement](https://microsoft365pro.co.uk/2020/03/02/teams-real-simple-with-pictures-twitter-integration-with-power-automate-post-connector-retirement/), that I modified with the two templates Iimages gallery" and "Activity Update". 
 
 Of course, <https://adaptivecards.io/designer/> is an indispensable tool for testing adaptive cards.
