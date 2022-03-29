@@ -12,12 +12,13 @@ header_img : "./assets/img/posts/2022-03-29_Identify-who-accessed-to-external-te
 ---
 
 
-What company hasn't wondered which Office 365 tenants its users are accessing? I can think of two cases in particular: 
+What company hasn't wondered which Office 365 tenants its users are accessing? 
 
-- Phishing: a group of users were phished and invited into a tenant with a similar name (e.g. MICR0SOFT instead of MICROSOFT). 
-- Tenant restrictions: Compliance teams had requested that the external tenants that employees could access be controlled. Before implementing any hardening measures, it was essential to understand usage. 
+I can think of two cases in particular: 
+- **Phishing**: a group of users were phished and invited into a tenant with a similar name (e.g. MICR0SOFT instead of MICROSOFT). 
+- **Tenant restrictions**: Compliance teams had requested that the external tenants that employees could access be controlled. Before implementing any hardening measures, it was essential to **understand usage**. 
 
-Little reminder about the Office profile
+# Little reminder about the Office profile
 
 Each user has in his Office profile, [a page regrouping his external organizations](https://myaccount.microsoft.com/organizations). 
 
@@ -28,16 +29,13 @@ Unfortunately, to my knowledge, there is no way for an administrator to retrieve
 
 <br/>
 # A first answer with Azure AD Sign In Log
-With the advent of cross-tenant access and new policy for collaboration with external tenants (via Inbound and Outbound settings), Microsoft has brought this issue back into the spotlight. 
+With the **advent of cross-tenant access and new policies for collaboration with external tenants** (via Inbound and Outbound settings), Microsoft has brought this issue back into the spotlight. 
 
-In the Azure AD Sign In Logs, more information has recently appeared: 
+In the Azure AD Sign In Logs, **more information has recently appeared**: 
 
 - Resource Tenant ID: Guid of the tenant of the accessed resource
 - Home tenant ID : Guid of the tenant to which the user is attached and used to validate his identity
 - Cross tenant access type: B2B Collaboration or B2B Direct
-
-
-
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-03-29_Identify-who-accessed-to-external-tenants_2.png" >
 
@@ -59,12 +57,12 @@ On my test tenant, this gives me :
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-03-29_Identify-who-accessed-to-external-tenants_3.png" >
 
-Except that I am well advanced with the External Tenant Guid... Knowing who accesses which application is great! But it would be very useful to know the tenant behind it.
+Except that I am well advanced with the External Tenant Guid... Knowing who accesses which application is great! **But it would be very useful to know the tenant behind it**.
 
 
 <br/>
 # A new API available
-While playing with the Cross-tenant access features, one window in particular interested me: the one allowing to select a third-party tenant ([Azure AD > External Identities > Cross-tenant access > Add Organization](https://portal.azure.com/#blade/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade/CrossTenantAccessSettings)). With the name of one of my test tenants, I have the following result: 
+While playing with the Cross-tenant access features, one pane in particular interested me: the one allowing to select a third-party tenant ([Azure AD > External Identities > Cross-tenant access > Add Organization](https://portal.azure.com/#blade/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade/CrossTenantAccessSettings)). With the name of one of my test tenants, I have the following result: 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-03-29_Identify-who-accessed-to-external-tenants_4.png" >
 
@@ -84,9 +82,9 @@ url: "/tenantRelationships/findTenantInformationByTenantId(tenantId='5eb0364a-1
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-03-29_Identify-who-accessed-to-external-tenants_5.png" >
 
-This is already more than interesting. 
+This is already more than interesting, **as it enables to query the information of a tenant with its name or its Guid**.  
 
-After several tests on Graph Explorer, I saw that the permission needed to call this API was the delegated permission "Directory.AccessAsUser". Unfortunately, I couldn't find an equivalent application permission for the API request but it's not bad.
+After several tests on Graph Explorer, I saw that the permission needed to call this API was the delegated permission **"Directory.AccessAsUser"**. Unfortunately, I couldn't find an equivalent application permission for the API request but it's not bad.
 
 A Proof of Concept to list the external stakeholders
 
