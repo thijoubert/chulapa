@@ -1,5 +1,5 @@
 ﻿---
-title: "Identify which users accessed to external Office 365 tenants"
+title: "Identify which external Office 365 tenants are accessed by your users"
 subtitle:
 excerpt: "With new Cross-tenant access capabilities, it is now possible to identify wich external tenants are accessed by your users."    
 tags:
