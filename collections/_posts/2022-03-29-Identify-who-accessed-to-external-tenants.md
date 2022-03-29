@@ -28,7 +28,7 @@ Unfortunately, to my knowledge, there is no way for an administrator to retrieve
 
 
 <br/>
-# A first answer with Azure AD Sign In Log
+# A first look at Azure AD Sign-In Logs
 With the **advent of cross-tenant access and new policies for collaboration with external tenants** (via Inbound and Outbound settings), Microsoft has brought this issue back into the spotlight. 
 
 In the Azure AD Sign In Logs, **more information has recently appeared**: 
