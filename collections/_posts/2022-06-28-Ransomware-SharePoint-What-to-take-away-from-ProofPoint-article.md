@@ -43,9 +43,7 @@ Proofpoint recently wrote a blog and communicated about the "discovery of a way 
 - **When the number of versions is modified, the next modification of an item will lead to the deletion of the N-M oldest versions** (N being the number of current versions and M the new number of configured versions).
 - To be noted: SharePoint Online will keep at least one version.  
 
-I had already at least mentioned this scenario twice, in 2021: 
-- In an article about [Office 365 backup](https://www.thijoubert.com/2021-06/Backup/)
-- In a conference about the [necessary hardening measures for the Power Platform](https://github.com/thijoubert/Sharing/blob/main/Presentations/2021-12-15_Durcissement%20Power%20Platform%20tous%20concern%C3%A9s_FR.pdf) 
+I had already at least mentioned this scenario twice: in an article about [Office 365 backup](https://www.thijoubert.com/2021-06/Backup/) and in a conference about the [necessary hardening measures for the Power Platform](https://github.com/thijoubert/Sharing/blob/main/Presentations/2021-12-15_Durcissement%20Power%20Platform%20tous%20concern%C3%A9s_FR.pdf) 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 Although this problem is not new, the approach of the article remains interesting because it continues to raise awareness of the functional limits of Saas. 
