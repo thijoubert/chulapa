@@ -86,13 +86,18 @@ This second case will require reducing the number of versions kept to be efficie
 However, this modification requires two prerequisites: 
 - The compromised user must have Full Control rights on the document libraries to be able to modify their parameters;
 - The attacker must be able to access the library settings: 
-  - Via the graphical interfaces, a user can set the limit of the versions between 100 and 50 000 (in case of a direct compromise)...
+
+**Via the graphical interfaces**, a user can set the limit of the versions between 100 and 50 000 (in case of a direct compromise)...
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-06-28_Ransomware-SharePoint_1.png" >
 
-   - However, there is no lesser limit for a modification through SharePoint PNP PowerShell (in case of a direct compromise) or via the SharePoint API (in case of an indirect compromise with the delegate consent All.SitesManage which does not require an admin consent): 
+However, there is **no lesser limit for a modification through SharePoint PNP PowerShell** (in case of a direct compromise) or via the SharePoint API (in case of an indirect compromise with the delegate consent All.SitesManage which does not require an admin consent): 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-06-28_Ransomware-SharePoint_2.png" >
+
+Through PowerShell or API, it could also be able to deactivate the SharePoint versioning: 
+
+<img src="https://thijoubert.github.io/assets/img/posts/2022-06-28_Ransomware-SharePoint_3.png" >
 
 
 The **implementation of best security practices** (see next section) should therefore greatly reduce the probability of this risk.
