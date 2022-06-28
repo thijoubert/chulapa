@@ -22,8 +22,8 @@ A “ransomware” can affect SharePoint Online in two ways:
 For the record, The Collective Consulting has published in 2019 a [very interesting article on the Exchange Online part](https://www.thecollective.eu/en/insights/exchange-online-ransomware-attacks-is-it-a-real-threat). 
 
 
-
-# A reminder of the ransomware scenario presented by ProofPoint
+<br/>
+# A reminder of the ransomware scenario
 
 Proofpoint recently wrote a blog and communicated about the "discovery of a way to ransom OneDrive for Business and SharePoint Online files." This attack would take place in 5 steps: 
 - Compromising the user's identity to access data
@@ -33,9 +33,10 @@ Proofpoint recently wrote a blog and communicated about the "discovery of a way 
 - Extortion of the victim to ransom the disclosure or recovery of data
 
 
-
+<br/>
 # Analysis of the scenario presented
 
+<br/>
 ## What should we think about the scenario? 
 
 **It is always good to put the subject back on top of the pile because it is often forgotten even though** no flaw has been discovered (functional or technical). The described procedure exploits the native versioning functionality of SharePoint Online: 
@@ -50,7 +51,7 @@ Although this problem is not new, the approach of the article remains interestin
 
 The Cloud is not a magical place. It is not because we migrate to Office 365 that Microsoft will secure everything for us. It's important to remember that Microsoft, like all SaaS vendors, has a duty to provide a secure solution; but it's up to its customers to manage the configuration of the service, protect identities and data, and detect abnormal behavior. This is commonly referred to as the "shared responsibility model".
 
-
+<br/>
 ## What about the "encryption" of files? 
 
 To scroll through the versions, an attacker will have several possibilities depending on the compromise: 
@@ -64,9 +65,10 @@ To scroll through the versions, an attacker will have several possibilities depe
 - **Modification via PowerShell CSOM** (with a delegation to a third-party application): similar to the previous scenario, although less practical.
 - **Modification via Power Automate** (with a new connection to a third-party application): the tests I did last year led me to believe that a ransomware scenario would be less effective than in Graph because of the latencies of the solution.
 
-
+<br/>
 ## What about the efficiency of this attack?  
 
+<br/>
 ### Either the attacker knows what he is looking for, or he will focus on the sensitive data...
 
 This first case will be very complicated to prevent: 
@@ -76,6 +78,7 @@ This first case will be very complicated to prevent:
 To note: if retention is enabled for the item or the SharePoint site (thanks to Purview Information Governance), a copy of all versions will be kept in the Preservation Hold Library of the SharePoint site. Retention will force the preservation of information, and therefore protect against data loss. On the other hand, it is better to keep in mind restoring information from the PHL is not easy, and to avoid relying only on this feature.  
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
+<br/>
 ### Or he doesn't know what it is looking for and it will scroll through the versions randomly or linearly site by site, library by the library, and so on.
 
 This second case will require reducing the number of versions kept to be efficient and maximize the success of such an attack. 
@@ -95,9 +98,10 @@ However, this modification requires two prerequisites:
 The **implementation of best security practices** (see next section) should therefore greatly reduce the probability of this risk.
 
 
-
+<br/>
 # What measures should be put in place to protect against this type of risk?
 
+<br/>
 ### Mastering the configuration: to avoid errors 
 
 As usual, the first thing to do will be to master the configuration of the Office 365 tenant, via an initial configuration and a follow-up over time of the evolutions. The objective will be to ensure that users or applications cannot too easily make errors or malicious actions. We will thus speak of : 
@@ -106,12 +110,14 @@ As usual, the first thing to do will be to master the configuration of the Offic
 - **SharePoint configuration** (including site and library templates) 
 - **Data retention** (including minimum data retention via Purview Information Governance and tenant cleansing)
 
+<br/>
 ## Securing identities: always a must-have
 
 The second step to master, which should already be mastered by everyone (unfortunately this is not the case ...), is to protect users to avoid compromise:
 - Direct compromise: **Password strength and other authentication factors**, **Multi-factor authentication**, **Conditional access**, etc.
 - Indirect compromise: **Control of settings**, etc.
 
+<br/>
 ## Backing up data: the eternal debate
 
 As I mentioned earlier, it is the responsibility of Microsoft's customers to ensure that their data is well protected. Backup vendors will legitimately take the opportunity to remind you that it is necessary to keep a copy of the data outside the platform.
@@ -122,10 +128,12 @@ Beyond the recurrent debate on this subject, on which I have already written, it
 
 In short, we will come back to the best cost/risk/benefit balance to define the most appropriate strategy for each organization. 
 
+<br/>
 ## Detecting abnormal behavior: an interesting compromise
 
 On the question of data backup, **a compromise could be to target only the most critical scopes, to make a regular backup on a limited number of versions** (e.g. daily and not all versions continuously), and to detect abnormal behavior (e.g. changes in the parameters of a site or a list, and actions performed by a user or application identity). 
 
+<br/>
 ## Raising user awareness: to get them on board with the company's strategy
 
 **Security is everyone's business**. Whether it is to counter external attacks or to avoid mistakes, it is necessary to make users aware of collaborative tools, good practices, and mistakes to avoid. For example, and as ProofPoint rightly reminds it, communicating to users when changing site settings or a document library can be interesting to limit the impact of a future attack. 
