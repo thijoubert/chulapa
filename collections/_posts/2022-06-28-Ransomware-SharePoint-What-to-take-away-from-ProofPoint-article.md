@@ -25,7 +25,7 @@ For the record, The Collective Consulting has published in 2019 a [very interest
 <br/>
 # A reminder of the ransomware scenario
 
-Proofpoint recently wrote a blog and communicated about the "discovery of a way to ransom OneDrive for Business and SharePoint Online files." This attack would take place in 5 steps: 
+Proofpoint recently wrote an interesting blog and communicated about the "[discovery of a way to ransom OneDrive for Business and SharePoint Online files](https://www.proofpoint.com/us/blog/cloud-security/proofpoint-discovers-potentially-dangerous-microsoft-office-365-functionality)." This attack would take place in 5 steps: 
 - Compromising the user's identity to access data
 - Exfiltration of data to keep a copy of the files
 - Modification of the library parameters to keep only one version
