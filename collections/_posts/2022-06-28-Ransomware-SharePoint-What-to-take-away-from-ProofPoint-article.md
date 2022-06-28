@@ -53,6 +53,7 @@ The Cloud is not a magical place. It is not because we migrate to Office 365 tha
 
 <br/>
 ## What about the "encryption" of files? 
+As written before, the "encryption" doesn't have to be real encryption, and that's the strength of this scenario. Just modify the file (e.g., by replacing the content with a " ") until all versions are scrolled through to make it unusable.
 
 To scroll through the versions, an attacker will have several possibilities depending on the compromise: 
 
@@ -135,8 +136,11 @@ In short, we will come back to the best cost/risk/benefit balance to define the 
 
 <br/>
 ## Detecting abnormal behavior: an interesting compromise
-
-On the question of data backup, **a compromise could be to target only the most critical scopes, to make a regular backup on a limited number of versions** (e.g. daily and not all versions continuously), and to detect abnormal behavior (e.g. changes in the parameters of a site or a list, and actions performed by a user or application identity). 
+An interesting compromise to counter this scenario could be: 
+- **Back-up only the most critical scopes with a very limited number of versions** (e.g. daily copy and not all versions continuously).
+- **Enforce Information Governance**, with minimum retention on all relevant data (to ensure that the data won't be lost, even if it complex to restore).
+- **Detect abnormal behavior** (e.g. changes in the parameters of a site or a list, and actions performed by a user or application identity). 
+- **Be reactive** to ask for Microsoft support.
 
 <br/>
 ## Raising user awareness: to get them on board with the company's strategy
