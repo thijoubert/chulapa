@@ -1,5 +1,5 @@
 ﻿---
-title: "Why do my users generate a lot of anonymous links and how to track them"
+title: "Why do my users generate a lot of anonymous links and how to track them?"
 subtitle:
 excerpt: "Because of a too loose configuration, a lack of mastery of the tools and attention, users create many anonymous links without being aware of it."    
 tags:
@@ -14,10 +14,13 @@ header_img : "./assets/img/posts/2022-07-28_How-to-track-anonymous-links_15.png"
 
 I will to try to answer a question I've been asked three times in the last few weeks: **why do my users generate a lot of anonymous links when they don't feel like they're doing so** (when adding an attachment to an email or in a Teams conversation, for example)? How can I detect this and make sure there is no data leak through these links?
 
+
+<br/>
 # Let's start with the beginning
 The creation of share links depends on a fundamental group of settings in Office 365: the “S**haring policy**” defined in the SharePoint Online Admin Center. This policy applies regardless of the workload involved: SharePoint Online, OneDrive for Business, Microsoft Teams, Exchange Online, etc. 
 
 
+<br/>
 ## Sharing policy
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_1.png" >
 
@@ -32,6 +35,7 @@ The combination of these two settings is used on all SharePoint sites and OneDri
 Note: if anonymous links are not allowed for OneDrive (or for a specific SharePoint site) and the default link is "Anyone with the link", the default sharing link will be "People in your organization with the link". 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
+<br/>
 ## Customization for a SharePoint or OneDrive site
 Once the group of settings is defined, all collaborative resources (mainly SharePoint and Teams) and personal resources (mainly OneDrive) **will follow this default template**.
 
@@ -57,7 +61,7 @@ It will however be possible to **modify the inherited configuration, on a given 
 
 
 
-
+<br/>
 # Behavior details according the workload
 In order to clarify the default behavior of link creation on the different workloads, I performed several tests on items in my OneDrive. 
 
@@ -66,10 +70,11 @@ The behavior will be similar for SharePoint Online, and collaborative resources 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_6.png" >
 
 
-
+<br/>
 ## OneDrive for Business
 Sharing from OneDrive (or any of the Office applications) is quite straightforward, and is becoming more and more mastered by end-users. However, it is still necessary to pay attention to the settings of the links used. 
 
+<br/>
 ### Test 1: Sharing of a document from OneDrive
 If a user wants to share a document from his or her OneDrive, **the default link used will be the one of the OneDrive** (“DefaultSharingLinkType” property). 
 
@@ -78,7 +83,7 @@ The link will be created if the user clicks on "**Send**" (a mail will be sent w
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_7.png" >
 
 
-
+<br/>
 ### Test 2: Modification of a sharing link from OneDrive
 If the user then creates a new link for a wider or smaller audience, **the new link will be created in addition to the previous one**. 
 
@@ -87,14 +92,14 @@ This is how we can see up to 8 anonymous links, 4 links for the whole company, a
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_8.png" >
 
 
-
+<br/>
 ## Microsoft Teams
 Teams is being used more and more to share content from a OneDrive or SharePoint site, but end-users still don't realize that sharing is just a matter of using a OneDrive or SharePoint share links, which have a lifecycle independent of Teams.
 
 It is important to clarify at this point that deleting a Teams message that contains a share link will not delete the share link. It will be necessary to delete the link directly from OneDrive.
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-
+<br/>
 ### Test 3: Addition of a document in a Teams chat 
 If a document is added from a OneDrive and shared as is in a Teams chat, **a share link is created** and sent. The link created follows the **default link type of the user's OneDrive**.  
 
@@ -103,14 +108,14 @@ If a document is added from a OneDrive and shared as is in a Teams chat, **a sha
 Note: the behavior is identical if the document is loaded from the computer and then sent, with the difference that the document is placed in the "Microsoft Teams Chat Files" folder.  
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-
+<br/>
 ### Test 4: Modification of the sharing link in a Teams chat
 If the user then wishes to adapt the sharing link to his target audience, **the new link is created, regardless of whether the document is sent or not.** 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_10.png" >
 
 
-
+<br/>
 ### Test 5: Addition of a document in Teams chat (without sending it)
 If a document is added from a OneDrive into a Teams chat, without being sent or modified, **no link is created**. 
 
@@ -118,13 +123,13 @@ If a document is added from a OneDrive into a Teams chat, without being sent or 
 
 
 
-
+<br/>
 ## Outlook
 Outlook is by far the **most complex workload when it comes to sharing links and anonymous links, but it is also the most emblematic of the new collaboration modes**. 
 
 For some time now, the recommendations in terms of collaboration have been to prefer sending sharing links rather than static documents weighing several MB each. 
 
-
+<br/>
 ### Test 6: Adding an attachment to an email
 If a document is added from an email from Outlook as a share link, **a link is created**, according to the default link type used for the user's OneDrive, **whether the email is sent or not**. 
 
@@ -132,13 +137,13 @@ If a document is added from an email from Outlook as a share link, **a link is c
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_13.png" >
 
-
+<br/>
 ### Test 7: Modification of the sharing link in an email
 If the user then wishes to adapt the sharing link to his target audience, a new sharing link is created and the default link is kept.  
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_14.png" >
 
-
+<br/>
 ## Synthesis of the tests
 
 ||**Workloads**|**Use case**|**Result**|
@@ -154,7 +159,7 @@ If the user then wishes to adapt the sharing link to his target audience, a new 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_15.png" >
 
 
-
+<br/>
 # How to hunt for anonymous share links
 As soon as an anonymous link is generated, a unified audit log is created "**Created an anonymous link**". This log is available in all Purview solutions (Unified Audit Logs, Defender for Cloud Apps, Insider Risk Management, etc.). 
 
@@ -162,18 +167,18 @@ From what I have seen, **it is not possible to distinguish the workload used to 
 
 The only exception I have seen concerns Outlook. Indeed, the **UserAgent specified in the log details allows to distinguish Outlook from a web UserAgent** (Chrome, Safari, Edge, etc.). 
 
-
+<br/>
 ## Creating an anonymous share link in OneDrive or Teams:  
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_16.png" >
 
-
+<br/>
 ## Creating an anonymous share link in Outlook:  
 <img src="https://thijoubert.github.io/assets/img/posts/2022-07-28_How-to-track-anonymous-links_17.png" >
 
 
 
-
+<br/>
 # How to deal with anonymous links
 The topic of anonymous links is always a hot one. I remember that my first assignments around Office 365 security regularly focused on the question, "Should anonymous links be left available to users?" 
 
