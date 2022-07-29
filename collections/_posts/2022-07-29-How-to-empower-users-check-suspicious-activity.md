@@ -10,6 +10,8 @@ tags:
   - Power Automate
   - Sharing
 header_img : "./assets/img/posts/2022-07-29_How-to-empower-users-check-suspicious-activity_15.png"
+header:
+   og_image: "./assets/img/posts/2022-07-29_How-to-empower-users-check-suspicious-activity.gif"
 ---
 
 
