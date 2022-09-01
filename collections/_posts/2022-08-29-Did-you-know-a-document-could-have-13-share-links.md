@@ -25,8 +25,6 @@ Microsoft has introduced a change to the Share Dialog UI through the Message Cen
 
 <img src="https://thijoubert.github.io/assets/img/posts/2022-08-29_Did-you-know-a-document-could-have-13-share-links_2.png" >
 
-<br/>
-
 <p align=center>
 *UI for other appications (including Word in Teams and Word Desktop)* 
 </p>
@@ -91,11 +89,11 @@ So there are 8 link possibilities:
 |Use case|Scope|Permissions|Password|Expiration date|Block download|Result|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |1|**Anyone with the link**|**Can edit**|No|No|-|Only 1 link for 1 and 2|
-|2|**Anyone with the link**|**Can edit**|No|**Yes**|Only 1 link for 1 and 2||
+|2|**Anyone with the link**|**Can edit**|No|**Yes**|-|Only 1 link for 1 and 2|
 |3|**Anyone with the link**|**Can edit**|**Yes**|No|-|Only 1 link for 3 and 4|
 |4|**Anyone with the link**|**Can edit**|**Yes**|**Yes**|-|Only 1 link for 3 and 4|
 |5|**Anyone with the link**|**Can review**|No|No|-|Only 1 link for 5 and 6|
-|6|**Anyone with the link**|**Can review**|No|**Yes**|Only 1 link for 5 and 6||
+|6|**Anyone with the link**|**Can review**|No|**Yes**|-|Only 1 link for 5 and 6|
 |7|**Anyone with the link**|**Can review**|**Yes**|No|-|Only 1 link for 7 and 8|
 |8|**Anyone with the link**|**Can review**|**Yes**|**Yes**|**-**|Only 1 link for 7 and 8|
 |9|**Anyone with the link**|**Can view**|No|No|No|Only 1 link for 9 and 10|
