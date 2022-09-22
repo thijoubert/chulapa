@@ -12,11 +12,11 @@ header_img : "./assets/img/posts/2022-09-22_Teams-and-sensitivity-labels_1.png"
 ---
 
 
-While playing around with sensitivity labels and PowerShell to see how we can best protect access to a confidential collaborative space, I discovered **16 new properties I didn't know about regarding the actions of sensitivity labels**. 
+While playing around with sensitivity labels and PowerShell to see how we can best protect access to a confidential collaborative space, I discovered **15 new properties I didn't know about regarding the actions of sensitivity labels**. 
 
 As a reminder, **sensitivity labels can be used to protect access to data, Microsoft 365 groups or sensitive Power BI reports**. It seems that **Microsoft wants to add a new string to its bow by adding more actions concerning Teams**. 
 
-Among the 16 new actions I saw: 
+Among the 15 new actions I saw: 
 - 1 of them about private Teams
 - 3 of them about Teams with shared channels 
 - 11 of them about Teams meetings
