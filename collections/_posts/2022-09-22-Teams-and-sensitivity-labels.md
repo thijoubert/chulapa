@@ -93,8 +93,6 @@ Unfortunately, this feature still seems to be limited to public or private previ
 
 Nothing appears either in a Microsoft documentation or in the Compliance Center: it is only possible to configure actions for items (emails, Office documents or Power BI reports). 
 
-![Graphical user interface, text, application, email
-
 <img src="https://thijoubert.github.io/assets/img/posts/2022-09-22_Teams-and-sensitivity-labels_5.png" >
 
 
