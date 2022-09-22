@@ -1,7 +1,7 @@
 ﻿---
 title: "Did you know that a document could have 13 different share links?"
 subtitle:
-excerpt: "Microsoft recently updated the UI of the Sharing for Word Online. It is the occasion to review some mecanichs regarding share links."    
+excerpt: "Microsoft recently updated the UI of the Sharing for Word Online. It is the occasion to review some mechanichs regarding share links."    
 tags:
   - Microsoft 365
   - Office 365
