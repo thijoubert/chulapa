@@ -1,7 +1,7 @@
 ﻿---
 title: "Sensitivity labels for Teams (Teams, Shared channels and meetings) are coming? "
 subtitle:
-excerpt: "Microsoft recently updated the UI of the Sharing for Word Online. It is the occasion to review some mechanichs regarding share links."    
+excerpt: "I just noticed 15 new properties of sensitivity labels related to teams, shared channels and meetings. What do they suggest for the future?."    
 tags:
   - Microsoft 365
   - Office 365
