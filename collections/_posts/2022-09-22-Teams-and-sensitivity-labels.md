@@ -1,7 +1,7 @@
 ﻿---
 title: "Sensitivity labels for Teams (Teams, Shared channels and meetings) are coming? "
 subtitle:
-excerpt: "I just noticed 15 new properties of sensitivity labels related to teams, shared channels and meetings. What do they suggest for the future?."    
+excerpt: "I just noticed 15 new properties of sensitivity labels related to teams, shared channels and meetings. What do they suggest for the future?"    
 tags:
   - Microsoft 365
   - Office 365
@@ -54,7 +54,7 @@ With these 3 new actions, Microsoft brings first elements of answer:
 
 # 11 new actions to set Teams meeting templates
 
-As for many topics within Microsoft 365, Teams Administrators can create policies to set up a framework of collaboration.[policies to set up a framework of collaboration](https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-participants-and-guests)v. From this framework, Teams meetings organizers can harden the settings if needed (but not loosen them).
+As for many topics within Microsoft 365, Teams Administrators can create [policies to set up a framework of collaboration](https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-participants-and-guests). From this framework, Teams meetings organizers can harden the settings if needed (but not loosen them).
 
 Historically, [the settings for Teams meetings were managed once the meeting had started](https://support.microsoft.com/en-us/office/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e). This could cause problems in the animation. 
 
