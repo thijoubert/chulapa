@@ -142,8 +142,7 @@ Afin d'aller plus loin, je peux également utiliser un groupe dynamique ciblant 
 1. *Filter the workload identities authenticating to cloud applications;*
 1. *Filter the cloud applications to which the user authenticates.*
 
-For more information : 
-
-- [Filter for applications in Conditional Access policy (Preview) - Azure Active Directory - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-filter-for-applications) 
-- [Add or deactivate custom security attributes in Azure AD (Preview) - Azure Active Directory - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/custom-security-attributes-add)
+For more information: 
+- [Filter for applications in Conditional Access policy (Preview)](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-filter-for-applications) 
+- [Add or deactivate custom security attributes in Azure AD (Preview)](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/custom-security-attributes-add)
 
