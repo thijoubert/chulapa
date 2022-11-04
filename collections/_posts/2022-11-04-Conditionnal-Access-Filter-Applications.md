@@ -1,5 +1,5 @@
 ﻿---
-title: "How to disable company links within Office 365 ?"
+title: "A first look at the new Conditional Access condition : Filter for applications"
 subtitle:
 excerpt: "The end of the year 2022 puts Application protection in the spotlight, with the GA of Entra Workload Identity Protection scheduled for November 2022."    
 tags:
