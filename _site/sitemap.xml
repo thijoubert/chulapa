@@ -1,141 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>/2023-01/ChatGPT-GraphAPI-PowerShell/</loc>
+        <lastmod>2023-01-20T00:00:00+01:00</lastmod>
+    </url>
+    <url>
         <loc>/2022-11/Conditionnal-Access-Filter-Applications/</loc>
         <lastmod>2022-11-04T00:00:00+01:00</lastmod>
-        </url>
+    </url>
     <url>
-<loc>/2022-10/Disable-Company-Links/</loc>
-<lastmod>2022-10-05T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-09/Teams-and-Sensitivity-Labels/</loc>
-<lastmod>2022-09-22T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-08/Did-you-know-a-document-could-have-13-share-links/</loc>
-<lastmod>2022-08-29T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-08/How-to-improve-screenshots/</loc>
-<lastmod>2022-08-10T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-07/How-to-empower-users-check-suspicious-activity/</loc>
-<lastmod>2022-07-29T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-07/How-to-track-anonymous-links/</loc>
-<lastmod>2022-07-28T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-06/Ransomware-SharePoint-What-to-take-away-from-ProofPoint-article/</loc>
-<lastmod>2022-06-28T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-03/Identify-who-accessed-to-external-tenants/</loc>
-<lastmod>2022-03-29T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-02/How-to-keep-track-news-Office-365-22/</loc>
-<lastmod>2022-02-07T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-01/How-to-keep-track-news-Office-365-12/</loc>
-<lastmod>2022-01-21T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2022-01/PowerBI-FistNames-France/</loc>
-<lastmod>2022-01-12T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-12/PowerPlatform-Default-Data-Group/</loc>
-<lastmod>2021-12-07T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-11/Conditional-Access-filter-for-devices/</loc>
-<lastmod>2021-11-10T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-11/Continuous-Access-Evaluation/</loc>
-<lastmod>2021-11-09T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-10/Office365-Tokens-Lifetime/</loc>
-<lastmod>2021-10-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-10/Prevent-Uncontrolled-Resharing-OneDrive/</loc>
-<lastmod>2021-10-05T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-09/Prevent-Uncontrolled-Resharing-SharePoint/</loc>
-<lastmod>2021-09-28T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-09/SharePoint-Prevent-Contractor-Access-Public-Files/</loc>
-<lastmod>2021-09-16T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-08/InformationBarriers-SharePoint/</loc>
-<lastmod>2021-08-31T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-08/InformationBarriers-OneDrive/</loc>
-<lastmod>2021-08-24T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-07/InformationBarriers-Feedback-from-the-field-1-2/</loc>
-<lastmod>2021-07-27T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-07/TestEnvironment/</loc>
-<lastmod>2021-07-22T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
-<lastmod>2021-07-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
-<lastmod>2021-07-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-07/Control-PowerPlatform-Access/</loc>
-<lastmod>2021-07-07T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2021-06/Backup/</loc>
-<lastmod>2021-06-17T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2020-10/Administration-M365/</loc>
-<lastmod>2020-10-19T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2020-08/M365SecurityComplianceLicensing/</loc>
-<lastmod>2020-08-16T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/2020-07/6étapes/</loc>
-<lastmod>2020-07-06T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/blog/</loc>
-</url>
-<url>
-<loc>/tags</loc>
-</url>
-<url>
-<loc>/archive</loc>
-</url>
- <url>
-<loc>/about</loc>
-</url>
-<url>
-<loc>/disclaimer</loc>
-</url>
-<url>
-<loc>/blog/page2/</loc>
-</url>
+        
+        <loc>/2022-10/Disable-Company-Links/</loc>
+        <lastmod>2022-10-05T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-09/Teams-and-Sensitivity-Labels/</loc>
+        <lastmod>2022-09-22T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-08/Did-you-know-a-document-could-have-13-share-links/</loc>
+        <lastmod>2022-08-29T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-08/How-to-improve-screenshots/</loc>
+        <lastmod>2022-08-10T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-07/How-to-empower-users-check-suspicious-activity/</loc>
+        <lastmod>2022-07-29T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-07/How-to-track-anonymous-links/</loc>
+        <lastmod>2022-07-28T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-06/Ransomware-SharePoint-What-to-take-away-from-ProofPoint-article/</loc>
+        <lastmod>2022-06-28T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-03/Identify-who-accessed-to-external-tenants/</loc>
+        <lastmod>2022-03-29T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-02/How-to-keep-track-news-Office-365-22/</loc>
+        <lastmod>2022-02-07T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-01/How-to-keep-track-news-Office-365-12/</loc>
+        <lastmod>2022-01-21T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2022-01/PowerBI-FistNames-France/</loc>
+        <lastmod>2022-01-12T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-12/PowerPlatform-Default-Data-Group/</loc>
+        <lastmod>2021-12-07T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-11/Conditional-Access-filter-for-devices/</loc>
+        <lastmod>2021-11-10T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-11/Continuous-Access-Evaluation/</loc>
+        <lastmod>2021-11-09T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-10/Office365-Tokens-Lifetime/</loc>
+        <lastmod>2021-10-19T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-10/Prevent-Uncontrolled-Resharing-OneDrive/</loc>
+        <lastmod>2021-10-05T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-09/Prevent-Uncontrolled-Resharing-SharePoint/</loc>
+        <lastmod>2021-09-28T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-09/SharePoint-Prevent-Contractor-Access-Public-Files/</loc>
+        <lastmod>2021-09-16T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-08/InformationBarriers-SharePoint/</loc>
+        <lastmod>2021-08-31T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-08/InformationBarriers-OneDrive/</loc>
+        <lastmod>2021-08-24T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-07/InformationBarriers-Feedback-from-the-field-1-2/</loc>
+        <lastmod>2021-07-27T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-07/TestEnvironment/</loc>
+        <lastmod>2021-07-22T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
+        <lastmod>2021-07-19T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-07/PowerPlatform-TenantIsolation/</loc>
+        <lastmod>2021-07-19T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-07/Control-PowerPlatform-Access/</loc>
+        <lastmod>2021-07-07T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2021-06/Backup/</loc>
+        <lastmod>2021-06-17T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2020-10/Administration-M365/</loc>
+        <lastmod>2020-10-19T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2020-08/M365SecurityComplianceLicensing/</loc>
+        <lastmod>2020-08-16T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/2020-07/6étapes/</loc>
+        <lastmod>2020-07-06T00:00:00+01:00</lastmod>
+    </url>
+    <url>
+        <loc>/blog/</loc>
+    </url>
+    <url>
+        <loc>/tags</loc>
+    </url>
+    <url>
+        <loc>/archive</loc>
+    </url>
+    <url>
+        <loc>/about</loc>
+    </url>
+    <url>
+        <loc>/disclaimer</loc>
+    </url>
+    <url>
+        <loc>/blog/page2/</loc>
+    </url>
 </urlset>
