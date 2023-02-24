@@ -19,7 +19,8 @@ At the end of 2022, Microsoft has improved the management and parameters availab
 
 This article aims to present **how these evolutions will enable you to enhance the initial perception of your Office 365 tenant. The goal will be to adapt the corporate identity to create the best sign-in experience** for the end users and the organization’s partners. 
 
-
+<br />
+<br />
 
 # A reminder of the legacy company branding
 
@@ -39,12 +40,14 @@ Microsoft allowed since 2017 to customize several settings for the authenticatio
 Although a welcome message is nice, I have seen several tenants display: "You can sign in with your email address" firstname.lastname@thijoubert.com. I'm not sure it's necessary to inform potential attackers what the User Principal Name of the users looks like…
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
-
+<br />
+<br />
 
 # Introduction of the new company branding capabilities 
 
 Now let’s deep dive into the new capabilities. 
 
+<br />
 
 ## How to switch to the new company branding experience
 
@@ -57,10 +60,13 @@ The first thing to do is to activate the functionality that is still in preview.
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_4.png">
 
+<br />
 
 ## How to configure the new company branding
 
 To configure the new company branding experience, 5 simple steps are required. The hardest part is to get the images and icons in the right size and format. 
+
+<br />
 
 ### 1. Basics: 
 
@@ -70,11 +76,12 @@ In this first section, we find the main graphic elements:
 - **Background image** for the main background image of the sign-in page
 - **Background color** for the background color in case of failure to load the background image
 
-![Graphical user interface, text, application
 
-Description automatically generated](Aspose.Words.0b04e106-e3d6-4c46-83cc-c296e8be678c.005.png)
+<img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_5.png">
 
 From what I've seen, it's not essential, even if recommended, to follow the dimensions of the images. It is possible to do more or less. On the contrary, the indicated sizes are maximum (even if the error message is not very explicit: “The file type uploaded for this image type is too large”.)
+
+<br />
 
 ### 2. Layout
 
@@ -84,18 +91,21 @@ In this new part, 3 parameters are available to manage the layout of the page:
 - **Header**: Display or hide the header (with the logo)
 - **Footer**: Display or hide the footer (with terms of use and cookies) 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_5.png">
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_6.png">
 
 
 It is also possible to upload a CSS file to customize the page layout, but I will return to that at the end of the article. 
 
+<br />
+
 ### 3. Header
 
 The customization of the header is very simple, as it contains only the logo of the page, displayed by default in the upper right corner. 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_7.png">
+
+<br />
 
 ### 4. Footer
 
@@ -112,6 +122,8 @@ With the new experience, it is possible to decide whether to display or not thes
 
 The terms of use are not necessarily those displayed by conditional access. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
+
+<br />
 
 ### 5. Review
 
@@ -130,6 +142,7 @@ And here we go:
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-02-19_AzureAD-LoginPage_10.png">
 
+<br />
 
 ## How to go further with the custom templates
 
@@ -201,6 +214,7 @@ The company branding can be customized for each of the browser's display languag
 
 However, **defining a sign-in experience for groups of users is still not possible**. This could be useful for some large organizations that would like to have authentication pages for each of their entities, as IT is centrally managed in a white-label approach.  
 
+<br />
 
 ## To go even further
 
