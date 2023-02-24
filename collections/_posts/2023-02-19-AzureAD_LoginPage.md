@@ -231,7 +231,7 @@ With Graph Explorer, extracting the organization's brand before editing the cont
 *Anyone attempting to connect with the address fakseuser@mydomain.com will be able to access the sign-in page and its components. It will also be appropriate to avoid giving too much information about the format of the main user names of the organization.*
 
 Sources: 
-- [Add branding to your organization's sign-in page - Azure AD - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding)
-- [Add company branding to your organization's sign-in page (preview) - Azure AD - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-customize-branding)
+- [Add branding to your organization's sign-in page - Azure AD - Microsoft Entra](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding)
+- [Add company branding to your organization's sign-in page (preview) - Azure AD - Microsoft Entra](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-customize-branding)
 - [Custom template download](https://download.microsoft.com/download/7/2/7/727f287a-125d-4368-a673-a785907ac5ab/custom-styles-template-013023.css)
-- [organizational branding resource type - Microsoft Graph beta | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/resources/organizationalbranding?view=graph-rest-beta)
+- [organizational branding resource type - Microsoft Graph beta](https://learn.microsoft.com/en-us/graph/api/resources/organizationalbranding?view=graph-rest-beta)
