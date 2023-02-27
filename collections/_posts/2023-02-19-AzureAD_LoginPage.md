@@ -1,5 +1,5 @@
 ﻿---
-title: "How to customize your Azure AD sign-in page with enhanced capbilities"
+title: "How to customize your Azure AD sign-in page with enhanced capabilities"
 subtitle:
 excerpt: "Improve the login experience while better adapting to the organization identity."    
 tags:
@@ -11,7 +11,7 @@ header_img : "./assets/img/posts/2023-02-19_AzureAD-LoginPage_12.png"
 
 One of the windows that many customers of Microsoft services (about 250M daily users) see practically daily is the Azure AD login page.
 
-At the end of 2022, Microsoft has improved the management and parameters available to customize this page. This evolution, which is now in public preview, enables beyond customizing the image or background color, the company logo and an explanatory text to manage: 
+At the end of 2022, Microsoft has improved the management and the parameters available to customize this page. This evolution, which is now in public preview, enables beyond customizing the image or background color, the company logo and an explanatory text to manage: 
 - A favicon for the browser tab 
 - A header with a reminder of the organization's logo
 - A footer with links to the terms of use, and a description of privacy and cookies
