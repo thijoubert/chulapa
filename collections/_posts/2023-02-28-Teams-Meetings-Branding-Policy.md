@@ -74,8 +74,7 @@ I got several error messages while configuring a new policy:
 - We can't create your images. Try again. If you continue to have problems, contact Microsoft customer support.
 - We can't get any policies right now. Try again. If you continue to have problems, contact Microsoft customer support.
 - We can’t get the policy assignments. Try again. If you continue to have problems, contact Microsoft customer support.
-
-The first error is quite annoying because I could not save a policy. Moreover, it is complicated to reproduce because for an identical configuration, the creation works, and several minutes later not.
+But after few retry, it worked like a charm. 
 
 <br />
 <br />
