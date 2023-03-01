@@ -140,7 +140,6 @@ Note that policies managed in PowerShell cannot be viewed, modified, or deleted 
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-02-28_Teams-Meetings-Branding-Policy_9.png">
 
-PowerShell enables to customize the meeting experience even without Teams Premium licensing. I raised this issue to Teams product.
 
 **3. Addition of other themes**
 
