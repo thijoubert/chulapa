@@ -24,7 +24,7 @@ These policies allow you to **configure the logo, background image, and button c
 
 In summary, the branding policies allow you to go from this: 
 
-<img src="https://thijoubert.github.io/assets/img/posts/2023-02-28_Teams-Meetings-Branding-Policy-1.png">
+<img src="https://thijoubert.github.io/assets/img/posts/2023-02-28_Teams-Meetings-Branding-Policy_1.png">
 
 To this: 
 
