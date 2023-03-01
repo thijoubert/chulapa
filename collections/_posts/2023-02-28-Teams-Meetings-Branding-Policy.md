@@ -155,4 +155,4 @@ The policy is well-modified. But I could not see how to use the different themes
 
 *From my point of view, the customization of the meeting themes will be mostly useful for Live Events or webinars with external people (can't wait for this to be released).* 
 
-*The few errors I encountered show that Microsoft's copy is not yet completely dry, but the feature is largely usable as is for all organizations that can afford Teams Premium or Advanced Communications (reminder: Teams has a 30% discount on the public price before June 30, 2023). It will be hard to justify the $10 per user month just to customize the lobby, but the other compliance features and intelligent recap are more than promising.*
+*The few errors I encountered show that the feature is not yet completely dry, but it is largely usable as is for all organizations that can afford Teams Premium or Advanced Communications (reminder: Teams has a 30% discount on the public price before June 30, 2023). I think that it will be hard to justify the $10 per user month just to customize the lobby, but the other compliance features and intelligent recap are more than promising.*
