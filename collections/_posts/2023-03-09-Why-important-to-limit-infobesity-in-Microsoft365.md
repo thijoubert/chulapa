@@ -57,11 +57,11 @@ Estimating the global carbon footprint of digital technology **is particularly c
 
 To assess emissions impacts, Microsoft "[segments greenhouse gas emissions into three categories consistent with the Greenhouse Gas Protocol](https://ghgprotocol.org/)”:
 
-- *Scope 1 | Emissions that directly result from business activities, such as stationary combustion of fuels for backup power generation in our data centers.* 
-- *Scope 2 | Emissions that indirectly result from producing the energy consumed in data centers, such as exhaust from an electric power plant. The Scope 2 methodology used for the Emissions Impact Dashboard for Microsoft 365 is market-based, meaning that it takes into account Microsoft’s renewable energy power purchases. Carbon offsets are not accounted for here.*
-- *Scope 3 | Emissions that indirectly result from the supply chain and all other business activities, such as the embodied carbon associated with manufacturing, shipping, and recycling the servers used in our data centers. Scope 3 figures as reported in the Emissions Impact Dashboard for Microsoft 365 can be thought of as a sunk cost; they represent emissions associated with servers and other IT assets that have already been built and installed in our data centers. Those emissions are amortized over each month of the asset’s estimated lifespan (the EID uses a default value of 6 years) before then being allocated to Azure and Microsoft 365 customers and reported in the EID.* 
+- *Scope 1: Emissions that directly result from business activities, such as stationary combustion of fuels for backup power generation in our data centers.* 
+- *Scope 2: Emissions that indirectly result from producing the energy consumed in data centers, such as exhaust from an electric power plant. The Scope 2 methodology used for the Emissions Impact Dashboard for Microsoft 365 is market-based, meaning that it takes into account Microsoft’s renewable energy power purchases. Carbon offsets are not accounted for here.*
+- *Scope 3: Emissions that indirectly result from the supply chain and all other business activities, such as the embodied carbon associated with manufacturing, shipping, and recycling the servers used in our data centers. Scope 3 figures can be thought of as a sunk cost; they represent emissions associated with servers and other IT assets that have already been built and installed in our data centers.* 
 
-While it is quite easy to estimate the impacts of scopes 1 and 2, the impacts of scope 3 are relatively undocumented. 
+While it is fairly easy to estimate the impacts of scopes 1 and 2, the impacts of scope 3 are generally poorly documented. 
 
 <br />
 
@@ -71,7 +71,7 @@ Microsoft has written several very interesting documents detailing an ambition t
 
 - [The Carbon Benefits of Cloud Computing: A Study on the Microsoft Cloud.](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 - [Microsoft 365 Emissions Whitepaper](https://aka.ms/m365-emissions-whitepaper)
-- [2021 Environmental Sustainability Report | Microsoft CSR](https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report)
+- [2021 Environmental Sustainability Report](https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report)
 
 Numerous commitments to the environment are detailed, such as the use of renewable energy, or past achievements such as the optimization of Azure Compute and CPU usage for Teams. 
 
@@ -101,8 +101,8 @@ To satisfy my scientific curiosity, I did some research on data storage in the c
 
 |Source|Value (for 1 GB) |Scope|Methodology (with French energy mix: 80g CO2e per kWh)|
 | :- | :- | :- | :- |
-|[Stanford](https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe) (2017)|**250** g CO2e per year|Storage only|Estimation of 3 kWh |
-|[Shift Project](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ftheshiftproject.org%2Fwp-content%2Fuploads%2F2018%2F10%2FLean-ICT-Materials-QuantiLev-2018.xlsx&wdOrigin=BROWSELINK) (2020)|**80**  g CO2e per year|Storage only|Estimation of 1 kWh with French “Caisse des Dépots”|
+|[Stanford](https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe) (2017)|**250** g CO2e per year|Storage only|Estimation of 3 kWh per GB|
+|[Shift Project](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ftheshiftproject.org%2Fwp-content%2Fuploads%2F2018%2F10%2FLean-ICT-Materials-QuantiLev-2018.xlsx&wdOrigin=BROWSELINK) (2020)|**80**  g CO2e per year|Storage only|Estimation of 1 kWh per GB with French “Caisse des Dépots”|
 |[Green Cloud Computing](https://myimpact.isit-europe.org/fr/) (2021)|**35g** CO2e per year|Storage and datacenter|0\.65 W per hour per TB, 6x replication|
 |[Negaoctet](https://base-impacts.ademe.fr/gestdoclist) (2022)|**12g** CO2e per year|Storage and datacenter|From a Netflix storage analysis|
 |[ADEME](https://impactco2.fr/usagenumerique/stockagedonnee) (?)|**0.24** gCO2 per year|Storage and datacenter|Source from Negaoctet ?|
@@ -175,9 +175,7 @@ The same information can be found in PowerShell :
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-03-09_Why-manage-data-volume-Microsoft365_5.png">
 
-Reminders for the storage capacity:
-- The contents in the Recycle Bin are not counted in the site storage. 
-- The contents in the Preservation Hold Library could 
+Reminders for the storage capacity: The contents in the Recycle Bin are not counted in the site storage. The contents in the Preservation Hold Library could 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 For your information, some of my customers have several Petabytes of data in SharePoint Online. Surely significant savings can be made in this area. 
