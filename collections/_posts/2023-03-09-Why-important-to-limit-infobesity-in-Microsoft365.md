@@ -58,10 +58,10 @@ Estimating the global carbon footprint of digital technology **is particularly c
 To assess emissions impacts, Microsoft "[segments greenhouse gas emissions into three categories consistent with the Greenhouse Gas Protocol](https://ghgprotocol.org/)”:
 
 - *Scope 1: Emissions that directly result from business activities, such as stationary combustion of fuels for backup power generation in our data centers.* 
-- *Scope 2: Emissions that indirectly result from producing the energy consumed in data centers, such as exhaust from an electric power plant. The Scope 2 methodology used for the Emissions Impact Dashboard for Microsoft 365 is market-based, meaning that it takes into account Microsoft’s renewable energy power purchases. Carbon offsets are not accounted for here.*
+- *Scope 2: Emissions that indirectly result from producing the energy consumed in data centers, such as exhaust from an electric power plant. The Scope 2 methodology used is market-based, meaning that it takes into account Microsoft’s renewable energy power purchases. Carbon offsets are not accounted for here.*
 - *Scope 3: Emissions that indirectly result from the supply chain and all other business activities, such as the embodied carbon associated with manufacturing, shipping, and recycling the servers used in our data centers. Scope 3 figures can be thought of as a sunk cost; they represent emissions associated with servers and other IT assets that have already been built and installed in our data centers.* 
 
-While it is fairly easy to estimate the impacts of scopes 1 and 2, the impacts of scope 3 are generally poorly documented. 
+While it is fairly easy to estimate the impacts of scopes 1 and 2 (direct impacts of the usage of Cloud Services), the impacts of scope 3 (lifecycle of datacenters) are generally less documented. 
 
 <br />
 
@@ -80,14 +80,14 @@ Microsoft concretely writes 3 things:
 1. **Scope 3 generates about 96% of the emissions** on average for collaborative services.
 1. **Customers can only act on Scope 3 over the long term** by reducing the amount of data needed, which will limit the capacity needed for the data volumes. 
 
-The **effort of transparency is commendable**, but I find that the **figures announced are rather weak** and lack details about the calculation method. 
+The **effort of transparency is praiseworthy**, but I find that the **figures announced are very low** and lack details about the calculation method. 
 
 In my humble opinion : 
 - **210g of CO2e per year seems to me very low for all the services offered by the platform** if we compare it with the emission of one hour of video on Netflix (between "well under 100g" according to Netflix and 400g according to The Shift Project on average - [source](https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines)).
 - **It is not clear if Microsoft's investments in environmental initiatives are taken into account in the calculation of carbon emissions related to collaborative uses** (theoretical compensation does not limit the environmental footprint which is real).
 - The dashboard seems to promote the use of the Cloud over on-premises solutions with a local energy mix, while the Redmond firm announces partnerships with energy providers using 100% renewable energy.
 
-For example**, my test tenant which contains a maximum of 1GB of data already represents 198g for one month for each of the 25 users** (see image below)...
+For example**, my test tenant, which contains a maximum of 1GB of data, already represents 198g for one month for each of the 25 users** (see image below)...
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-03-09_Why-manage-data-volume-Microsoft365_2.png">
 
