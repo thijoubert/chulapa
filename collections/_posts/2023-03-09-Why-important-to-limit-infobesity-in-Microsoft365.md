@@ -236,6 +236,6 @@ One of the most critical aspects of Microsoft 365  is data volume control, which
 
 Effective Office 365 data management policies and practices are needed to address these challenges, and organizations must make it a priority to implement them. With the right policies in place, companies can reduce their data volume, control costs, ensure regulatory compliance, and enhance system performance.
 
-On the subject of eco-responsibility, it remains complicated today to estimate the exact impacts of the consumption of Cloud services. Even without that, sobriety must be a compass. In the long run, and Microsoft makes it clear in its reports, limiting the volume of data will limit the increase in data center capacity. 
+On the subject of eco-responsibility, it remains complicated today to estimate the exact impacts of the consumption of Cloud services. Even without that, sobriety must be a compass. In the long run, limiting data volume will limit data center capacity requirements (knowing that the construction and lifecycle of these data centers represent the majority of the environmental impact of cloud services, if we don't count the end-users devices). 
 
-To this end, I will continue to write articles that provide concrete tips to limit infobesity. By implementing these tips, organizations can successfully manage their data on Office 365 and overcome the challenges associated with data volume control.
+To this end, I will continue to write articles that provide concrete tips to limit infobesity.
