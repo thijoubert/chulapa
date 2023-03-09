@@ -175,7 +175,7 @@ The same information can be found in PowerShell :
 
 <img src="https://thijoubert.github.io/assets/img/posts/2023-03-09_Why-manage-data-volume-Microsoft365_5.png">
 
-Reminders for the storage capacity: The contents in the Recycle Bin are not counted in the site storage. The contents in the Preservation Hold Library could 
+Reminders about storage capacity: The contents of the recycle garbage can are not included in the site storage, while the contents of the Preservation Hold Library are. 
 {: #myid .alert .alert-info .p-3 .mx-2 mb-3}
 
 For your information, some of my customers have several Petabytes of data in SharePoint Online. Surely significant savings can be made in this area. 
